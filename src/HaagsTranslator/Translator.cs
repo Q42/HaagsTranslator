@@ -9,7 +9,7 @@ namespace HaagsTranslator
 {
   public class Translator
   {
-    string[][] translationReplacements = {
+    static readonly string[][] translationReplacements = {
     new []{"uitgaan",  "stappen"}, // replaced later voor stappe of stappuh
     new []{"childerswijk", "childâhswijk"},
     new []{"([^o])ei", "$1è"}, // moet voor 'scheveningen' en 'eithoeke', geen 'groeit'
@@ -191,6 +191,12 @@ namespace HaagsTranslator
     new []{"z(au|o)'n", "zaun"},
     new []{"zo([^en])", "zau$1"}, // 'zogenaamd', geen 'zoeken', 'zondag'
 };
+
+    public Translator()
+    {
+      Regex.CacheSize = translationReplacements.Length;
+
+    }
 
     public string Translate(string dutch)
     {
