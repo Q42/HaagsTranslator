@@ -1,19 +1,10 @@
-﻿using System.Text.RegularExpressions;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace HaagsTranslator.Tests
 {
   [TestFixture]
   public class TranslatorTests
   {
-    private Translator translator;
-
-    [SetUp]
-    public void SetUp()
-    {
-      translator = new Translator();
-    }
-    
     [Test]
     [TestCase("Schilderswijk", "Schildâhswèk")]
     [TestCase("Zuiderpark", "Zùidâhpark")]
@@ -85,7 +76,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Van zo'n bakje koffie krijg ik huisje boompje beestje in m'n koppie", "Van zaun bakkie koffie krèg ik hùissie baumpie beissie imme koppie")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
-      var result = translator.Translate(dutch);
+      var result = Translator.Translate(dutch);
       Assert.AreEqual(expectedTranslation, result);
     }
   }
