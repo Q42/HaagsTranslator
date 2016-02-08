@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace HaagsTranslator.Tests
 {
@@ -12,13 +7,15 @@ namespace HaagsTranslator.Tests
   {
     private Translator translator;
 
-    [OneTimeSetUp]
-    public void OneTimeSetUp()
+    [SetUp]
+    public void SetUp()
     {
       translator = new Translator();
     }
     
     [Test]
+    [TestCase("Schilderswijk", "Schildâhswèk")]
+    [TestCase("Zuiderpark", "Zùidâhpark")]
     [TestCase("achter. achter, achter ", "achtâh. achtâh, achtâh ")]
     [TestCase("Voorwoord", "Voâhwoâhd")]
     [TestCase("Ik zweer je, meneer, doe je het nog een keer, krijg je een peer, ga je neer.", "Ik zweâh je, meneâh, doejenut nog un keâh, krèg je un peâh, ga je neâh.")]

@@ -49,7 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\src\HaagsTranslator\HaagsTranslator.csproj">
+    <ProjectReference Include="..\HaagsTranslator\HaagsTranslator.csproj">
       <Project>{eaff48b1-d748-422b-a423-2baad7a41e2c}</Project>
       <Name>HaagsTranslator</Name>
     </ProjectReference>
