@@ -6,6 +6,8 @@ namespace HaagsTranslator.Tests
   public class TranslatorTests
   {
     [Test]
+    [TestCase(null, null)]
+    [TestCase("", "")]
     [TestCase("Schilderswijk", "Schildâhswèk")]
     [TestCase("Zuiderpark", "Zùidâhpark")]
     [TestCase("achter. achter, achter ", "achtâh. achtâh, achtâh ")]

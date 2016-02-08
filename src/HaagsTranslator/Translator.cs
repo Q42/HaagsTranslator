@@ -210,6 +210,8 @@ namespace HaagsTranslator
     /// <returns></returns>
     public static string Translate(string dutch)
     {
+      if (string.IsNullOrEmpty(dutch))
+        return dutch;
       return TranslationReplacements.Aggregate(dutch, (current, replacement) => Regex.Replace(current, replacement[0], replacement[1], RegexOptions.CultureInvariant));
     }
   }
