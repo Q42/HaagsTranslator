@@ -1,0 +1,7 @@
+.vs
+*.user
+*.ncrunch
+bin
+obj
+_NCrunch_HaagsTranslator
+packages/*
