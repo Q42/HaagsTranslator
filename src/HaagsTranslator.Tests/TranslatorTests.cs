@@ -81,6 +81,7 @@ namespace HaagsTranslator.Tests
     [TestCase("M'n been slaapt, vind je het erg als ik er even bij ga liggen?", "Me bein slaap, vijje ut errag as ik er eive bè ga legge?")]
     [TestCase("Waar ligt madurodam nou? Die heb ik dacht ik in de kast neergelegd.", "Waah leg meduraudam nâh? Die heppik dach ik in de kas neâhgeleige.")]
     [TestCase("Kan het zijn dat ik u ken? kunnen", "Ken ut zèn dattik u kan? kenne")]
+    [TestCase("Het zou niet mogen moeten, maar wat kan mij het rotten ", "Ut zâh nie mauge motte, maah wat ken mènnut rotte ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);

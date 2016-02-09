@@ -62,6 +62,7 @@ namespace HaagsTranslator
       new[]{"\\b(G|g)aat het\\b", "$1aat-ie"},
       new[]{"\\b(M|m)et je\\b", "$1ejje"},
       new[]{"\\b(V|v)ind je\\b", "$1ijje"},
+      new[]{ "\\bmij het\\b", "mènnut"},
 
       new []{"ADO Den Haag", "FC De Haag"},
       new []{"ADO", "Adau"},
