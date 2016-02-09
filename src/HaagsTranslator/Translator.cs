@@ -1,13 +1,18 @@
-﻿using System.Text.RegularExpressions;
+﻿using System;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace HaagsTranslator
 {
-  public class Translator
+  /// <summary>
+  /// Translator for translating nl-NL to nl-DH
+  /// </summary>
+  public static class Translator
   {
     /// <summary>
     /// list of replacement rules, ordered
     /// </summary>
-    static readonly string[][] translationReplacements = {
+    static readonly string[][] TranslationReplacements = {
       new []{"uitgaan",  "stappen"}, // replaced later voor stappe of stappuh
       new []{"childerswijk", "childâhswijk"},
       new []{"([^o])ei", "$1è"}, // moet voor 'scheveningen' en 'eithoeke', geen 'groeit'
@@ -204,11 +209,11 @@ namespace HaagsTranslator
     };
 
     /// <summary>
-    /// Initialize new translator service
+    /// Verify that at least our regexe's fit in the cache of the regex lib
     /// </summary>
-    public Translator()
+    static Translator()
     {
-      Regex.CacheSize = translationReplacements.Length;
+      Regex.CacheSize = Math.Max(Regex.CacheSize, TranslationReplacements.Length);
     }
 
     /// <summary>
@@ -216,13 +221,11 @@ namespace HaagsTranslator
     /// </summary>
     /// <param name="dutch"></param>
     /// <returns></returns>
-    public string Translate(string dutch)
+    public static string Translate(string dutch)
     {
-      foreach (var replacement in translationReplacements)
-      {
-        dutch = Regex.Replace(dutch, replacement[0], replacement[1], RegexOptions.CultureInvariant);
-      }
-      return dutch;
+      if (string.IsNullOrEmpty(dutch))
+        return dutch;
+      return TranslationReplacements.Aggregate(dutch, (current, replacement) => Regex.Replace(current, replacement[0], replacement[1], RegexOptions.CultureInvariant));
     }
   }
 }
