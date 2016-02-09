@@ -31,7 +31,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Gert, barst, Martin, harte smarties, ooievaar dat is raar maar wel waar.", "Gegt, bagst, Magtin, hagte smagties, auievaah da's raah maah wel waah.")]
     [TestCase("Door een kier in de deur van de bar rook ik de meur van goor bier ", "Doâh un kieâh in de deuâh van de bâh rauk ik de meuâh van goâh bieâh ")]
     [TestCase("De juiste uitspraak vanuit Haags wordt dus altijd aangegeven door diverse accenten.", "De jùiste ùitspraak vanùit Haags wogt dus altèd angegeive doâh divegse aksentûh.")]
-    [TestCase("Ik houd van jou, goude vrouw voor jou val ik flauw.", "Ik hâh van jâh, gâhwe vrâh voâh jâh vallik flâh.")]
+    [TestCase("Ik houd van jou, goude vrouw voor jou val ik flauw.", "Ik hâh vajjâh, gâhwe vrâh voâh jâh vallik flâh.")]
     [TestCase("Die ongein kan wel waar zijn, maar je blijft wel even mooi van mijn lijf, geil wijf", "Die ongèn ken wel waah zèn, maah je blèf wel eive maui van mèn lèf, gèl wèf")]
     [TestCase("Dat is helemaal niet fijn, dat is ronduit. Weet je wat klote is?", "Da's heilemaal nie fèn, da's rondùit. Weit je wat klaute is?")]
     [TestCase("De tram die met opzet heel langzaam rijdt. auto volkslied", "De trem die met opzet heil langzaam rèd. âhtau vollekslied")]
@@ -83,6 +83,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Als je gaat lopen zeiken zal ik de oren van je harses trekken.", "Asje gaat laupe zèke zallik de ore vajje hagses trekkûh.")]
     [TestCase("Zal ik even het behang van je knars aftrekken.", "Zallik eive ut behang vajje knags aftrekkûh.")]
     [TestCase("Van zo'n bakje koffie krijg ik huisje boompje beestje in m'n koppie", "Van zaun bakkie koffie krèg ik hùissie baumpie beissie imme koppie")]
+    [TestCase("Ken ik, ken u, ken jij, als u, mag het, aan het, van het, ik dacht het, van jou, kijk dan", "Kennik, kennu, kejjèh, assu, maggut, annut, vannut, dachut, vajjâh, kèktan")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = translator.Translate(dutch);

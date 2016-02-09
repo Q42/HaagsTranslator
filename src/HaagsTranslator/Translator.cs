@@ -44,6 +44,17 @@ namespace HaagsTranslator
       new []{"patie", "petie"}, // 'sympatiek'
       new []{"aagd([ ,.])", "aag$1"}, // 'ondervraagd'
       new []{"(am|at|ig|ig|it|kk|nn)en([^ ,.])", "$1e$2"}, // 'en' in een woord, bijv. 'samenstelling', 'eigenlijk', 'buitenstaander', 'statenkwartier', 'dennenweg', 'klokkenluider'
+
+      	// woordcombinaties
+	  new[]{"\\b(K|k)en ik\\b", "$1ennik"},
+      new[]{"\\b(K|k)en u\\b", "$1ennu"},
+      new[]{"\\b(K|k)en jij\\b", "$1ejjèh"},
+      new[]{"\\b(A|a)ls u", "$1ssu"},
+      new[]{"\\b(M|m)ag het\\b", "$1aggut"},
+      new[]{"\\bik dacht het\\b", "dachut"},
+      new[]{ "\\b(V|v)an jâh\\b", "$1ajjâh"},
+      new[]{"\\b(K|k)ijk dan\\b", "$1èktan"},
+
       new []{"ADO Den Haag", "FC De Haag"},
       new []{"ADO", "Adau"},
       new []{"sje\\b", "ssie"}, // 'huisje', moet voor 'asje'
