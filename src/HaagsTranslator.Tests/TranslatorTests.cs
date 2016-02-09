@@ -19,7 +19,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Zuiderpark", "Zùidâhpark")]
     [TestCase("achter. achter, achter ", "achtâh. achtâh, achtâh ")]
     [TestCase("Voorwoord", "Voâhwoâhd")]
-    [TestCase("Ik zweer je, meneer, doe je het nog een keer, krijg je een peer, ga je neer.", "Ik zweâh je, meneâh, doejenut nog un keâh, krèg je un peâh, ga je neâh.")]
+    [TestCase("Ik zweer je, meneer, doe je het nog een keer, krijg je een peer, ga je neer.", "Ik zweâh je, meneâh, doejenut nog un keâh, krègie un peâh, ga je neâh.")]
     [TestCase("directie, aktie.", "direksie, aksie.")]
     [TestCase("Lekker laten hangen. Hier ", "Lekkâh late hangûh. Hieâh ")]
     [TestCase("Vrijheid. Mooie duur Huur er kermis", "Vrèhèd. Mauie duâh Huâh er kerremis")]
@@ -84,6 +84,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Zal ik even het behang van je knars aftrekken.", "Zallik eive ut behang vajje knags aftrekkûh.")]
     [TestCase("Van zo'n bakje koffie krijg ik huisje boompje beestje in m'n koppie", "Van zaun bakkie koffie krèg ik hùissie baumpie beissie imme koppie")]
     [TestCase("Ken ik, ken u, ken jij, als u, mag het, aan het, van het, ik dacht het, van jou, kijk dan", "Kennik, kennu, kejjèh, assu, maggut, annut, vannut, dachut, vajjâh, kèktan")]
+    [TestCase("Gaat het niet lekker dan loop je met je ziel onder je hart gestoken ", "Gaat-ie nie lekkâh dan laupie mejje ziel ondâh je hagt gestauke ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = translator.Translate(dutch);

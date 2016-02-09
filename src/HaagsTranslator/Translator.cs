@@ -45,15 +45,17 @@ namespace HaagsTranslator
       new []{"aagd([ ,.])", "aag$1"}, // 'ondervraagd'
       new []{"(am|at|ig|ig|it|kk|nn)en([^ ,.])", "$1e$2"}, // 'en' in een woord, bijv. 'samenstelling', 'eigenlijk', 'buitenstaander', 'statenkwartier', 'dennenweg', 'klokkenluider'
 
-      	// woordcombinaties
-	  new[]{"\\b(K|k)en ik\\b", "$1ennik"},
+      // woordcombinaties
+      new[]{"\\b(K|k)en ik\\b", "$1ennik"},
       new[]{"\\b(K|k)en u\\b", "$1ennu"},
       new[]{"\\b(K|k)en jij\\b", "$1ejjèh"},
       new[]{"\\b(A|a)ls u", "$1ssu"},
       new[]{"\\b(M|m)ag het\\b", "$1aggut"},
       new[]{"\\bik dacht het\\b", "dachut"},
-      new[]{ "\\b(V|v)an jâh\\b", "$1ajjâh"},
+      new[]{"\\b(V|v)an jâh\\b", "$1ajjâh"},
       new[]{"\\b(K|k)ijk dan\\b", "$1èktan"},
+      new[]{"\\b(G|g)aat het\\b", "$1aat-ie"},
+      new[]{"\\b(M|m)et je\\b", "$1ejje"},
 
       new []{"ADO Den Haag", "FC De Haag"},
       new []{"ADO", "Adau"},
@@ -100,14 +102,13 @@ namespace HaagsTranslator
       new []{"(?=ge)l", "hoi"},
       new []{"([^io])e(g|v|l|k|p)e(l|n|m| )", "$1ei$2e$3"}, // aangegeven, helemaal, 'gekregen' geen 'geleden', 'uitspreken', 'geknepen', 'goeveneur', 'verdiepen', 'postzegels'
       new []{"alve([ ,.])", "alleve$1"}, // 'halve', moet na 'aangegeven'
-      new []{"([^ bieo])en([ ,])",       "$1e$2"}, // haal '-en' eruit, geen 'verscheen', 'tien', 'indien', 'ben', 'doen'
+      new []{"([^ ieo])en[.]", "$1ûh."}, // einde van de zin, haal ' en ', 'doen', 'zien' en 'heen'  eruit
+      new []{"([^ bieo])en\\b", "$1e"}, // haal '-en' eruit, geen 'verscheen', 'tien', 'indien', 'ben', 'doen'
       new []{"bben\\b", "bbe"}, // 'hebben'
       new []{"oien([ ,.])", "oie$1"}, // 'weggooien'
-      new []{"([^ ieo])en[.]",       "$1ûh."}, // einde van de zin, haal ' en ', 'doen', 'zien' en 'heen'  eruit
       new []{"([Hh])eb je ", "$1ebbie "}, // voor '-eb'
       new []{"(H|h)eb (un|een)\\b", "$1ep'n"}, // voor '-eb'
       new []{"eb([ ,.])",        "ep$1"},
-
       new []{"([^ ])ter([^e])", "$1tâh$2"}, // 'achtergesteld', geen 'beluisteren'
       new []{"(d|f)eli", "$1eili"}, // 'gefeliciteerd', 'indeling'
       new []{"(f|p|ie)t([ ,.])", "$1$2"}, // 'blijft', 'niet', 'betrapt'
@@ -130,9 +131,10 @@ namespace HaagsTranslator
       new []{"\\bin m'n\\b", "imme"},
       new []{"isch(|e)", "ies$1"},
       new []{"is er", "istâh"},
+      new []{ "(g|k|p) je\\b", "$1ie"}, // 'loop je', 'zoek je'
       new []{"jezelf", "je ège"}, // "jezelf"
       new []{"([^(oe)])kje\\b", "$1kkie"}, // 'bakje', moet voor algemeen regel op 'je', TODO, 'bekje'
-      new []{"([^ dist])je([ .,])", "$1ie$2"}, // woorden eindigend op -je', zonder 'asje', 'rijtje', 'avondje'
+      new []{"([^ dijst])je([ .,])", "$1ie$2"}, // woorden eindigend op -je', zonder 'asje', 'rijtje', 'avondje', geen 'mejje'
       new []{"([^e])ije", "$1èje"}, // 'blije', geen 'geleije'
       new []{"(K|k)an([ ,.])", "$1en$2"}, // 'kan', geen 'kans', 'kaneel'
       new []{"(K|k)unne", "$1enne"}, // 'kunnen', TODO, wisselen van u / e
