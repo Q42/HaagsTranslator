@@ -61,6 +61,7 @@ namespace HaagsTranslator
       new[]{"\\b(K|k)ijk dan\\b", "$1èktan"},
       new[]{"\\b(G|g)aat het\\b", "$1aat-ie"},
       new[]{"\\b(M|m)et je\\b", "$1ejje"},
+      new[]{"\\b(V|v)ind je\\b", "$1ijje"},
 
       new []{"ADO Den Haag", "FC De Haag"},
       new []{"ADO", "Adau"},
@@ -97,12 +98,12 @@ namespace HaagsTranslator
       new []{"Eig", "Èg"}, // 'Eigenlijk', TODO hoofdletters
       new []{" eig", "èg"}, // 'eigenlijk'
       new []{"(e|E)rg\\b", "$1rrag"}, // 'erg', moet voor 'ergens'
-      new []{"([^tv])(e|E)r(m|g)", "$1$2rre$3"}, // 'kermis', 'ergens', geen 'achtergelaten', 'vermoeide'
+      new []{"([^etv])(e|E)r(m|g)", "$1$2rre$3"}, // 'kermis', 'ergens', geen 'achtergelaten', 'vermoeide','neergelegd'
       new []{"([^e ])ers([^. ,c])", "$1egs$2"}, // 'diverse', 'versie', geen klinkers, geen 'eerste', geen 'verscheen'
 
       new []{"ers([ ,.t])", "âhs$1"}, // 'klinkers', 'eerste'
       new []{"eur([ ,.l])", "euâh$1"}, // worden eindigend op 'eur', zoals 'deur', 'gouveneurlaan'
-      new []{"eer(|d)([ ,.])",   "eâh$1$2"}, // zweer,
+      new []{"eer", "eâh" }, // 'zweer', 'neer'
       new []{"elk([ ,.])", "ellek$1"}, // 'elk'
       new []{"(?=ge)l", "hoi"},
       new []{"([^io])e(g|v|l|k|p)e(l|n|m| )", "$1ei$2e$3"}, // aangegeven, helemaal, 'gekregen' geen 'geleden', 'uitspreken', 'geknepen', 'goeveneur', 'verdiepen', 'postzegels'
@@ -118,6 +119,7 @@ namespace HaagsTranslator
       new []{"(d|f)eli", "$1eili"}, // 'gefeliciteerd', 'indeling'
       new []{"(f|p|ie)t([ ,.])", "$1$2"}, // 'blijft', 'niet', 'betrapt'
       new []{"ngt\\b", "nk"}, // 'hangt'
+      new []{"gelegd\\b", "geleige"}, // 'neergelegd'
       new []{"([HhVvr])ee(l|n|t)", "$1ei$2"}, // 'verscheen', 'veel', 'overeenkomsten', 'heet'
       new []{"(H|h)er", "$1eâh"}, // 'herzien'
       new []{"(I|i)n het", "$1nnut"}, // 'in het'
@@ -155,12 +157,16 @@ namespace HaagsTranslator
       new []{"(M|m)ein", "meint"}, // moet na 'ee'
       new []{"mt\\b", "mp"}, // 'komt'
       new []{"lein", "lèn"},
+
+      new []{"\\b(L|l)igge\\b", "$1egge" },
+      new []{"\\b(L|l)igt\\b", "$1eg" },
       new []{"lez", "leiz"}, // 'lezer'
       new []{"lf", "lluf"}, // 'zelfde'
       new []{"ark(|t)([ ,.])", "arrek$2"}, // 'park', 'markt'
       new []{"(M|m)oet([ ,.])", "$1ot$2"}, // 'moet', geen 'moeten'
       new []{"neme", "neime"}, // 'nemen'
       new []{"nce", "nse"}, // 'nuance'
+      new []{"\\bmad", "med"}, // 'madurodam'
       new []{"oer", "oeâh"}, // 'beroerd', 'hoer'
       new []{"(ordt|ord)([^e])", "ogt$2"}, // wordt, word, geen 'worden'
       new []{"orde", "ogde"}, // 'worden'
@@ -171,10 +177,12 @@ namespace HaagsTranslator
       new []{"O(b|d|g|k|l|m|p|s|t|v)(i|e)", "Au$1$2"}, // zelfde, maar dan met hoofdletter
       new []{"([^ io])er\\b", "$1âh"}, // 'kanker', geen 'hoer', 'er', 'hier' , moet voor 'over' na o(v)(e)
       new []{"(P| p)o(^st)" , "$1au$2"}, // 'poltici'
+      new []{"p ik\\b", "ppik"}, // 'hep ik'
       new []{"rsch", "sch"}, // 'verschijn'
       new []{"rme", "rreme"}, // 'arme'
       new []{"re(s|tr)o", "rei$1o"}, // 'resoluut', 'retro'
       new []{"redespa", "reidespe"}, // voor Vredespaleis
+      new []{"rod", "raud"}, // 'madurodam'
       new []{"([Rr])o(?=ma)" , "$1au"}, // voor romantisch, maar haal bijv. rommel eruit
       new []{"inds", "ins"}, // 'sinds'
       new []{"seque", "sekwe"}, // 'inconsequenties'

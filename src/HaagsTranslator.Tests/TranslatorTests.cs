@@ -78,6 +78,8 @@ namespace HaagsTranslator.Tests
     [TestCase("Van zo'n bakje koffie krijg ik huisje boompje beestje in m'n koppie", "Van zaun bakkie koffie krèg ik hùissie baumpie beissie imme koppie")]
     [TestCase("Ken ik, ken u, ken jij, als u, mag het, aan het, van het, ik dacht het, van jou, kijk dan", "Kennik, kennu, kejjèh, assu, maggut, annut, vannut, dachut, vajjâh, kèktan")]
     [TestCase("Gaat het niet lekker dan loop je met je ziel onder je hart gestoken ", "Gaat-ie nie lekkâh dan laupie mejje ziel ondâh je hagt gestauke ")]
+    [TestCase("M'n been slaapt, vind je het erg als ik er even bij ga liggen?", "Me bein slaap, vijje ut errag as ik er eive bè ga legge?")]
+    [TestCase("Waar ligt madurodam nou? Die heb ik dacht ik in de kast neergelegd.", "Waah leg meduraudam nâh? Die heppik dach ik in de kas neâhgeleige.")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
