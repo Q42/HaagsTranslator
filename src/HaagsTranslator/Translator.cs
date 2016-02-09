@@ -29,7 +29,7 @@ namespace HaagsTranslator
       new []{"heeft", "hep"}, // 'heeft', moet voor 'heef'
       new []{"(on|i)der", "$1dâh"}, // 'onder', 'Zuiderpark'
       new []{"ui", "ùi"}, // moet voor 'ooi' zitte n
-      new []{"([^e])(e|a)r(|s)t" , "$1$2g$3t"}, // gert, barst, martin etc., geen 'eerste', ''
+      new []{"([^e])(e|a)r(|s)t([^j])", "$1$2g$3t$4"}, // gert, barst, martin etc., geen 'eerste', 'biertje'
       new []{" er aan", " d'ran"}, // 'er aan'
       new []{"(A|a)an het([ ,.])", "$1nnut$2"}, // 'aan het', moet voor 'gaan'
       new []{"([^dlt])aan",      "$1an"}, // 'gaan' , geen 'gedaan', 'buitenstaander', 'laan'
@@ -43,7 +43,6 @@ namespace HaagsTranslator
       new []{"alk\\b", "alluk"}, // 'valk'
       new []{"([^a])ars", "$1ags"}, // 'harses', geen 'Haagenaars'
       new []{"oor" ,     "oâh"},
-      new []{"(g|n|l|L|m|M)ee(n|s)" , "$1ei$2"}, // 'geen', 'hagenees', 'lees', 'burgemeester'
       new []{"(A|a)ar([^io])", "$1ah$2"}, // 'aardappel, 'verjaardag', geen 'waarom', 'waarin'
       new []{"aar", "ar"}, // wel 'waarom'
       new []{"patie", "petie"}, // 'sympatiek'
@@ -71,10 +70,13 @@ namespace HaagsTranslator
       new []{"ADO Den Haag", "FC De Haag"},
       new []{"ADO", "Adau"},
       new []{"sje\\b", "ssie"}, // 'huisje', moet voor 'asje'
+      new []{"\\balleen\\b", "enkelt"},
+      new []{"\\bAlleen\\b", "Enkelt"},
       new []{"(A|a)ls je", "$1sje"}, // moet voor 'als'
       new []{"(A|a)ls\\b",       "$1s"},
       new []{"(b|k|w)ar\\b", "$1âh"},
       new []{" bent([ ,.])", " ben$1"}, // 'ben', geen 'instrument'
+      new []{"bote", "baute"}, // 'boterham'
       new []{"bt([ ,.])", "b$1"}, // 'hebt'
       new []{"cc", "ks"}, // 'accenten'
       new []{"ct", "kt"}, // 'geactualiseerde', 'directie'
@@ -87,6 +89,7 @@ namespace HaagsTranslator
       new []{"ds", "s"}, // 'scheidsrechter', 'godsdienstige', 'gebedsdienst'
       new []{"(D|d)y", "$1i"}, // dynamiek
       new []{"uee([ ,.])", "uwee$1"}, // 'prostituee', moet voor '-ee'
+      new []{"(g|n|l|L|m|M)ee(n|s)" , "$1ei$2"}, // 'geen', 'hagenees', 'lees', 'burgemeester'
       new []{"ee([ ,.l])", "ei$1"}, // met '-ee' op het eind zoals 'daarmee', 'veel'
       new []{" is een ", " issun "}, // moet voor ' een '
       new []{"(I|i)n een ", "$1nnun "}, // 'in een', voor ' een '
@@ -199,6 +202,7 @@ namespace HaagsTranslator
       new []{"([^gr])st([ ,.])", "$1s$2"}, // 'haast', 'troost', 'gebedsdienst', geen 'barst'
       new []{"tep\\b", "teppie"}, // 'step'
       new []{"té([ ,.])", "tei$1"}, // 'satè'
+      new []{"tje\\b", "tsje"}, // 'biertje'
       new []{"to([ ,.])", "tau$1"}, // moet na 'au'/'ou'
       new []{"(T|t)ram", "$1rem"}, // 'tram'
       new []{"ua", "uwa"}, // 'nuance', 'menstruatie'
