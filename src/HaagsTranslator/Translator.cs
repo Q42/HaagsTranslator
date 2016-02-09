@@ -108,6 +108,7 @@ namespace HaagsTranslator
       new []{"(?=ge)l", "hoi"},
       new []{"([^io])e(g|v|l|k|p)e(l|n|m| )", "$1ei$2e$3"}, // aangegeven, helemaal, 'gekregen' geen 'geleden', 'uitspreken', 'geknepen', 'goeveneur', 'verdiepen', 'postzegels'
       new []{"alve([ ,.])", "alleve$1"}, // 'halve', moet na 'aangegeven'
+      new []{"\\b(K|k)en\\b", "$1an"}, // moet voor -en
       new []{"([^ ieo])en[.]", "$1ûh."}, // einde van de zin, haal ' en ', 'doen', 'zien' en 'heen'  eruit
       new []{"([^ bieo])en\\b", "$1e"}, // haal '-en' eruit, geen 'verscheen', 'tien', 'indien', 'ben', 'doen'
       new []{"bben\\b", "bbe"}, // 'hebben'
