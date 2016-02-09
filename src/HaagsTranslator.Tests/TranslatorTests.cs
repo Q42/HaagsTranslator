@@ -15,7 +15,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Ik zweer je, meneer, doe je het nog een keer, krijg je een peer, ga je neer.", "Ik zweâh je, meneâh, doejenut nog un keâh, krègie un peâh, ga je neâh.")]
     [TestCase("directie, aktie.", "direksie, aksie.")]
     [TestCase("Lekker laten hangen. Hier ", "Lekkâh late hangûh. Hieâh ")]
-    [TestCase("Vrijheid. Mooie duur Huur er kermis", "Vrèhèd. Mauie duâh Huâh er kerremis")]
+    [TestCase("Vrijheid. Mooie duur Huur er kermis", "Vrèhèd. Mauie duâh Huâh d'r kerremis")]
     [TestCase("Slimmer naar de pier in Scheveningen Voorburg", "Slimmâh naah de pieâh in Scheiveningâh Voâhburrag")]
     [TestCase("Lekker naar het Binnenhof en daarna gaan stappen.", "Lekkâh naah ut Binnehof en daahna gan stappûh.")]
     [TestCase("Den Haag, het Plein, het Vredespaleis, Zuiderpark, park, Zwarte Pad, Grote Markt, de kerk, Rijswijkseplein", "De Haag, ut Plèn, ut Vreidespelès, Zùidâhparrek, parrek, Zwagte Pad, Graute Marrek, de kerrek, Rèswèkseplèn")]
@@ -50,7 +50,7 @@ namespace HaagsTranslator.Tests
     [TestCase("natuurlijke barrière, reisbestemming, oude taaie, zo gek als een kaartspel", "natuâhlèke barrèjerre, rèsbestemming, âhwe taaie, zau gek assun kaagtspel")]
     [TestCase("uitnodiging om een boom om te hakken. met z'n alle zo hard als je kan achter een neger aanrennen, City Pier City loop ", "ùitnaudiging om un baum om te hakkûh. met ze alle zau hard asje ken achtâh un negâh anrenne, City Pieâh City laup ")]
     [TestCase("Achter de pui aan het Spui is iedereen in een luie bui ", "Achtâh de pùi annut Spùi is iederein innun lùie bùi ")]
-    [TestCase("Geel is heel wat anders als geil, maar je kan er wel allebei een ziekte van krijgen ", "Geil is heil wat andâhs as gèl, maah je ken er wel allebè un ziekte van krège ")]
+    [TestCase("Geel is heel wat anders als geil, maar je kan er wel allebei een ziekte van krijgen ", "Geil is heil wat andâhs as gèl, maah je kandâh wel allebè un ziekte van krège ")]
     [TestCase("Van die hete saté zat ik een uur of twee met m'n reet op de plee aan de diaree ", "Van die heite satei zattik un uâh of twei met me reit op de plei an de diarei ")]// met m'n niet vertaald
     [TestCase("Menstruatie is een bloederige situatie, net als fluctuatie van de ", "Menstruwasie issun bloederige situwasie, net as fluktuwasie van de ")]
     [TestCase("De vla lag in de la van ma en zij lag op d'r pa, die dat niet echt naar of raar vond, medeklinkers ", "De vla lag in de la van ma en zè lag op d'r pa, die dat nie ech naah of raah vond, meideklinkâhs ")]
@@ -78,10 +78,12 @@ namespace HaagsTranslator.Tests
     [TestCase("Van zo'n bakje koffie krijg ik huisje boompje beestje in m'n koppie", "Van zaun bakkie koffie krèg ik hùissie baumpie beissie imme koppie")]
     [TestCase("Ken ik, ken u, ken jij, als u, mag het, aan het, van het, ik dacht het, van jou, kijk dan", "Kennik, kennu, kejjèh, assu, maggut, annut, vannut, dachut, vajjâh, kèktan")]
     [TestCase("Gaat het niet lekker dan loop je met je ziel onder je hart gestoken ", "Gaat-ie nie lekkâh dan laupie mejje ziel ondâh je hagt gestauke ")]
-    [TestCase("M'n been slaapt, vind je het erg als ik er even bij ga liggen?", "Me bein slaap, vijje ut errag as ik er eive bè ga legge?")]
+    [TestCase("M'n been slaapt, vind je het erg als ik er even bij ga liggen?", "Me bein slaap, vijje ut errag as ik d'r eive bè ga legge?")]
     [TestCase("Waar ligt madurodam nou? Die heb ik dacht ik in de kast neergelegd.", "Waah leg meduraudam nâh? Die heppik dach ik in de kas neâhgeleige.")]
     [TestCase("Kan het zijn dat ik u ken? kunnen", "Ken ut zèn dattik u kan? kenne")]
     [TestCase("Het zou niet mogen moeten, maar wat kan mij het rotten ", "Ut zâh nie mauge motte, maah wat ken mènnut rotte ")]
+    [TestCase("Er is een regel die zegt: als er wordt gegeten dan kan er ook worden gescheten ", "D'r issun reigel die zeg: astâh wogt gegeite dan kandâh auk wogde gescheite ")]
+    [TestCase("Zorg dat je er op tijd bent, dan kun je er nog bij", "Zorrag dat je d'r op tèd ben, dan kejjedâh nog bè")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);

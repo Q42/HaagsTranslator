@@ -51,6 +51,7 @@ namespace HaagsTranslator
       new []{"(am|at|ig|ig|it|kk|nn)en([^ ,.])", "$1e$2"}, // 'en' in een woord, bijv. 'samenstelling', 'eigenlijk', 'buitenstaander', 'statenkwartier', 'dennenweg', 'klokkenluider'
 
       // woordcombinaties
+      new[]{"\\b(K|k)an er\\b", "$1andâh"},
       new[]{"\\b(K|k)en ik\\b", "$1ennik"},
       new[]{"\\b(K|k)en u\\b", "$1ennu"},
       new[]{"\\b(K|k)en jij\\b", "$1ejjèh"},
@@ -63,6 +64,9 @@ namespace HaagsTranslator
       new[]{"\\b(M|m)et je\\b", "$1ejje"},
       new[]{"\\b(V|v)ind je\\b", "$1ijje"},
       new[]{ "\\bmij het\\b", "mènnut"},
+
+      new[]{"\\b(A|a)ls er\\b", "$1stâh"},
+      new[]{"\\b(K|k)(u|a)n j(e|ij) er\\b", "$1ejjedâh"}, // 'ken je er'
 
       new []{"ADO Den Haag", "FC De Haag"},
       new []{"ADO", "Adau"},
@@ -125,14 +129,15 @@ namespace HaagsTranslator
       new []{"([HhVvr])ee(l|n|t)", "$1ei$2"}, // 'verscheen', 'veel', 'overeenkomsten', 'heet'
       new []{"(H|h)er", "$1eâh"}, // 'herzien'
       new []{"(I|i)n het", "$1nnut"}, // 'in het'
-      new []{"hete", "heite"}, // 'hete'
+      new []{"ete", "eite" }, // 'hete', 'gegeten'
       new []{"het([ ,.])", "ut$1"}, // TODO, kan dit samen?
       new []{"Het([ ,.])", "Ut$1"},
       new []{"ier",  "ieâh"}, // 'bierfeest'
       new []{"ière", "ijerre"}, // 'barriere'
       new []{"ibu", "ibe"}, // 'tribunaal'
       new []{"ijgt([ ,.])", "ijg$1"}, // 'krijgt', moet voor 'ij([ ])'
-      new []{"ij([ dgksnfp])",  "è$1"}, // 'zij', 'knijp'
+      new []{"ij\\b",  "è"}, // 'zij', 'bij'
+      new []{"ij([dgksnfp])",  "è$1"}, // 'zij', 'knijp'
       new []{"([^e])ig([ ,.])",    "$1ag$2"}, // geen 'kreig'
       new []{"ilieu", "ejui"}, // 'milieu'
       new []{"ina", "ine"}, // dinamiek
@@ -174,6 +179,7 @@ namespace HaagsTranslator
       new []{"orde", "ogde"}, // 'worden'
       new []{"(N|n)(|o)od", "$1aud"}, // 'noodzakelijk'
       new []{"olk", "ollek"}, // 'volkslied'
+      new []{"org\\b", "orrag"}, // 'zorg'
       new []{"ove", "auve"},
       new []{"o(b|d|g|k|l|m|p|s|t|v)(i|e)", "au$1$2"}, // 'komen', 'grote', 'over', 'olie', 'notie'
       new []{"O(b|d|g|k|l|m|p|s|t|v)(i|e)", "Au$1$2"}, // zelfde, maar dan met hoofdletter
@@ -209,12 +215,15 @@ namespace HaagsTranslator
       new []{"voetbal", "foebal"},
       new []{"wart", "wagt"},
       new []{"we er ", "we d'r "}, // 'we er'
+      new []{"\\ber\\b", "d'r"}, // moet na andere 'er'
+	  new []{"\\bEr\\b", "D'r"}, // moet na andere 'er'
       new []{"wil hem\\b", "wil 'm"},
       new []{"(W|w|H|h)ee(t|l)", "$1ei$2"}, // 'heel', 'heet'
       new []{"zal\\b",       "zâh"},
       new []{"z'n" , "ze"}, // 'z'n'
       new []{"\\bzich\\b", "ze ège"}, // 'zich'
       new []{"z(au|o)'n", "zaun"},
+      new []{"\\bzegt\\b", "zeg"},
       new []{"zo([^en])", "zau$1"}, // 'zogenaamd', geen 'zoeken', 'zondag'
     };
 
