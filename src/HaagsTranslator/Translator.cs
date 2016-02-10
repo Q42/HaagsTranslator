@@ -22,6 +22,7 @@ namespace HaagsTranslator
       new []{"Kurhaus", "Koeâhhâhs"}, // moet voor 'au' en 'ou'
       new []{"Maurice Haak", "Maûpie"}, // moet voor 'au' en 'ou'
       new []{"Hagenezen", "Hageneize"}, // moet na 'ei'
+      new []{"kids", "kindâh" }, // 'kindertips'
       new []{"doe je het", "doejenut"},
       new []{"(M|m)oeten", "$1otte"}, // moet voor '-en'
       new []{"(w|W)eleens", "$1elles"}, // 'weleens', moet voor 'hagenees'
@@ -29,13 +30,15 @@ namespace HaagsTranslator
       new []{"heeft", "hep"}, // 'heeft', moet voor 'heef'
       new []{"(on|i)der", "$1dâh"}, // 'onder', 'Zuiderpark'
       new []{"ui", "ùi"}, // moet voor 'ooi' zitte n
-      new []{"([^e])(e|a)r(|s)t([^j])", "$1$2g$3t$4"}, // gert, barst, martin etc., geen 'eerste', 'biertje'
+      new []{"([^e])(e|a|o)r(|s)t([^j])", "$1$2g$3t$4"}, // gert, barst, martin etc., geen 'eerste', 'biertje'
       new []{" er aan", " d'ran"}, // 'er aan'
       new []{"(A|a)an het\\b", "$1nnut"}, // 'aan het', moet voor 'gaan'
       new []{"([^dlt])aan",      "$1an"}, // 'gaan' , geen 'gedaan', 'buitenstaander', 'laan'
       new []{"(H|h)oud\\b", "$1ou"}, // 'houd', moet voor 'oud'
       new []{"(au|ou)w([^e])", "$1$2"}, // 'vrouw', ''flauw', maar zonder 'blauwe'
       new []{"oude", "ouwe"}, // 'goude'
+      new []{"\\b(T|t)our\\b", "$1oeâh"},
+      new []{"diner\\b", "dinei"},
       new []{"(au|ou)", "âh"}, // 'oud'
       new []{"aci", "assi"}, // 'racist'
       new []{"als een", "assun"}, // 'als een'
@@ -88,6 +91,7 @@ namespace HaagsTranslator
       new []{"derb", "dâhb"},
       new []{"dere\\b", "dâh"}, // 'andere'
       new []{"derd\\b", "dâhd"}, // 'veranderd'
+      new []{"(d|D)eze([^l])", "$1eize$2"}, 
       new []{"dt\\b", "d"}, // 'dt' op het einde van een woord
       new []{"([^h])ds", "$1s"}, // 'scheidsrechter', 'godsdienstige', 'gebedsdienst', geen 'ahdste'
       new []{"(D|d)y", "$1i"}, // dynamiek
@@ -112,6 +116,7 @@ namespace HaagsTranslator
       new []{"(e|E)rg\\b", "$1rrag"}, // 'erg', moet voor 'ergens'
       new []{"([^etv])(e|E)r(m|g)", "$1$2rre$3"}, // 'kermis', 'ergens', geen 'achtergelaten', 'vermoeide','neergelegd'
       new []{"([^e ])ers([^. ,c])", "$1egs$2"}, // 'diverse', 'versie', geen klinkers, geen 'eerste', geen 'verscheen'
+      new []{"\\b(V|v)ers\\b", "$1eâhs"}, // 'vers', moet voor -ers}
       new []{"ers\\b", "âhs"}, // 'klinkers', 'eerste'
       new []{"erst", "âhst"}, // 'klinkers', 'eerste'
       new []{"eur\\b", "euâh"}, // worden eindigend op 'eur', zoals 'deur', 'gouveneurlaan'
@@ -153,11 +158,13 @@ namespace HaagsTranslator
       new []{"ina", "ine"}, // dinamiek
       new []{"inc", "ink"}, // 'incontinentie'
       new []{"\\bin m'n\\b", "imme"},
+      new []{"([^gr])ties\\b", "$1sies"}, // 'tradities', moet voor -isch, geen 'smarties'
       new []{"isch(|e)", "ies$1"},
       new []{"is er", "istâh"},
       new []{ "(g|k|p) je\\b", "$1ie"}, // 'loop je', 'zoek je'
       new []{"jezelf", "je ège"}, // "jezelf"
       new []{"([^(oe)])kje\\b", "$1kkie"}, // 'bakje', moet voor algemeen regel op 'je', TODO, 'bekje'
+      new []{"opje\\b", "oppie"}, // 'kopje'
       new []{"([^ dijst])je\\b", "$1ie"}, // woorden eindigend op -je', zonder 'asje', 'rijtje', 'avondje', geen 'mejje'
       new []{"([^e])ije", "$1èje"}, // 'blije', geen 'geleije'
       new []{"(K|k)an\\b", "$1en"}, // 'kan', geen 'kans', 'kaneel'
@@ -187,12 +194,14 @@ namespace HaagsTranslator
       new []{"(ordt|ord)([^e])", "ogt$2"}, // wordt, word, geen 'worden'
       new []{"orde", "ogde"}, // 'worden'
       new []{"(N|n)(|o)od", "$1aud"}, // 'noodzakelijk'
+      new []{"l(f|k|m|p)([^a])", "lle$1$2"}, // 'volkslied', 'behulp', geen 'elkaar'
       new []{"olk", "ollek"}, // 'volkslied'
       new []{"org\\b", "orrag"}, // 'zorg'
       new []{"\\borg", "oâhg"}, // 'orgineel'}
       new []{"ove", "auve"},
       new []{"o(b|d|g|k|l|m|p|s|t|v)(i|e)", "au$1$2"}, // 'komen', 'grote', 'over', 'olie', 'notie'
       new []{"O(b|d|g|k|l|m|p|s|t|v)(i|e)", "Au$1$2"}, // zelfde, maar dan met hoofdletter
+      new []{"\\b(V|v)er\\b", "$1eâh"}, // 'ver'
       new []{"([^ io])er\\b", "$1âh"}, // 'kanker', geen 'hoer', 'er', 'hier' , moet voor 'over' na o(v)(e)
       new []{"(P| p)o(^st)" , "$1au$2"}, // 'poltici'
       new []{"p ik\\b", "ppik"}, // 'hep ik'

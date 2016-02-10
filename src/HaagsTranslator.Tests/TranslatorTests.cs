@@ -87,6 +87,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Een biertje is net zo gezond als een bruine boterham, alleen veel slapper", "Un bieâhtsje is net zau gezond assun brùine bautâhham, enkelt veil slappâh")]
     [TestCase("Ik heb alleen vijf jaar zandbak, nou en?", "Ik hep enkelt vèf jaah zandbak, nâh en?")]
     [TestCase("vliegtuig Waar literatuur orgineel kinderboekenmuseum oudste ontmoet enkele ", "vliegtùig Waah literatuâh oâhgineil kindâhboekemuseum âhdste ontmoet enkele ")]
+    [TestCase("ver vers tour kopje tradities kidstips behulp sport deze ", "veâh veâhs toeâh koppie tradisies kindâhtips behullep spogt deize ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
