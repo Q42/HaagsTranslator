@@ -89,6 +89,7 @@ namespace HaagsTranslator.Tests
     [TestCase("vliegtuig Waar literatuur orgineel kinderboekenmuseum oudste ontmoet enkele ", "vliegtùig Waah literatuâh oâhgineil kindâhboekemuseum âhdste ontmoet enkele ")]
     [TestCase("ver vers tour kopje tradities kidstips behulp sport deze ", "veâh veâhs toeâh koppie tradisies kindâhtips behullep spogt deize ")]
     [TestCase("festivals hofvijver greep Vermeers bekende beker voorhoofd toerist audiovisueel verkeersaderlating reserveren ", "festivals hofvèvâh greip Vemeâhs bekende beikâh voâhhauf toeris âhdiauviseweil vekeâhsadâhlating reiservere ")]
+    [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haugtepunte meinu sie zorrage omgeiving boelevâh ideiaal platforrem vorremgeiving exterrene depau warrem ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
