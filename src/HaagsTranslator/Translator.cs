@@ -24,6 +24,8 @@ namespace HaagsTranslator
       new []{"Hagenezen", "Hageneize"}, // moet na 'ei'
       new []{"\\b(H|h)ighlights\\b", "$1oogtepunten"}, 
       new []{"kids", "kindâh" }, // 'kindertips'
+      new []{"\\bfood\\b", "vreite"},
+      new []{"fastfood", "snel vreite"},
       new []{"doe je het", "doejenut"},
       new []{"\\bsee\\b", "sie"}, // van 'must see'
       new []{"(M|m)oeten", "$1otte"}, // moet voor '-en'
@@ -167,12 +169,12 @@ namespace HaagsTranslator
       new []{"ibu", "ibe"}, // 'tribunaal'
       new []{"ijgt\\b", "ijg"}, // 'krijgt', moet voor 'ij\\b'
       new []{"ij\\b",  "è"}, // 'zij', 'bij'
-      new []{"ij([dgksnfpv])",  "è$1"}, // 'zij', 'knijp', 'vijver'
+      new []{"ij([dgkslmnftpv])",  "è$1"}, // 'knijp', 'vijver', 'stijl'
       new []{"([^euù])ig\\b",    "$1ag"}, // geen 'kreig', 'vliegtuig'
       new []{"ilieu", "ejui"}, // 'milieu'
       new []{"ina", "ine"}, // dinamiek
       new []{"inc", "ink"}, // 'incontinentie'
-      new []{"io([^oe])", "iau$1"}, // 'audio', geen 'viool'
+      new []{"io([^oen])", "iau$1"}, // 'audio', geen 'viool', 'station'
       new []{"\\bin m'n\\b", "imme"},
       new []{"([^gr])ties\\b", "$1sies"}, // 'tradities', moet voor -isch, geen 'smarties'
       new []{"isch(|e)", "ies$1"},
@@ -231,11 +233,13 @@ namespace HaagsTranslator
       new []{"([Rr])o(?=ma)" , "$1au"}, // voor romantisch, maar haal bijv. rommel eruit
       new []{"inds", "ins"}, // 'sinds'
       new []{"seque", "sekwe"}, // 'inconsequenties'
+      new []{"sjes\\b", "ssies"}, // 'huisjes'
       new []{"stje\\b", "ssie"}, // 'beestje'
       new []{"st(b|d|g|h|j|k|l|m|n|p|v|w|z)", "s$1"}, // 'lastpakken', geen 'str'
       new []{"([^gr])st\\b", "$1s"}, // 'haast', 'troost', 'gebedsdienst', geen 'barst'
       new []{"tep\\b", "teppie"}, // 'step'
       new []{"té\\b", "tei"}, // 'satè'
+      new []{"tion", "sion"}, // 'station'
       new []{"tje\\b", "tsje"}, // 'biertje'
       new []{"to\\b", "tau"}, // moet na 'au'/'ou'
       new []{"(T|t)ram", "$1rem"}, // 'tram'
@@ -264,6 +268,7 @@ namespace HaagsTranslator
       new []{"z(au|o)'n", "zaun"},
       new []{"\\bzegt\\b", "zeg"},
       new []{"zo([^enr])", "zau$1"}, // 'zogenaamd', geen 'zoeken', 'zondag', 'zorgen'
+      new []{"'t", "ut"},
     };
 
     /// <summary>
