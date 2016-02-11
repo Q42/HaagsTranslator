@@ -7,6 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaagsTranslator", "src\Haag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaagsTranslator.Tests", "src\HaagsTranslator.Tests\HaagsTranslator.Tests.csproj", "{EC75FA7E-FB7E-4CDE-9B32-9DEF582902D0}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget stuff", "nuget stuff", "{1BD6CA21-7B8A-4438-AA12-B3866AEBCBA5}"
+	ProjectSection(SolutionItems) = preProject
+		HaagsTranslator.nuspec = HaagsTranslator.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
