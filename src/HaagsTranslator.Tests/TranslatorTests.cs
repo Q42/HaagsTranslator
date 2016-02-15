@@ -94,6 +94,7 @@ namespace HaagsTranslator.Tests
     [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is de Heik jeug stgand stgandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
     [TestCase("Restaurant shopping theater Jeugdprijs Last-minute ticketshop Normale prijs Overige Cabaret", "Resterant sjopping theijatâh Jeugprès Lasminnut ticketsjop Noâhmale près Auverige Cabberet")]
     [TestCase("Circus Culinair Tentoonstelling Folklore Jazz jazz Moderne dans Hedendaagse Film Musical", "Cirrekus Culinèâh Tetaunstelling Folklore Djez djez Maudèrrene dans Heidedaagse Fillem Musikol")]
+    [TestCase("Niet-westerse dans Toneel Poppentheater lezing Show beurs workshop events Locaties", "Niet westagse dans Tauneil Poppetheijatâh leizing Sjow beuâhs wurreksjop ievents Laukasies")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);

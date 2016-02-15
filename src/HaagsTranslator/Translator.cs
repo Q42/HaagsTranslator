@@ -27,12 +27,16 @@ namespace HaagsTranslator
       new [] { "\\bThe Hague\\b", "de Heek" },
       new []{"\\b(H|h)ighlights\\b", "$1oogtepunten"},
       new [] { "\\b(L|l)ast-minute\\b","$1asminnut" },
+      new [] { "events", "ievents" },
+      new [] { "Events", "Ievents" },
       new [] { "Jazz", "Djez" },
       new [] { "jazz", "djez" },
       new [] { "(T|t)entoon", "$1etoon" },
       new [] { "(C|c)abaret", "$1abberet" },
       new [] { "(M|m)usical", "$1usikol" },
       new []{"kids", "kindâh" }, // 'kindertips'
+      new [] { "(S|s)how", "$1jow" },
+      new [] { "(W|w)ork", "$1urrek" },
       new []{"\\bfood\\b", "vreite"},
       new []{"fastfood", "snel vreite"},
       new []{"doe je het", "doejenut"},
@@ -146,7 +150,7 @@ namespace HaagsTranslator
       new []{"\\b(V|v)ers\\b", "$1eâhs"}, // 'vers', moet voor -ers}
       new []{"ers\\b", "âhs"}, // 'klinkers', 'eerste'
       new []{"erst", "âhst"}, // 'klinkers', 'eerste'
-      new []{"eur\\b", "euâh"}, // worden eindigend op 'eur', zoals 'deur', 'gouveneurlaan'
+      new []{ "eur([^e])", "euâh$1"}, // worden eindigend op 'eur', zoals 'deur', 'gouveneurlaan', geen 'kleuren'
       new []{"eurl", "euâhl"}, // worden eindigend op 'eur', zoals 'deur', 'gouveneurlaan'
       new []{"eer", "eâh" }, // 'zweer', 'neer'
       new []{"([^oej])enu", "$1einu"}, // 'menu', geen 'doejenut'
@@ -234,6 +238,8 @@ namespace HaagsTranslator
       new []{"l(f|k|m|p)([^a])", "lle$1$2"}, // 'volkslied', 'behulp', geen 'elkaar'
       new []{"olk", "ollek"}, // 'volkslied'
       new [] { "(F|f)olleklore", "$1olklore" },
+      new [] { "o(c|k)a", "auka" }, // 'locaties'
+      new [] { "one(e|i)", "aunei" }, // 'toneel'
       new []{"org\\b", "orrag"}, // 'zorg'
       new []{"orge", "orrage"}, // 'zorgen'
       new []{"\\borg", "oâhg"}, // 'orgineel'}
@@ -247,6 +253,7 @@ namespace HaagsTranslator
       new []{"([^ io])er\\b", "$1âh"}, // 'kanker', geen 'hoer', 'er', 'hier' , moet voor 'over' na o(v)(e)
       new []{"(P| p)o(^st)" , "$1au$2"}, // 'poltici'
       new []{"p ik\\b", "ppik"}, // 'hep ik'
+      new [] {"ppen", "ppe" }, // 'poppentheater'
       new []{"rsch", "sch"}, // 'verschijn'
       new []{"(A|a)rme", "$1rreme"}, // 'arme'
       new []{"re(s|tr)(e|o)", "rei$1$2"}, // 'resoluut', 'retro', 'reserveren'
@@ -296,6 +303,7 @@ namespace HaagsTranslator
       new []{"zo([^enr])", "zau$1"}, // 'zogenaamd', geen 'zoeken', 'zondag', 'zorgen'
       new []{"'t", "ut"},
       new [] {"derr", "dèrr" }, // 'moderne, moet na 'ern'/'ode'
+      new [] { "Nie-westegse", "Niet westagse" }, 
     };
 
     /// <summary>
