@@ -16,10 +16,10 @@ namespace HaagsTranslator.Tests
     [TestCase("directie, aktie.", "direksie, aksie.")]
     [TestCase("Lekker laten hangen. Hier ", "Lekkâh late hangûh. Hieâh ")]
     [TestCase("Vrijheid. Mooie duur Huur er kermis", "Vrèhèd. Mauie duâh Huâh d'r kerremis")]
-    [TestCase("Slimmer naar de pier in Scheveningen Voorburg", "Slimmâh naah de pieâh in Scheiveningâh Voâhburrag")]
+    [TestCase("Slimmer naar de pier in Scheveningen Voorburg", "Slimmâh naah de pieâh in Scheiveninge Voâhburrag")]
     [TestCase("Lekker naar het Binnenhof en daarna gaan stappen.", "Lekkâh naah ut Binnehof en daahna gan stappûh.")]
     [TestCase("Den Haag, het Plein, het Vredespaleis, Zuiderpark, park, Zwarte Pad, Grote Markt, de kerk, Rijswijkseplein", "De Haag, ut Plèn, ut Vreidespelès, Zùidâhparrek, parrek, Zwagte Pad, Graute Marrek, de kerrek, Rèswèkseplèn")]
-    [TestCase("Verkoopprijs, prijs Kurhaus, Restaurants, romantisch, romantische, rommel, Maurice Haak Majesteit", "Vekaupprès, près Koeâhhâhs, Eithoeke, raumanties, raumantiese, rommel, Maûpie Majestèt")]
+    [TestCase("Verkoopprijs, prijs Kurhaus, Restaurants, romantisch, romantische, rommel, Maurice Haak Majesteit", "Vekaupprès, près Koeâhhâhs, Resterants, raumanties, raumantiese, rommel, Maûpie Majestèt")]
     [TestCase("ADO ADO Den Haag, gefeliciteerd met de verjaardag doosje smarties ", "Adau FC De Haag, gefeiliciteâhd met de vejaahdag daussie smagties ")]
     [TestCase("Gert, barst, Martin, harte smarties, ooievaar dat is raar maar wel waar.", "Gegt, bagst, Magtin, hagte smagties, auievaah da's raah maah wel waah.")]
     [TestCase("Door een kier in de deur van de bar rook ik de meur van goor bier ", "Doâh un kieâh in de deuâh van de bâh rauk ik de meuâh van goâh bieâh ")]
@@ -88,13 +88,14 @@ namespace HaagsTranslator.Tests
     [TestCase("Ik heb alleen vijf jaar zandbak, nou en?", "Ik hep enkelt vèf jaah zandbak, nâh en?")]
     [TestCase("vliegtuig Waar literatuur orgineel kinderboekenmuseum oudste ontmoet enkele ", "vliegtùig Waah literatuâh oâhgineil kindâhboekemuseum âhdste ontmoet enkele ")]
     [TestCase("ver vers tour kopje tradities kidstips behulp sport deze ", "veâh veâhs toeâh koppie tradisies kindâhtips behullep spogt deize ")]
-    [TestCase("festivals hofvijver greep Vermeers bekende beker voorhoofd toerist audiovisueel verkeersaderlating reserveren ", "festivals hofvèvâh greip Vemeâhs bekende beikâh voâhhauf toeris âhdiauviseweil vekeâhsadâhlating reiservere ")]
+    [TestCase("festivals hofvijver greep Vermeers bekende beker voorhoofd toerist audiovisueel verkeersaderlating reserveren ", "festivals hofvèvâh greip Vemeâhs bekende beikâh voâhhauf toeris âhdiauviseweil vekeâhsadâhlating reisâhvere ")]
     [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haugtepunte meinu sie zorrage omgeiving boelevâh ideiaal platforrem vorremgeiving exterrene depau warrem ")]
     [TestCase("huisjes food fastfood 't tegenover station stijl ", "hùissies vreite snel vreite ut teigenauvâh stasion stèl ")]
     [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is de Heik jeug stgand stgandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
     [TestCase("Restaurant shopping theater Jeugdprijs Last-minute ticketshop Normale prijs Overige Cabaret", "Resterant sjopping theijatâh Jeugprès Lasminnut ticketsjop Noâhmale près Auverige Cabberet")]
     [TestCase("Circus Culinair Tentoonstelling Folklore Jazz jazz Moderne dans Hedendaagse Film Musical", "Cirrekus Culinèâh Tetaunstelling Folklore Djez djez Maudèrrene dans Heidedaagse Fillem Musikol")]
     [TestCase("Niet-westerse dans Toneel Poppentheater lezing Show beurs workshop events Locaties", "Niet westagse dans Tauneil Poppetheijatâh leizing Sjow beuâhs wurreksjop ievents Laukasies")]
+    [TestCase("Strand & Buiten Concerten Shoppen Excursies Dit weekend Vandaag Advertentie Reserveer nu", "Stgand en Bùitûh Konsegte Sjoppûh Ekskugsies Dit wiekend Vedaag Advâhtensie Reisâhveâh nâh")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
