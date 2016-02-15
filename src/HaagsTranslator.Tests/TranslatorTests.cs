@@ -92,6 +92,7 @@ namespace HaagsTranslator.Tests
     [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haugtepunte meinu sie zorrage omgeiving boelevâh ideiaal platforrem vorremgeiving exterrene depau warrem ")]
     [TestCase("huisjes food fastfood 't tegenover station stijl ", "hùissies vreite snel vreite ut teigenauvâh stasion stèl ")]
     [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is de Heik jeug stgand stgandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
+    [TestCase("Restaurant shopping theater Jeugdprijs Last-minute ticketshop Normale prijs Overige Cabaret", "Resterant sjopping theijatâh Jeugprès Lasminnut ticketsjop Noâhmale près Auverige Cabberet")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
