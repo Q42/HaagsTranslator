@@ -27,7 +27,11 @@ namespace HaagsTranslator
       new [] { "\\bThe Hague\\b", "de Heek" },
       new []{"\\b(H|h)ighlights\\b", "$1oogtepunten"},
       new [] { "\\b(L|l)ast-minute\\b","$1asminnut" },
+      new [] { "Jazz", "Djez" },
+      new [] { "jazz", "djez" },
+      new [] { "(T|t)entoon", "$1etoon" },
       new [] { "(C|c)abaret", "$1abberet" },
+      new [] { "(M|m)usical", "$1usikol" },
       new []{"kids", "kindâh" }, // 'kindertips'
       new []{"\\bfood\\b", "vreite"},
       new []{"fastfood", "snel vreite"},
@@ -127,6 +131,7 @@ namespace HaagsTranslator
       new []{"([^k])ee(d|f|g|k|l|m|n|p|s|t)", "$1ei$2"}, // 'bierfeest', 'kreeg', 'greep', geen 'keeper'
       new []{"([^e])ens\\b", "$1es"}, // 'ergens', geen 'weleens'
       new []{"([^ i])eden\\b", "$1eije"}, // geen 'bieden'
+      new [] {"([^ i])eden", "$1eide" }, // 'hedendaagse'
       new []{"me(d|t)e", "mei$1e"}, // 'medeklinkers'
       new []{"Eig", "Èg"}, // 'Eigenlijk', TODO hoofdletters
       new []{" eig", "èg"}, // 'eigenlijk'
@@ -182,11 +187,13 @@ namespace HaagsTranslator
       new []{"ij\\b",  "è"}, // 'zij', 'bij'
       new []{"ij([dgkslmnftpv])",  "è$1"}, // 'knijp', 'vijver', 'stijl'
       new []{"([^euù])ig\\b",    "$1ag"}, // geen 'kreig', 'vliegtuig'
+      new [] {"ilm", "illem" }, // 'film'
       new []{"ilieu", "ejui"}, // 'milieu'
-      new []{"ina", "ine"}, // dinamiek
+      new []{"ina([^i])", "ine$1" }, // dinamiek, geen 'culinair'
       new []{"inc", "ink"}, // 'incontinentie'
       new []{"io([^oen])", "iau$1"}, // 'audio', geen 'viool', 'station'
       new []{"\\bin m'n\\b", "imme"},
+      new [] { "irc", "irrek" }, // 'circus'
       new []{"([^gr])ties\\b", "$1sies"}, // 'tradities', moet voor -isch, geen 'smarties'
       new []{"isch(|e)", "ies$1"},
       new []{"is er", "istâh"},
@@ -216,6 +223,7 @@ namespace HaagsTranslator
       new []{"lf", "lluf"}, // 'zelfde'
       new []{"ark(|t)\\b", "arrek"}, // 'park', 'markt'
       new []{"\\b(M|m)oet\\b", "$1ot"}, // 'moet', geen 'moeten'
+      new [] {"nair", "nèâh" }, // 'culinair'
       new []{"neme", "neime"}, // 'nemen'
       new []{"nce", "nse"}, // 'nuance'
       new []{"\\bmad", "med"}, // 'madurodam'
@@ -225,6 +233,7 @@ namespace HaagsTranslator
       new []{"(N|n)(|o)od", "$1aud"}, // 'noodzakelijk'
       new []{"l(f|k|m|p)([^a])", "lle$1$2"}, // 'volkslied', 'behulp', geen 'elkaar'
       new []{"olk", "ollek"}, // 'volkslied'
+      new [] { "(F|f)olleklore", "$1olklore" },
       new []{"org\\b", "orrag"}, // 'zorg'
       new []{"orge", "orrage"}, // 'zorgen'
       new []{"\\borg", "oâhg"}, // 'orgineel'}
@@ -234,7 +243,7 @@ namespace HaagsTranslator
       new [] { "\\bout", "âht" }, // 'outdoor'
       new [] { "\\bOut", "Âht" }, // 'Outdoor'
       new []{"\\b(V|v)er\\b", "$1eâh"}, // 'ver'
-      new []{"der([^eiaou])", "dâh$1"}, 
+      new []{ "der([^eianrouè])", "dâh$1"},// 'moderne'/'moderrene'
       new []{"([^ io])er\\b", "$1âh"}, // 'kanker', geen 'hoer', 'er', 'hier' , moet voor 'over' na o(v)(e)
       new []{"(P| p)o(^st)" , "$1au$2"}, // 'poltici'
       new []{"p ik\\b", "ppik"}, // 'hep ik'
@@ -286,6 +295,7 @@ namespace HaagsTranslator
       new []{"\\bzegt\\b", "zeg"},
       new []{"zo([^enr])", "zau$1"}, // 'zogenaamd', geen 'zoeken', 'zondag', 'zorgen'
       new []{"'t", "ut"},
+      new [] {"derr", "dèrr" }, // 'moderne, moet na 'ern'/'ode'
     };
 
     /// <summary>
