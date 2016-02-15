@@ -66,8 +66,8 @@ namespace HaagsTranslator.Tests
     [TestCase("Kinderen zijn lastpakken, ik koop nooit geen postzegels van die pusbakken.", "Kindere zèn laspakke, ik kaup nauit gein poszeigels van die pusbakkûh.")]
     [TestCase("bezoeken festivalstad achtergelaten doen hebben zondag avondje bieden uitzicht indeling.", "bezoeke festivalstad achtâhgelate doen hebbe zondag avondje biede ùitzich indeiling.")]
     [TestCase("De godsdienstige stadswacht stond bij de gebedsdienst als een scheidsrechter te huilen ", "De gosdienstige staswach stond bè de gebesdiens assun schèsrechtâh te hùile ")]
-    [TestCase("Het wordt almaar kouder, zei de strandpaviljoenhouder. De vermoeide ouder kreeg een schuit in z'n schouder ", "Ut wogt almaah kâhwâh, zè de strandpaviljoenhâhwâh. De vemoeide âhwâh kreig un schùit in ze schâhwâh ")]
-    [TestCase("Kan het wat zachter, zei de strandwachter tegen de kreunende verkrachter ", "Ken ut wat zachtâh, zè de strandwachtâh teige de kreunende vekrachtâh ")]
+    [TestCase("Het wordt almaar kouder, zei de strandpaviljoenhouder. De vermoeide ouder kreeg een schuit in z'n schouder ", "Ut wogt almaah kâhwâh, zè de stgandpavejoenhâhwâh. De vemoeide âhwâh kreig un schùit in ze schâhwâh ")]
+    [TestCase("Kan het wat zachter, zei de strandwachter tegen de kreunende verkrachter ", "Ken ut wat zachtâh, zè de stgandwachtâh teige de kreunende vekrachtâh ")]
     [TestCase("Als ik een asbak was, vrat ik as als gras", "As ik un asbak was, vrattik as as gras")]
     [TestCase("Krijg jij lekker de kanker", "Krèg jè lekkâh de kankâh")]
     [TestCase("Wilders is groot, Wilders is machtig, hij is een lul van één meter tachtig ", "Wildâhs is graut, Wildâhs is machtag, hè issun lul van ein meitâh tachtag ")]
@@ -91,6 +91,7 @@ namespace HaagsTranslator.Tests
     [TestCase("festivals hofvijver greep Vermeers bekende beker voorhoofd toerist audiovisueel verkeersaderlating reserveren ", "festivals hofvèvâh greip Vemeâhs bekende beikâh voâhhauf toeris âhdiauviseweil vekeâhsadâhlating reiservere ")]
     [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haugtepunte meinu sie zorrage omgeiving boelevâh ideiaal platforrem vorremgeiving exterrene depau warrem ")]
     [TestCase("huisjes food fastfood 't tegenover station stijl ", "hùissies vreite snel vreite ut teigenauvâh stasion stèl ")]
+    [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is de Heik jeug stgand stgandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);

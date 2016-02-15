@@ -22,6 +22,9 @@ namespace HaagsTranslator
       new []{"Kurhaus", "Koeâhhâhs"}, // moet voor 'au' en 'ou'
       new []{"Maurice Haak", "Maûpie"}, // moet voor 'au' en 'ou'
       new []{"Hagenezen", "Hageneize"}, // moet na 'ei'
+      new [] { "(L|l)unchroom", "$1unsroem" },
+      new [] { "\\bThis\\b", "Dis" },
+      new [] { "\\bThe Hague\\b", "de Heek" },
       new []{"\\b(H|h)ighlights\\b", "$1oogtepunten"}, 
       new []{"kids", "kindâh" }, // 'kindertips'
       new []{"\\bfood\\b", "vreite"},
@@ -34,11 +37,13 @@ namespace HaagsTranslator
       new []{"heeft", "hep"}, // 'heeft', moet voor 'heef'
       new []{"(on|i)der", "$1dâh"}, // 'onder', 'Zuiderpark'
       new []{"ui", "ùi"}, // moet voor 'ooi' zitte n
+      new [] { "Ui", "Ùi" },
       new []{"oort", "ogt"}, // 'soort', moet voor '-ort'
       new []{"([^e])(e|a|o)r(|s)t([^j])", "$1$2g$3t$4"}, // gert, barst, martin etc., geen 'eerste', 'biertje'
       new []{" er aan", " d'ran"}, // 'er aan'
       new []{"(A|a)an het\\b", "$1nnut"}, // 'aan het', moet voor 'gaan'
-      new []{"([^dlt])aan",      "$1an"}, // 'gaan' , geen 'gedaan', 'buitenstaander', 'laan'
+      new [] { "\\b(A|a)an", "$1n" }, // 'aan', 'aanrennen'
+      new [] { "\\b(G|g)aan\\b", "$1an" }, // 'gaan'
       new []{"(H|h)oud\\b", "$1ou"}, // 'houd', moet voor 'oud'
       new []{"(au|ou)w([^e])", "$1$2"}, // 'vrouw', ''flauw', maar zonder 'blauwe'
       new []{"oude", "ouwe"}, // 'goude'
@@ -79,6 +84,7 @@ namespace HaagsTranslator
 
       new []{"ADO Den Haag", "FC De Haag"},
       new []{"ADO", "Adau"},
+      new [] { "avil", "ave" }, // 'strandpaviljoen'
       new []{"sje\\b", "ssie"}, // 'huisje', moet voor 'asje'
       new []{"\\balleen\\b", "enkelt"},
       new []{"\\bAlleen\\b", "Enkelt"},
@@ -122,6 +128,7 @@ namespace HaagsTranslator
       new []{"me(d|t)e", "mei$1e"}, // 'medeklinkers'
       new []{"Eig", "Èg"}, // 'Eigenlijk', TODO hoofdletters
       new []{" eig", "èg"}, // 'eigenlijk'
+      new [] { "eugd\\b", "eug" }, // 'jeugd'
       new []{"([^o])epot\\b", "$1epau"}, // 'depot'
       new []{"(e|E)rg\\b", "$1rrag"}, // 'erg', moet voor 'ergens'
       new []{"(a|o)rm", "$1rrem"}, // 'platform', 'vormgeving', 'warm'
@@ -220,6 +227,8 @@ namespace HaagsTranslator
       new []{"ove", "auve"},
       new []{"o(b|d|g|k|l|m|p|s|t|v)(i|e)", "au$1$2"}, // 'komen', 'grote', 'over', 'olie', 'notie'
       new []{"O(b|d|g|k|l|m|p|s|t|v)(i|e)", "Au$1$2"}, // zelfde, maar dan met hoofdletter
+      new [] { "\\bout", "âht" }, // 'outdoor'
+      new [] { "\\bOut", "Âht" }, // 'Outdoor'
       new []{"\\b(V|v)er\\b", "$1eâh"}, // 'ver'
       new []{"der([^eiaou])", "dâh$1"}, 
       new []{"([^ io])er\\b", "$1âh"}, // 'kanker', geen 'hoer', 'er', 'hier' , moet voor 'over' na o(v)(e)
@@ -236,6 +245,7 @@ namespace HaagsTranslator
       new []{"sjes\\b", "ssies"}, // 'huisjes'
       new []{"stje\\b", "ssie"}, // 'beestje'
       new []{"st(b|d|g|h|j|k|l|m|n|p|v|w|z)", "s$1"}, // 'lastpakken', geen 'str'
+      new [] { "\\b(s|S)tr", "$1tg" }, // 'strand', moet 'na st-'
       new []{"([^gr])st\\b", "$1s"}, // 'haast', 'troost', 'gebedsdienst', geen 'barst'
       new []{"tep\\b", "teppie"}, // 'step'
       new []{"té\\b", "tei"}, // 'satè'
@@ -247,6 +257,7 @@ namespace HaagsTranslator
       new []{"(u|ù)igt\\b", "$1ig"}, // 'zuigt'
       new []{"(U|u)ren", "$1re"}, // 'uren'
       new []{"ùidâh\\b", "ùiâh"}, // 'klokkenluider'
+      new [] { "unch", "uns" }, // 'lunch'
       new []{"urg", "urrag"}, // 'Voorburg'
       new []{"ur(f|k)", "urre$1"}, // 'Turk','snurkende','surf'
       new []{"uur", "uâh"},
