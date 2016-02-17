@@ -32,7 +32,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Waarom we ze klinkers noemen.", "Warom we ze klinkâhs noemûh.")]
     [TestCase("Het eerste boekje verscheen tien jaar geleden. Sinds die tijd is er veel veranderd in Den Haag. En vaak ten goede.", "Ut eâhste boekie veschein tien jaah geleije. Sins die tèd istâh veil verandâhd in De Haag. En vaak te goede.")]
     [TestCase("Hoogste tijd dus dat er een herziene en geactualiseerde versie kwam van dit boekje in Haagse kleuren, waarin recht wordt gedaan aan de dynamiek in onze stad.", "Haugste tèd dus dattâh un heâhziene en geaktuwaliseâhde vegsie kwam van dit boekie in Haagse kleure, warin rech wogt gedaan an de dinemiek in onze stad.")]
-    [TestCase("Sommige zeggen weleens dat het Haags geen dialect is maar. Immers, dit Haags is van de Hagenezen. Ik meen echter dat er veel overeenkomsten te beluisteren zijn met een andere zogenaamd.", "Sommige zegge welles dat ut Haags gein dialek is maah. Immâhs, dit Haags is van de Hageneize. Ik meint echtâh dattâh veil auvereinkomste te belùistere zèn met un andâh zaugenaamd.")]
+    [TestCase("Sommige zeggen weleens dat het Haags geen dialect is maar. Immers, dit Haags is van de Hagenezen. Ik meen echter dat er veel overeenkomsten te beluisteren zijn met een andere zogenaamd.", "Sommige zegge welles dat ut Haags gein dialek is maah. Immâhs, dit Haags is van de Hageneize. Ik meint echtâh dattâh veil auvereinkomste te belùistere zèn met un andere zaugenaamd.")]
     [TestCase("Luister maar eens naar de R zoals veel Hagenaars die uitspreken. Of naar de klanken van de korte klinkers.", "Lùistâh maah 'ns naah de R zauas veil Hagenaahs die ùitspreikûh. Of naah de klanke van de kogte klinkâhs.")]
     [TestCase("Het lijkt allemaal erg veel op elkaar. Haast geen verschil. Het bekakte Haags is wel wat meer geknepen. Of, zoals de samenstellers ergens zeggen omdat ze om die aardappel heen moeten.", "Ut lèk allemaal errag veil op elkaah. Haas gein veschil. Ut bekakte Haags is wel wat meâh gekneipûh. Of, zauas de samestellâhs erreges zegge omdat ze om die aahdappel hein motte.")]
     [TestCase("Eigenlijk zou je dus kunnen zeggen dat alle Hagenaars dezelfde taal spreken, het Haags. Zij het dan met nuanceverschillen.", "Ègelèk zâh je dus kenne zegge dat alle Hagenaahs dezellufde taal spreike, ut Haags. Zè ut dan met nuwanseveschillûh.")]
@@ -97,6 +97,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Niet-westerse dans Toneel Poppentheater lezing Show beurs workshop events Locaties", "Niet westagse dans Tauneil Poppetheijatâh leizing Sjow beuâhs wurreksjop ievents Laukasies")]
     [TestCase("Strand & Buiten Concerten Shoppen Excursies Dit weekend Vandaag Advertentie Reserveer nu", "Stgand en Bùitûh Konsegte Sjoppûh Ekskugsies Dit wiekend Vedaag Advâhtensie Reisâhveâh nâh")]
     [TestCase("Data & tickets Tentoonstellingen Extra informatie must see Privacy policy", "Data en tikkets Tetaunstellinge Ekstra infoâhmasie mus-sie Praaivesie pollesie")]
+    [TestCase("Kun je VVV-informatiepunten stadswandelingen eindelijk per ter bied informatiebrochures prof professor ", "Kajje VVV-infoâhmasiepunte staswandelinge èndelèk peâh teâh biedt infoâhmasiebrausjures prof praufessor ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
