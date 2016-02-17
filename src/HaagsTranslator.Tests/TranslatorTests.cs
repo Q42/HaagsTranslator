@@ -19,7 +19,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Slimmer naar de pier in Scheveningen Voorburg", "Slimmâh naah de pieâh in Scheiveninge Voâhburrag")]
     [TestCase("Lekker naar het Binnenhof en daarna gaan stappen.", "Lekkâh naah ut Binnehof en daahna gan stappûh.")]
     [TestCase("Den Haag, het Plein, het Vredespaleis, Zuiderpark, park, Zwarte Pad, Grote Markt, de kerk, Rijswijkseplein", "De Haag, ut Plèn, ut Vreidespelès, Zùidâhparrek, parrek, Zwagte Pad, Graute Marrek, de kerrek, Rèswèkseplèn")]
-    [TestCase("Verkoopprijs, prijs Kurhaus, Restaurants, romantisch, romantische, rommel, Maurice Haak Majesteit", "Vekaupprès, près Koeâhhâhs, Resterants, raumanties, raumantiese, rommel, Maûpie Majestèt")]
+    [TestCase("Verkoopprijs, prijs Kurhaus, Restaurants, romantisch, romantische, rommel, Maurice, Maurice Majesteit", "Vekaupprès, près Koeâhhâhs, Resterants, raumanties, raumantiese, rommel, Mâhpie, Mâhpie Majestèt")]
     [TestCase("ADO ADO Den Haag, gefeliciteerd met de verjaardag doosje smarties ", "Adau FC De Haag, gefeiliciteâhd met de vejaahdag daussie smagties ")]
     [TestCase("Gert, barst, Martin, harte smarties, ooievaar dat is raar maar wel waar.", "Gegt, bagst, Magtin, hagte smagties, auievaah da's raah maah wel waah.")]
     [TestCase("Door een kier in de deur van de bar rook ik de meur van goor bier ", "Doâh un kieâh in de deuâh van de bâh rauk ik de meuâh van goâh bieâh ")]
@@ -31,8 +31,8 @@ namespace HaagsTranslator.Tests
     [TestCase("Ik raak altijd weer tot tranen toe beroerd", "Ik raak altèd weâh tot trane toe beroeâhd")]
     [TestCase("Waarom we ze klinkers noemen.", "Warom we ze klinkâhs noemûh.")]
     [TestCase("Het eerste boekje verscheen tien jaar geleden. Sinds die tijd is er veel veranderd in Den Haag. En vaak ten goede.", "Ut eâhste boekie veschein tien jaah geleije. Sins die tèd istâh veil verandâhd in De Haag. En vaak te goede.")]
-    [TestCase("Hoogste tijd dus dat er een herziene en geactualiseerde versie kwam van dit boekje in Haagse kleuren, waarin recht wordt gedaan aan de dynamiek in onze stad.", "Haugste tèd dus dattâh un heâhziene en geaktuwaliseâhde vegsie kwam van dit boekie in Haagse kleure, warin rech wogt gedaan an de dinemiek in onze stad.")]
-    [TestCase("Sommige zeggen weleens dat het Haags geen dialect is maar. Immers, dit Haags is van de Hagenezen. Ik meen echter dat er veel overeenkomsten te beluisteren zijn met een andere zogenaamd.", "Sommige zegge welles dat ut Haags gein dialek is maah. Immâhs, dit Haags is van de Hageneize. Ik meint echtâh dattâh veil auvereinkomste te belùistere zèn met un andere zaugenaamd.")]
+    [TestCase("Hoogste tijd dus dat er een herziene en geactualiseerde versie kwam van dit boekje in Haagse kleuren, waarin recht wordt gedaan aan de dynamiek in onze stad.", "Haugste tèd dus dattâh un heâhziene en geaktuwaliseâhde vegsie kwam van dit boekie in Haagse kleure, waarin rech wogt gedaan an de dinemiek in onze stad.")]
+    [TestCase("Sommige zeggen weleens dat het Haags geen dialect is maar. Immers, dit Haags is van de Hagenezen. Ik meen echter dat er veel overeenkomsten te beluisteren zijn met een andere zogenaamd.", "Sommige zegge welles dat ut Haags gein dialek is maah. Immâhs, dit Haags is van de Hageneize. Ik meint echtâh dattâh veil auvereinkompste te belùistere zèn met un andere zaugenaamd.")]
     [TestCase("Luister maar eens naar de R zoals veel Hagenaars die uitspreken. Of naar de klanken van de korte klinkers.", "Lùistâh maah 'ns naah de R zauas veil Hagenaahs die ùitspreikûh. Of naah de klanke van de kogte klinkâhs.")]
     [TestCase("Het lijkt allemaal erg veel op elkaar. Haast geen verschil. Het bekakte Haags is wel wat meer geknepen. Of, zoals de samenstellers ergens zeggen omdat ze om die aardappel heen moeten.", "Ut lèk allemaal errag veil op elkaah. Haas gein veschil. Ut bekakte Haags is wel wat meâh gekneipûh. Of, zauas de samestellâhs erreges zegge omdat ze om die aahdappel hein motte.")]
     [TestCase("Eigenlijk zou je dus kunnen zeggen dat alle Hagenaars dezelfde taal spreken, het Haags. Zij het dan met nuanceverschillen.", "Ègelèk zâh je dus kenne zegge dat alle Hagenaahs dezellufde taal spreike, ut Haags. Zè ut dan met nuwanseveschillûh.")]
@@ -99,6 +99,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Data & tickets Tentoonstellingen Extra informatie must see Privacy policy", "Data en tikkets Tetaunstellinge Ekstra infoâhmasie mus-sie Praaivesie pollesie")]
     [TestCase("Kun je VVV-informatiepunten stadswandelingen eindelijk per ter bied informatiebrochures prof professor ", "Kajje VVV-infoâhmasiepunte staswandelinge èndelèk peâh teâh biedt infoâhmasiebrausjures prof praufessor ")]
     [TestCase("souvenirs cadeau vervoersbewijzen bibliotheek touchscreen actuele Palace medewerkers werkdagen ", "soevenieâhs kado vevoeâhsbewèze biebeleteik tatskrien akteweile Pellus meidewerrekâhs werrekdage ")]
+    [TestCase("Gevers gevestigd kunt Herenstraat aankomsthal airport Airport vele gele waarin speciale begeleiding Telefonische ", "Geivâhs gevestag ken Herestraat ankompshal èâhpogt Èâhpogt veile geile waarin speiciale begelèding Telefauniese ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
