@@ -98,6 +98,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Strand & Buiten Concerten Shoppen Excursies Dit weekend Vandaag Advertentie Reserveer nu", "Stgand en Bùitûh Konsegte Sjoppûh Ekskugsies Dit wiekend Vedaag Advâhtensie Reisâhveâh nâh")]
     [TestCase("Data & tickets Tentoonstellingen Extra informatie must see Privacy policy", "Data en tikkets Tetaunstellinge Ekstra infoâhmasie mus-sie Praaivesie pollesie")]
     [TestCase("Kun je VVV-informatiepunten stadswandelingen eindelijk per ter bied informatiebrochures prof professor ", "Kajje VVV-infoâhmasiepunte staswandelinge èndelèk peâh teâh biedt infoâhmasiebrausjures prof praufessor ")]
+    [TestCase("souvenirs cadeau vervoersbewijzen bibliotheek touchscreen actuele Palace medewerkers werkdagen ", "soevenieâhs kado vevoeâhsbewèze biebeleteik tatskrien akteweile Pellus meidewerrekâhs werrekdage ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
