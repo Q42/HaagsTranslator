@@ -46,8 +46,8 @@ namespace HaagsTranslator.Tests
     [TestCase("De wereld is een pijp kaneel, je zuigt er aan met pijn in je keel.", "De wereld issun pèp kaneil, je zùig d'ran met pèn in je keil.")]
     [TestCase("Ik werd urenlang ondergevraagd.", "Ik wegd urelang ondâhgevraag.")]
     [TestCase("Die heeft spullen, die zijn al heel lang oud, zeg maar antiek.", "Die hep spulle, die zèn al heil lang âhd, zeg maah antiek.")]
-    [TestCase("koets, prostituee, klokkenluider, tribunaal, onsympatieke, verlaten, politici, bierfeest ", "patsâhbak, prostituwei, klokkelùiâh, tribenaal, onsympetieke, velate, paulitici, bieâhfeis ")]
-    [TestCase("natuurlijke barrière, reisbestemming, oude taaie, zo gek als een kaartspel", "natuâhlèke barrèjerre, rèsbestemming, âhwe taaie, zau gek assun kaagtspel")]
+    [TestCase("koets, prostituee, klokkenluider, tribunaal, onsympatieke, verlaten, politici, bierfeest ", "patsâhbak, prostituwei, klokkelùiâh, tribenaal, onsympetieke, velate, pauliticie, bieâhfeis ")]
+    [TestCase("natuurlijke barrière, reisbestemming, oude taaie, zo gek als een kaartspel", "natuâhlukke barrèjerre, rèsbestemming, âhwe taaie, zau gek assun kaagtspel")]
     [TestCase("uitnodiging om een boom om te hakken. met z'n alle zo hard als je kan achter een neger aanrennen, City Pier City loop ", "ùitnaudiging om un baum om te hakkûh. met ze alle zau hard asje ken achtâh un negâh anrenne, City Pieâh City laup ")]
     [TestCase("Achter de pui aan het Spui is iedereen in een luie bui ", "Achtâh de pùi annut Spùi is iederein innun lùie bùi ")]
     [TestCase("Geel is heel wat anders als geil, maar je kan er wel allebei een ziekte van krijgen ", "Geil is heil wat andâhs as gèl, maah je kandâh wel allebè un ziekte van krège ")]
@@ -100,6 +100,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Kun je VVV-informatiepunten stadswandelingen eindelijk per ter bied informatiebrochures prof professor ", "Kajje VVV-infoâhmasiepunte staswandelinge èndelèk peâh teâh biedt infoâhmasiebrausjures prof praufessor ")]
     [TestCase("souvenirs cadeau vervoersbewijzen bibliotheek touchscreen actuele Palace medewerkers werkdagen ", "soevenieâhs kado vevoeâhsbewèze biebeleteik tatskrien akteweile Pellus meidewerrekâhs werrekdage ")]
     [TestCase("Gevers gevestigd kunt Herenstraat aankomsthal airport Airport vele gele waarin speciale begeleiding Telefonische ", "Geivâhs gevestag ken Herestraat ankompshal èâhpogt Èâhpogt veile geile waarin speiciale begelèding Telefauniese ")]
+    [TestCase("voorjaarsvakantie Nederland Favorite koninklijke event evenementen internationale januari februari ", "voâhjaahsvekansie Neidâhland Favverietûh kauninklukke ievent eivenemente intâhnasjaunale jannewarie feibruwarie ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
