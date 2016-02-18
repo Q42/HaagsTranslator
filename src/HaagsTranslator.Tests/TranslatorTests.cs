@@ -63,7 +63,7 @@ namespace HaagsTranslator.Tests
     [TestCase("De vlerk stak zijn dolk in de snurkende Turk. elk valk erg", "De vlerrek stak zèn dollek in de snurrekende Turrek. ellek valluk errag")]
     [TestCase("De keeper wil hem nog houden, maar de voetbal hangt al in de touwen. hangen komen komt nemen ", "De keepâh wil 'm nog hâhwe, maah de foebal hank al in de tâhwûh. hange kaume komp neime ")]
     [TestCase("Ik heb een houten bek, heb je een fles olie? Heb je een step om te surfen op het wereldwijde web ", "Ik hep'n hâhte bek, hebbie un fles aulie? Hebbie un steppie om te surrefe op ut wereldwède wep ")]
-    [TestCase("Kinderen zijn lastpakken, ik koop nooit geen postzegels van die pusbakken.", "Kindere zèn laspakke, ik kaup nauit gein poszeigels van die pusbakkûh.")]
+    [TestCase("Kinderen zijn lastpakken, ik koop nooit geen postzegels van die pusbakken.", "Kindâhre zèn laspakke, ik kaup nauit gein poszeigels van die pusbakkûh.")]
     [TestCase("bezoeken festivalstad achtergelaten doen hebben zondag avondje bieden uitzicht indeling.", "bezoeke festivalstad achtâhgelate doen hebbe zondag avondje biede ùitzich indeiling.")]
     [TestCase("De godsdienstige stadswacht stond bij de gebedsdienst als een scheidsrechter te huilen ", "De gosdienstige staswach stond bè de gebesdiens assun schèsrechtâh te hùile ")]
     [TestCase("Het wordt almaar kouder, zei de strandpaviljoenhouder. De vermoeide ouder kreeg een schuit in z'n schouder ", "Ut wogt almaah kâhwâh, zè de stgandpavejoenhâhwâh. De vemoeide âhwâh kreig un schùit in ze schâhwâh ")]
@@ -103,6 +103,7 @@ namespace HaagsTranslator.Tests
     [TestCase("voorjaarsvakantie Nederland Favorite koninklijke event evenementen internationale januari februari ", "voâhjaahsvekansie Neidâhland Favverietûh kauninklukke ievent eivenemente intâhnasjaunale jannewarie feibruwarie ")]
     [TestCase("movies that literatuurfestival favoriete cultureel Ook gemeentemuseum collectie Hieronymus Dance beroemdste winkelen ", "moevies det literatuâhfestival favverietûh kultereil Auk gemeintemuseum kolleksie Hieraunimus Dens beroempste winkele ")]
     [TestCase("flagshipstores Bijenkorf talloze vintage Shop till you drop marktstraat yoga Bergen chique Corona eigentijds ", "fleksjipstoâhs Bèjekorref tallauze vintuts Sjop til joe drop marrekstraat yauga Berrege sjieke Korauna ègetèds ")]
+    [TestCase("plekjes watertanden bijzondere Facebook social media jenever- en likeurdistilleerderij ", "plekkies watâhtande biezondâhre Feisboek sausjel miedieja jeneivâh- en likeuâhdistilleâhderè ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
