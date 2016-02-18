@@ -49,6 +49,7 @@ namespace HaagsTranslator
       new [] { "social media", "sausjel miedieja" }, 
       new [] { "(S|s)tores", "$1toâhs" },
       new [] { "(T|t)ouchscreen", "$1atskrien" }, 
+      new [] { "(T|t)ouch", "$1ats" }, 
       new [] { "that", "det" },
       new []{ "(V|v)andaag", "$1edaag" },
       new [] { "(V|v)intage", "$1intuts" },
@@ -226,6 +227,7 @@ namespace HaagsTranslator
       new [] { "(F|f)eb", "$1eib" }, // 'februari'
       new []{"ngt\\b", "nk"}, // 'hangt'
       new []{"eving", "eiving"}, // 'omgeving'
+      new [] { "gje\\b", "ggie"}, // 'dagje'
       new []{"gelegd\\b", "geleige"}, // 'neergelegd'
       new []{"([HhVvr])ee(l|n|t)", "$1ei$2"}, // 'verscheen', 'veel', 'overeenkomsten', 'heet'
       new [] {"(H|h)er([^e])", "$1eâh$2" }, // 'herzien', geen 'herenstraat'
@@ -260,7 +262,8 @@ namespace HaagsTranslator
       new []{"([^gr])ties\\b", "$1sies"}, // 'tradities', moet voor -isch, geen 'smarties'
       new []{"isch(|e)", "ies$1"},
       new []{"is er", "istâh"},
-      new []{ "(g|k|p) je\\b", "$1ie"}, // 'loop je', 'zoek je'
+      new [] { "(p) je\\b", "$1ie" }, // 'loop je'
+      new [] { "(g|k) je\\b", "$1$1ie" }, // 'zoek je'
       new [] { "jene", "jenei"}, // 'jenever'
       new []{"jezelf", "je ège"}, // "jezelf"
       new []{"([^(oe)])kje\\b", "$1kkie"}, // 'bakje', moet voor algemeen regel op 'je', TODO, 'bekje'
@@ -274,10 +277,11 @@ namespace HaagsTranslator
       new [] { "Oo([igkm])", "Au$1" }, // 'ook' 
       new []{"oo([difgklmnpst])",         "au$1"}, // 'hoog', 'dood'
       new []{"rij",      "rè"},
+      new [] { "tieg", "sieg" }, // 'vakantiegevoel'
       new []{"tie\\b",   "sie"}, // 'directie'
       new []{"enties\\b", "ensies"}, // 'inconsequenties', geen 'romantisch'
       new [] {"(b|B|k|K|m|L|l|M|p|P|t|T|w|W)erk", "$1errek" }, // 'kerk', 'werkdagen', geen 'verkeer'
-      new [] { "kjes\\b", "kkies" }, // 'plekjes'
+      new [] { "(f|k)jes\\b", "$1$1ies" }, // 'plekjes'
       new []{"(M|m)'n", "$1e"}, // 'm'n'
       new []{"(M|m)ong", "$1eg"}, // 'mongool'
       new []{"(M|m)ein([^ut])", "$1eint$2"}, // moet na 'ee', geen 'menu', 'gemeentemuseum'

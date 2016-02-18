@@ -12,7 +12,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Zuiderpark", "Zùidâhparrek")]
     [TestCase("achter. achter, achter ", "achtâh. achtâh, achtâh ")]
     [TestCase("Voorwoord", "Voâhwoâhd")]
-    [TestCase("Ik zweer je, meneer, doe je het nog een keer, krijg je een peer, ga je neer.", "Ik zweâh je, meneâh, doejenut nog un keâh, krègie un peâh, ga je neâh.")]
+    [TestCase("Ik zweer je, meneer, doe je het nog een keer, krijg je een peer, ga je neer.", "Ik zweâh je, meneâh, doejenut nog un keâh, krèggie un peâh, ga je neâh.")]
     [TestCase("directie, aktie.", "direksie, aksie.")]
     [TestCase("Lekker laten hangen. Hier ", "Lekkâh late hangûh. Hieâh ")]
     [TestCase("Vrijheid. Mooie duur Huur er kermis", "Vrèhèd. Mauie duâh Huâh d'r kerremis")]
@@ -104,6 +104,7 @@ namespace HaagsTranslator.Tests
     [TestCase("movies that literatuurfestival favoriete cultureel Ook gemeentemuseum collectie Hieronymus Dance beroemdste winkelen ", "moevies det literatuâhfestival favverietûh kultereil Auk gemeintemuseum kolleksie Hieraunimus Dens beroempste winkele ")]
     [TestCase("flagshipstores Bijenkorf talloze vintage Shop till you drop marktstraat yoga Bergen chique Corona eigentijds ", "fleksjipstoâhs Bèjekorref tallauze vintuts Sjop til joe drop marrekstraat yauga Berrege sjieke Korauna ègetèds ")]
     [TestCase("plekjes watertanden bijzondere Facebook social media jenever- en likeurdistilleerderij ", "plekkies watâhtande biezondâhre Feisboek sausjel miedieja jeneivâh- en likeuâhdistilleâhderè ")]
+    [TestCase("touch vakantiegevoel hofjes dagje ", "tats vekansiegevoel hoffies daggie ")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
