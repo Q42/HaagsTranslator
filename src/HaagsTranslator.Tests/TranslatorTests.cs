@@ -91,7 +91,7 @@ namespace HaagsTranslator.Tests
     [TestCase("festivals hofvijver greep Vermeers bekende beker voorhoofd toerist audiovisueel verkeersaderlating reserveren ", "festivals hofvèvâh greip Vemeâhs bekende beikâh voâhhauf toeris âhdiauviseweil vekeâhsadâhlating reisâhvere ")]
     [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haailaaits meinu sie zorrage omgeiving boelevâh ideiaal platfoâhm vorremgeiving eksterrene deipau warrem ")]
     [TestCase("huisjes food fastfood 't tegenover station stijl ", "hùissies vreite snel vreite ut teigenauvâh stasion stèl ")]
-    [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is de Heik jeug stgand stgandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
+    [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is De Heek jeug stgand stgandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
     [TestCase("Restaurant shopping theater Jeugdprijs Last-minute ticketshop Normale prijs Overige Cabaret", "Resterant sjopping theijatâh Jeugprès Lasminnut tikketsjop Noâhmale près Auverige Cabberet")]
     [TestCase("Circus Culinair Tentoonstelling Folklore Jazz jazz Moderne dans Hedendaagse Film Musical", "Cirrekus Kulinèâh Tetaunstelling Folklore Djez djez Maudèrrene dans Heidedaagse Fillem Musikol")]
     [TestCase("Niet-westerse dans Toneel Poppentheater lezing Show beurs workshop events Locaties", "Niet westagse dans Tauneil Poppetheijatâh leizing Sjow beuâhs wurreksjop ievents Laukasies")]

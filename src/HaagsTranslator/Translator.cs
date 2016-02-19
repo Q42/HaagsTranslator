@@ -22,7 +22,6 @@ namespace HaagsTranslator
       new []{"Hagenezen", "Hageneize"}, // moet na 'ei'
       new []{ "(L|l)unchroom", "$1unsroem" },
       new []{ "\\bThis\\b", "Dis" },
-      new []{ "\\bThe Hague\\b", "de Heek" },
       new []{"\\b(H|h)ighlights\\b", "$1aailaaits"},
       new []{ "\\b(L|l)ast-minute\\b","$1asminnut" },
       new [] {"\\bAirport", "Èâhpogt" },
@@ -391,7 +390,8 @@ namespace HaagsTranslator
       new []{ "Nie-westegse", "Niet westagse" },
       new []{ "&", "en" },
       new []{"us sie", "us-sie" }, // 'must see'
-    };
+	  new []{ "\\bThe Hague\\b", "De Heek" }, // moet na 'ee -> ei'
+	};
 
     /// <summary>
     /// Verify that at least our regexe's fit in the cache of the regex lib
