@@ -21,7 +21,8 @@ namespace HitsTester
     {
       textBox3.Text = HaagsTranslator.Translator.Translate(textBox1.Text);
       textBox2.Text = HaagsTranslator.Translator.GetHits(textBox1.Text)
-        .Aggregate("", (current, item) => current += item.Item1 + " => hit: " + item.Item2 + Environment.NewLine);
+        .Where(h => h.Item2)
+        .Aggregate("", (current, item) => current += item.Item1 + Environment.NewLine);
     }
 
     private void label2_Click(object sender, EventArgs e)

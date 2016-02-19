@@ -430,7 +430,7 @@ namespace HaagsTranslator
         var original = haags;
         haags = Regex.Replace(original, replacement[0], replacement[1], RegexOptions.CultureInvariant);
 
-        result.Add(Tuple.Create(replacement[0], original.Equals(haags, StringComparison.InvariantCultureIgnoreCase)));
+        result.Add(Tuple.Create(replacement[0], !original.Equals(haags, StringComparison.InvariantCultureIgnoreCase)));
       }
       return result;
     }
