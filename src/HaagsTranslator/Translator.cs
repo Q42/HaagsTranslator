@@ -388,7 +388,6 @@ namespace HaagsTranslator
       new []{"'t", "ut"},
       new []{"derr", "dèrr" }, // 'moderne, moet na 'ern'/'ode'
       new []{ "Nie-westegse", "Niet westagse" },
-      new []{ "&", "en" },
       new []{"us sie", "us-sie" }, // 'must see'
 	  new []{ "\\bThe Hague\\b", "De Heek" }, // moet na 'ee -> ei'
 	};
