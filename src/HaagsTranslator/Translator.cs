@@ -246,7 +246,9 @@ namespace HaagsTranslator
       new [] { "(B|b)ijz", "$1iez" }, // 'bijzondere', moet voor 'bij'
       new []{"ij\\b",  "è"}, // 'zij', 'bij'
       new [] { "([^e])ije(n|)", "$1èje" }, // 'bijenkorf', 'blije', geen 'geleie' 
-      new []{"ij([dgkslmnftpvz])",  "è$1"}, // 'knijp', 'vijver', 'stijl', 'vervoersbewijzen'
+      new [] {"\\blijk\\b", "lèk" }, // 'lijk' , geen 'eindelijk' ('-lijk')
+      new [] {"(d|k|r|w|z)ijk", "$1èk"}, // 'wijk', geen '-lijk'
+      new []{"ij([dgslmnftpvz])",  "è$1"}, // 'knijp', 'vijver', 'stijl', 'vervoersbewijzen', geen '-lijk'
       new []{"([^euù])ig\\b",    "$1ag"}, // geen 'kreig', 'vliegtuig'
       new [] { "([^euù])igd\\b", "$1ag" }, // gevestigd
       new []{"ilm", "illem" }, // 'film'
