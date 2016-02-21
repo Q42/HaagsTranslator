@@ -19,7 +19,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Slimmer naar de pier in Scheveningen Voorburg", "Slimmâh naah de pieâh in Scheiveninge Voâhburrag")]
     [TestCase("Lekker naar het Binnenhof en daarna gaan stappen.", "Lekkâh naah ut Binnehof en daahna gan stappûh.")]
     [TestCase("Den Haag, het Plein, het Vredespaleis, Zuiderpark, park, Zwarte Pad, Grote Markt, de kerk, Rijswijkseplein", "De Haag, ut Plèn, ut Vreidespelès, Zùidâhparrek, parrek, Zwagte Pad, Graute Marrek, de kerrek, Rèswèkseplèn")]
-    [TestCase("Verkoopprijs, prijs Kurhaus, Restaurants, romantisch, romantische, rommel, Maurice, Maurice Majesteit", "Vekaupprès, près Koeâhhâhs, Resterants, raumanties, raumantiese, rommel, Mâhpie, Mâhpie Majestèt")]
+    [TestCase("Verkoopprijs, prijs Kurhaus, Restaurants, romantisch, romantische, rommel, Maurice, Maurice Majesteit", "Vekaupprès, près Koeâhhâhs, Resterans, raumanties, raumantiese, rommel, Mâhpie, Mâhpie Majestèt")]
     [TestCase("ADO ADO Den Haag, gefeliciteerd met de verjaardag doosje smarties ", "Adau FC De Haag, gefeiliciteâhd met de vejaahdag daussie smagties ")]
     [TestCase("Gert, barst, Martin, harte smarties, ooievaar dat is raar maar wel waar.", "Gegt, bagst, Magtin, hagte smagties, auievaah da's raah maah wel waah.")]
     [TestCase("Door een kier in de deur van de bar rook ik de meur van goor bier ", "Doâh un kieâh in de deuâh van de bâh rauk ik de meuâh van goâh bieâh ")]
@@ -52,7 +52,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Achter de pui aan het Spui is iedereen in een luie bui ", "Achtâh de pùi annut Spùi is iederein innun lùie bùi ")]
     [TestCase("Geel is heel wat anders als geil, maar je kan er wel allebei een ziekte van krijgen ", "Geil is heil wat andâhs as gèl, maah je kandâh wel allebè un ziekte van krège ")]
     [TestCase("Van die hete saté zat ik een uur of twee met m'n reet op de plee aan de diaree ", "Van die heite satei zattik un uâh of twei met me reit op de plei an de diarei ")]// met m'n niet vertaald
-    [TestCase("Menstruatie is een bloederige situatie, net als fluctuatie van de ", "Menstruwasie issun bloederige sitewasie, net as fluktewasie van de ")]
+    [TestCase("Menstruatie is een bloederige situatie, net als fluctuatie van de ", "Menstruwasie issun bloedâhrige sitewasie, net as fluktewasie van de ")]
     [TestCase("De vla lag in de la van ma en zij lag op d'r pa, die dat niet echt naar of raar vond, medeklinkers ", "De vla lag in de la van ma en zè lag op d'r pa, die dat nie ech naah of raah vond, meideklinkâhs ")]
     [TestCase("Ruud zei resoluut ik huur acuut een wijf a la minuut ", "Ruud zè reisoluut ik huâh akuut un wèf a la minuut ")]
     [TestCase("Is dat je haar of heb je jongen gekregen Maar troost jezelf op een ooievaar groeit helemaal geen haar, dat is raar maar wel waar en zo kennen we er nog wel een paar ", "Is dat je haah of hebbie jonge gekreige Maah traus je ège op un auievaah groeit heilemaal gein haah, da's raah maah wel waah en zau kenne we d'r nog wel un paah ")]
@@ -107,6 +107,7 @@ namespace HaagsTranslator.Tests
     [TestCase("touch vakantiegevoel hofjes dagje ", "tats vekansiegevoel hoffies daggie ")]
     [TestCase("stoere surfers populairste Geniet van de weidsheid dynamisch decor beroemde erwtensoep ", "stoere surrefâhs paupelèhste Geniet van de wèdshèd dinamies dekoâh beroemde erretesoep ")]
     [TestCase("Zinnenprikkelende producten verser dan vers kwalitatieve reeds overgebleven instaprondleiding, je zult je Beauty & the Beast", "Zinneprikkelende praudukte vegsâh dan vegs kwalitatieve reids auvâhgebleive instaprondlèding, je zal je ège Bjoetie & de Bies")]
+    [TestCase("modeontwerper bezienswaardigheden relaxen markante bloederigste originele dichtbij spectaculaire stork vegetarisch Cuisine cuisine volgens", "maudeontwerrepâh bezienswaahdigheide rielekse magkante bloedâhragste orresjineile dichbè spektakelère storrek veigetaries Kwiesien kwiesien volleges")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
