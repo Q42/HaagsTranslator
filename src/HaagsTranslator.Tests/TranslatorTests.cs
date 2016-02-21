@@ -109,6 +109,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Zinnenprikkelende producten verser dan vers kwalitatieve reeds overgebleven instaprondleiding, je zult je Beauty & the Beast", "Zinneprikkelende praudukte vegsâh dan vegs kwalitatieve reids auvâhgebleive instaprondlèding, je zal je ège Bjoetie & de Bies")]
     [TestCase("modeontwerper bezienswaardigheden relaxen markante bloederigste originele dichtbij spectaculaire stork vegetarisch Cuisine cuisine volgens", "maudeontwerrepâh bezienswaahdigheide rielekse magkante bloedâhragste orresjineile dichbè spektakelère storrek veigetaries Kwiesien kwiesien volleges")]
     [TestCase("Tripadvisor skiën Overnachten SEA LIFE Europese Nachtje Bites Crowne .com instituut sterker", "Tripetfaaisoâh skieje Auvâhnachte SIELÈF Euraipeise Nachie Bèts Kraun .com instituut sterrekâh")]
+    [TestCase("bospaddenstoelen saus uitwaaien roots bezoekerscentrum strandseizoen plezierig dertig beach verder parkeervergunning vertegenwoordiger tussenletter broer automatiek", "bospaddestoele sâhs ùitwaaie roets bezoekâhscentrum stgandsèzoen plezieâhrag deâhtag bietsj veâhdahs pagkeâhvegunning veteigewoâhdegâh tusselettâh broeâh âhtaumatiek")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
