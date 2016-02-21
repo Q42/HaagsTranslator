@@ -90,7 +90,7 @@ namespace HaagsTranslator.Tests
     [TestCase("ver vers tour kopje tradities kidstips behulp sport deze ", "veâh vegs toeâh koppie tradisies kindâhtips behullep spogt deize ")]
     [TestCase("festivals hofvijver greep Vermeers bekende beker voorhoofd toerist audiovisueel verkeersaderlating reserveren ", "festivals hofvèvâh greip Vemeâhs bekende beikâh voâhhauf toeris âhdiauviseweil vekeâhsadâhlating reisâhvere ")]
     [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haailaaits menu sie zorrage omgeiving boelevâh ideiaal platfoâhm vorremgeiving eksterrene deipau warrem ")]
-    [TestCase("huisjes food fastfood 't tegenover station stijl ", "hùissies vreite snel vreite ut teigenauvâh stasion stèl ")]
+    [TestCase("huisjes food fastfood 't tegenover station stijl ", "hùissies foet fastfoet ut teigenauvâh stasion stèl ")]
     [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is De Heek jeug stgand stgandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
     [TestCase("Restaurant shopping theater Jeugdprijs Last-minute ticketshop Normale prijs Overige Cabaret", "Resterant sjopping theijatâh Jeugprès Lasminnut tikketsjop Noâhmale près Auverige Cabberet")]
     [TestCase("Circus Culinair Tentoonstelling Folklore Jazz jazz Moderne dans Hedendaagse Film Musical", "Cirrekus Kulinèâh Tetaunstelling Folklore Djez djez Maudèrrene dans Heidedaagse Fillem Musikol")]
@@ -108,6 +108,7 @@ namespace HaagsTranslator.Tests
     [TestCase("stoere surfers populairste Geniet van de weidsheid dynamisch decor beroemde erwtensoep ", "stoere surrefâhs paupelèhste Geniet van de wèdshèd dinamies dekoâh beroemde erretesoep ")]
     [TestCase("Zinnenprikkelende producten verser dan vers kwalitatieve reeds overgebleven instaprondleiding, je zult je Beauty & the Beast", "Zinneprikkelende praudukte vegsâh dan vegs kwalitatieve reids auvâhgebleive instaprondlèding, je zal je ège Bjoetie & de Bies")]
     [TestCase("modeontwerper bezienswaardigheden relaxen markante bloederigste originele dichtbij spectaculaire stork vegetarisch Cuisine cuisine volgens", "maudeontwerrepâh bezienswaahdigheide rielekse magkante bloedâhragste orresjineile dichbè spektakelère storrek veigetaries Kwiesien kwiesien volleges")]
+    [TestCase("Tripadvisor skiën Overnachten SEA LIFE Europese Nachtje Bites Crowne .com instituut sterker", "Tripetfaaisoâh skieje Auvâhnachte SIELÈF Euraipeise Nachie Bèts Kraun .com instituut sterrekâh")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
