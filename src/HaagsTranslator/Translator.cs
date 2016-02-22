@@ -207,10 +207,11 @@ namespace HaagsTranslator
       new [] {"ber([^eoiuâè])", "bâh$1"}, // 'ubergezellige', moet na '-erg'
       new [] {"(G|g)eve(r|n)", "$1eive$2" }, // 'Gevers', moet voor '-ers', geen 'gevestigd'
       new []{"([^eo ])ers([^. ,c])", "$1egs$2"}, // 'diverse', 'versie', geen klinkers, geen 'eerste', geen 'verscheen'
-      new []{"\\b(V|v)ers\\b", "$1egs"}, // 'vers', moet voor -ers}
+      new []{"Vers\\b", "Vegs"}, // 'vers', moet voor -ers}
+      new []{ "([^ei])vers\\b", "$1vegs"}, // 'vers', moet voor -ers, geen 'Gevers'
       new [] { "renstr", "restr" }, // 'herenstraat' (voor koppelwoorden)
       new [] {"([^eio])eder", "$1eider" }, // 'Nederland', geen 'iedereen', 'bloederige'
-      new []{"ers\\b", "âhs"}, // 'klinkers'
+      new []{ "([^eio])ers\\b", "$1âhs"}, // 'klinkers'
       new []{ "([^v])ers(c|t)", "$1âhs$2"}, // 'eerste', 'bezoekerscentrum', geen 'verschaffen'
       new [] { "erwt", "erret" }, // 'erwtensoep'
       new [] { "([^eo])eci", "$1eici" }, // 'speciaal'
@@ -222,7 +223,8 @@ namespace HaagsTranslator
       new []{"eer", "eâh" }, // 'zweer', 'neer'
       new []{"elk\\b", "ellek"}, // 'elk'
       new []{"(E|e)xt", "$1kst" }, // 'extra'
-      new [] {"\\b(g|G|v|V|h|H)ele\\b", "$1eile" }, // 'vele', 'gele', 'hele'
+      new [] { "(H|h)ele", "$1eile"}, // 'gehele', 'hele'
+      new [] {"\\b(g|G|v|V)ele\\b", "$1eile" }, // 'vele', 'gele', 'hele'
       new [] { "nele", "neile" }, // 'originele'
       new [] {"\\b(D|d)elen", "$1eile"}, // 'delen', geen 'wandelen'
       new [] {"sdelen", "sdeile"}, // 'geslachtsdelen', geen 'wandelen'
