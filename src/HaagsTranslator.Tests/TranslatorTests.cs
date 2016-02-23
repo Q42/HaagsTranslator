@@ -111,7 +111,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Tripadvisor skiën Overnachten SEA LIFE Europese Nachtje Bites Crowne .com instituut sterker", "Tripetfaaisoâh skieje Auvâhnachte SIELÈF Euraipeise Nachie Bèts Kraun .com instituut sterrekâh")]
     [TestCase("bospaddenstoelen saus uitwaaien roots bezoekerscentrum strandseizoen plezierig dertig beach verder parkeervergunning vertegenwoordiger tussenletter broer automatiek", "bospaddestoele sâhs ùitwaaie roets bezoekâhscentrum stgandsèzoen plezieâhrag deâhtag bietsj veâhdahs pagkeâhvegunning veteigewoâhdegâh tusselettâh broeâh âhtaumatiek")]
     [TestCase("cultuurschatten übergezellige dieren vooral teams theatervoorstellingen wandelen kenmerken karakteristieke kleding supermarktjes Eten koffietentjes Zeeheldenkwartier borrelen", "kultuâhschatte übâhgezellage diere voâhal tiems theijatâhvoâhstellinge wandele kenmerreke karaktâhristieke kleiding supâhmarrekkies Eite koffietentjes Zeiheldekwagtieâh borrele")]
-    [TestCase("dagvers gehele", "dagvegs geheile")]
+    [TestCase("dagvers gehele algoritme beginselen hen goedkeuring euro bijbehorende ontworpen stuks levendige Omdat", "dagvegs geheile algauritme beginsele hen goedkeuâhring euâhro bèbehoâhrende ontworrepe stuks leivendege Omdat")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
