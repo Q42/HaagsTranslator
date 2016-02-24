@@ -286,7 +286,7 @@ namespace HaagsTranslator
       new []{ "([^e])ije(n|)", "$1èje" }, // 'bijenkorf', 'blije', geen 'geleie' 
       new []{ "(B|b)ij", "$1è" }, // 'bijbehorende'
       new []{"\\blijk\\b", "lèk" }, // 'lijk' , geen 'eindelijk' ('-lijk')
-      new []{"(d|k|r|w|z)ijk", "$1èk"}, // 'wijk', geen '-lijk'
+      new []{"(D|d|K|k|R|r|W|w|Z|z)ijk", "$1èk"}, // 'wijk', geen '-lijk'
       new []{ "ij([dgslmnftpvz])",  "è$1"}, // 'knijp', 'vijver', 'stijl', 'vervoersbewijzen', geen '-lijk'
       new []{ "([^euù])ig\\b",    "$1ag"}, // geen 'kreig', 'vliegtuig'
       new []{ "lige\\b",    "lage"}, // 'gezellige'
@@ -408,6 +408,7 @@ namespace HaagsTranslator
       new []{ "stje\\b", "ssie"}, // 'beestje'
       new []{ "st(b|d|g|h|j|k|l|m|n|p|v|w|z)", "s$1"}, // 'lastpakken', geen 'str'
       new []{"(S|s)ouv", "$1oev" }, // 'souvenirs'
+      new []{ "(s|S)tran", "$1tgan" }, // 'strand', moet 'na st-'
       new []{ "\\b(s|S)tr", "$1tg" }, // 'strand', moet 'na st-'
       new []{ "([^gr])st\\b", "$1s"}, // 'haast', 'troost', 'gebedsdienst', geen 'barst'
       new []{ "tep\\b", "teppie"}, // 'step'
