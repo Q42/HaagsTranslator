@@ -2,11 +2,13 @@
 <package >
   <metadata>
     <id>HaagsTranslator</id>
+    <title>Dutch to Haags Translator</title>
     <version>1.0.7</version>
     <authors>Mark van Straten, Roelfjan de Vries</authors>
     <owners>Mark van Straten, Roelfjan de Vries</owners>
     <licenseUrl>https://github.com/q42/HaagsTranslator/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/q42/HaagsTranslator</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Q42/HaagsTranslator/master/nuget-package-icon.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Library for translating nl-NL to nl-DH largely based on the rules as explained in 'Ut NIEUWE Groen-Geile Boekie'</description>
     <releaseNotes>Initial release, most rules as needed</releaseNotes>
