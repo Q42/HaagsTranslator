@@ -188,7 +188,7 @@ namespace HaagsTranslator
       new []{ "(?<![e])ens\\b", "es"}, // 'ergens', geen 'weleens'
       new []{ "(D|d)ance", "$1ens" }, // moet na '-ens' 
       new []{ "(?<![ hi])eden\\b", "eije"}, // geen 'bieden'. 'bezienswaardigheden'
-      new []{ "(?<![ i])eden", "eide" }, // 'hedendaagse'
+      new []{ "(?<![ bgi])eden", "eide" }, // 'hedendaagse', geen 'bedenken'
       new []{ "\\b(E|e)ve", "$1ive" }, // 'evenementen'
       new []{ "me(d|t)e", "mei$1e"}, // 'medeklinkers'
       new []{ "eugd", "eug" }, // 'jeugd', 'jeugdprijs'
@@ -375,7 +375,7 @@ namespace HaagsTranslator
       new []{ "der(?![eianrouèt])", "dâh"},// 'moderne'/'moderrene', geen 'dertig'
       new []{ "\\b(P|p|T|t)er\\b", "$1eâh" }, // 'per', 'ter'
       new []{ "(?<![ io])er\\b", "âh" }, // 'kanker', geen 'hoer', 'er', 'per', 'hier' , moet voor 'over' na o(v)(e)
-      new []{ "per", "pâh"}, // 'supermarkt', moet na 'per'
+      new []{ "(P|p)er(?!i)", "$1âh"}, // 'supermarkt', geen 'periode', moet na 'per'
       new []{ "(P| p)o(^st)" , "$1au$2"}, // 'poltici'
       new []{ "p ik\\b", "ppik"}, // 'hep ik'
       new []{ "ppen", "ppe" }, // 'poppentheater'
