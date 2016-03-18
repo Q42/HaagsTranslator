@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>HaagsTranslator</id>
+    <id>$id$</id>
     <title>Dutch to Haags Translator</title>
     <version>$version$</version>
     <authors>Mark van Straten, Roelfjan de Vries</authors>
@@ -15,7 +15,10 @@
     <copyright>Copyright 2016</copyright>
     <tags>Haags</tags>
   </metadata>
-  <files>
+  <!--<files>
+    <file src="bin\$configuration$\$id$.dll" target="lib\net40\" />
+  </files>-->
+  <!--<files>
     <file src="src\HaagsTranslator\bin\Debug\HaagsTranslator.dll" target="lib\net40" />
-  </files>
+  </files>-->
 </package>
