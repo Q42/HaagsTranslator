@@ -3,7 +3,7 @@
   <metadata>
     <id>HaagsTranslator</id>
     <title>Dutch to Haags Translator</title>
-    <version>1.0.7</version>
+    <version>$version$</version>
     <authors>Mark van Straten, Roelfjan de Vries</authors>
     <owners>Mark van Straten, Roelfjan de Vries</owners>
     <licenseUrl>https://github.com/q42/HaagsTranslator/blob/master/LICENSE</licenseUrl>
