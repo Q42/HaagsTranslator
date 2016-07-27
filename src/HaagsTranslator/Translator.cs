@@ -474,7 +474,8 @@ namespace HaagsTranslator
     {
       if (string.IsNullOrEmpty(dutch))
         return dutch;
-      return TranslationReplacements.Aggregate(dutch, (current, replacement) => Regex.Replace(current, replacement[0], replacement[1], RegexOptions.CultureInvariant));
+      var copyValue = string.Copy(dutch);
+      return TranslationReplacements.Aggregate(copyValue, (current, replacement) => Regex.Replace(current, replacement[0], replacement[1], RegexOptions.CultureInvariant));
     }
 
 #if DEBUG
