@@ -454,7 +454,9 @@ namespace HaagsTranslator
 
       //quick fixups
       new [] { "stgong>", "strong>"}, //fixups for <strong tag>
-      new [] { "kute;", "cute;" } // fixups for &eacute; tag
+      new [] { "kute;", "cute;" }, // fixups for &eacute; tag
+      new [] { "&ksedil;", "&ccedil;" }, // fixups for &ccedil; tag
+      new [] { "lie>", "li>" } // fixups for <li> tag
     };
 
     /// <summary>
