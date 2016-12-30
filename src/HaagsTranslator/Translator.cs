@@ -69,7 +69,6 @@ namespace HaagsTranslator
       new []{ "(W|w)eekend", "$1iekend" },
       new []{ "(W|w)ork", "$1urrek" },
       new []{"(B|b)ibliotheek", "$1iebeleteik" },
-      new []{ "cadeau", "kado" },
       new []{ "(F|f)ood", "$1oet"},
       new []{ "doe je het", "doejenut"},
       new []{ "\\bsee\\b", "sie"}, // van 'must see'
@@ -97,7 +96,7 @@ namespace HaagsTranslator
       new []{ "\\b(T|t)our\\b", "$1oeâh"},
       new []{ "diner\\b", "dinei"},
       new []{ "(B|b)oul", "$1oel"}, // 'boulevard'
-      new []{ "(au|ou)(?!v)", "âh" }, // 'oud', geen 'souvenirs'
+      new []{ "(?<![e])(au|ou)(?!v)", "âh" }, // 'oud', geen 'souvenirs', 'cadeau', 'bureau'
       new []{ "aci", "assi"}, // 'racist'
       new []{ "als een", "assun"}, // 'als een'
       new []{ "a(t|l) ik", "a$1$1ik"}, // val ik, at ik
@@ -148,9 +147,9 @@ namespace HaagsTranslator
       new []{ "chique", "sjieke" },
       new []{"chure", "sjure" }, // 'brochure'
       new []{ "ct", "kt"}, // 'geactualiseerde', 'directie'
-      new []{ "Co", "Ko" }, // 'Concerten'
+      new []{ "C(a|o)", "K$1" }, // 'Concerten', 'Cadeau'
       new []{ "cor\\b", "koâh" }, // 'decor'
-      new []{ "(?<![.])co", "ko" }, // 'concerten', 'collectie', geen '.com'
+      new []{ "(?<![.])c(a|o)", "k$1" }, // 'concerten', 'cadeau', 'collectie', geen '.com'
       new []{ "cu", "ku" }, // 'culturele'
       new []{ "Cu", "Ku" }, // 'culturele'
       new []{ "(ch|c|k)t\\b", "$1"}, // woorden eindigend op 'cht', 'ct', 'kt', of met een 's' erachter ('geslachts')
@@ -166,6 +165,7 @@ namespace HaagsTranslator
       
       new []{ "(D|d)y", "$1i"}, // dynamiek
       new []{ "eaa", "eiaa"}, // 'ideaal'
+      new []{ "eau\\b", "o" }, // 'cadeau', 'bureau'
       new []{ "ègen", "ège" }, // 'eigentijds', moet voor 'ee'
       new []{ "Eig", "Èg" }, // 'Eigenlijk', moet voor 'ee'
       new []{ "eig", "èg" }, // 'eigenlijk', moet voor 'ee'
