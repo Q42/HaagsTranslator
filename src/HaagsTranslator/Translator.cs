@@ -97,6 +97,7 @@ namespace HaagsTranslator
       new []{ "diner\\b", "dinei"},
       new []{ "(B|b|R|r)ou(l|t)", "$1oe$2"}, // 'boulevard','routes'
       new []{ "(?<![e])(au|ou)(?!v)", "âh" }, // 'oud', geen 'souvenirs', 'cadeau', 'bureau', 'routes'
+      new []{ "Ou", "Âh" }, // 'Oud'
       new []{ "aci", "assi"}, // 'racist'
       new []{ "als een", "assun"}, // 'als een'
       new []{ "a(t|l) ik", "a$1$1ik"}, // val ik, at ik
