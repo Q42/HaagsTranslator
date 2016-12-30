@@ -296,7 +296,8 @@ namespace HaagsTranslator
       new []{ "(?<![gr])ties\\b", "sies"}, // 'tradities', moet voor -isch, geen 'smarties'
       new []{ "isch(|e)", "ies$1"},
       new []{ "is er", "istâh"},
-      new []{ "(p) je\\b", "$1ie" }, // 'loop je'
+      new []{ "ap je\\b", "appie" }, // 'stap je'
+      new []{ "(p) je\\b", "$1ie" }, // 'loop je', geen 'stap je'
       new []{ "(g|k) je\\b", "$1$1ie" }, // 'zoek je'
       new []{ "jene", "jenei"}, // 'jenever'
       new []{ "jezelf", "je ège"}, // "jezelf"
