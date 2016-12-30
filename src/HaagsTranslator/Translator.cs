@@ -95,8 +95,8 @@ namespace HaagsTranslator
       new []{ "oude", "ouwe"}, // 'goude'
       new []{ "\\b(T|t)our\\b", "$1oeâh"},
       new []{ "diner\\b", "dinei"},
-      new []{ "(B|b)oul", "$1oel"}, // 'boulevard'
-      new []{ "(?<![e])(au|ou)(?!v)", "âh" }, // 'oud', geen 'souvenirs', 'cadeau', 'bureau'
+      new []{ "(B|b|R|r)ou(l|t)", "$1oe$2"}, // 'boulevard','routes'
+      new []{ "(?<![e])(au|ou)(?!v)", "âh" }, // 'oud', geen 'souvenirs', 'cadeau', 'bureau', 'routes'
       new []{ "aci", "assi"}, // 'racist'
       new []{ "als een", "assun"}, // 'als een'
       new []{ "a(t|l) ik", "a$1$1ik"}, // val ik, at ik
@@ -262,7 +262,7 @@ namespace HaagsTranslator
       new []{"(H|h)er(?![e])", "$1eâh" }, // 'herzien', geen 'herenstraat'
       new []{ "(I|i)n het", "$1nnut"}, // 'in het'
       new []{ "\\b(E|e)te", "$1ite"}, // 'eten'
-      new []{ "(?<![ir])ete(?![i])", "eite" }, // 'hete', 'gegeten', geen 'bibliotheek','erretensoep', 'koffietentjes', 'genieten
+      new []{ "(?<![ior])ete(?![i])", "eite" }, // 'hete', 'gegeten', geen 'bibliotheek','erretensoep', 'koffietentjes', 'genieten, 'roetes (routes)'
       new []{ "(d|h|l|m|r|t)ea(?![m])", "$1eija" }, // 'theater', geen 'team'
       new []{ "\\bhet\\b", "ut"},
       new []{ "Het\\b", "Ut"},
