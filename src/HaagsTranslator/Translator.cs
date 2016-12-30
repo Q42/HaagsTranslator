@@ -268,8 +268,8 @@ namespace HaagsTranslator
       new []{ "Het\\b", "Ut"},
       new []{ "(?<![eouù])i\\b", "ie" }, // 'januari'
       new []{"ieri", "ieâhra"}, // 'plezierig'
-      new []{ "ier(?![aeio])", "ieâh" }, // 'bierfeest', geen 'hieronymus', 'plezierig', 'dieren'
-      new []{ "iero(?![eo])", "ierau" }, // 'hieronymus'
+      new []{ "ier(?!(a|e|i|ony))", "ieâh" }, // 'bierfeest', 'hieronder', geen 'hieronymus', 'plezierig', 'dieren'
+      new []{ "iero(?!e|o|nd)", "ierau" }, // 'hieronymus', geen 'hieronder'
       new []{ "ière", "ijerre"}, // 'barriere'
       new []{ "ibu", "ibe"}, // 'tribunaal'
       new []{ "icke", "ikke" }, // 'tickets'
