@@ -206,7 +206,7 @@ namespace HaagsTranslator
       new []{ "Vers\\b", "Vegs"}, // 'vers', moet voor -ers}
       new []{ "(?<![ei])vers\\b", "vegs"}, // 'vers', moet voor -ers, geen 'Gevers'
       new []{ "renstr", "restr" }, // 'herenstraat' (voor koppelwoorden)
-      new []{"(?<![eio])eder", "eider" }, // 'Nederland', geen 'iedereen', 'bloederige'
+      new []{"(?<![eIio])eder", "eider" }, // 'Nederland', geen 'iedereen', 'bloederige', 'Iedere'
       new []{ "(?<![eio])ers\\b", "âhs"}, // 'klinkers'
       new []{ "(?<![v])ers(c|t)", "âhs$1"}, // 'eerste', 'bezoekerscentrum', geen 'verschaffen'
       new []{ "erwt", "erret" }, // 'erwtensoep'
