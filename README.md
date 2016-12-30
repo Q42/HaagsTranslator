@@ -1,4 +1,4 @@
-# Vertaler naar het Haags
+# Vertaler Nederlands naar het Haags
 Ontwikkeld speciaal voor de Haagse versie van DenHaag.com ter ere van de onthulling van het standbeeld van Haagse Harry op de Grote Markt in Den Haag.
 
 Bekijk het op [DeHaag.com](http://www.dehaag.com)
