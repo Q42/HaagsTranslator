@@ -75,7 +75,7 @@ namespace HaagsTranslator.Tests
     [TestCase("De redactie van het boekje neemt geen notie van de klachten van lezers over inconsequenties ", "De redaksie vannut boekie neimp gein nausie van de klachte van leizâhs auvâh inkonsekwensies ")]
     [TestCase("Als je gaat lopen zeiken zal ik de oren van je harses trekken.", "Asje gaat laupe zèke zallik de ore vajje hagses trekkûh.")]
     [TestCase("Zal ik even het behang van je knars aftrekken.", "Zallik eive ut behang vajje knags aftrekkûh.")]
-    [TestCase("Van zo'n bakje koffie krijg ik huisje boompje beestje in m'n koppie", "Van zaun bakkie koffie krèg ik hùissie baumpie beissie imme koppie")]
+    [TestCase("Van zo'n bakje koffie krijg ik huisje boompje beestje in m'n koppie", "Van zaun bakkie pleuâh krèg ik hùissie baumpie beissie imme koppie")]
     [TestCase("Ken ik, ken u, ken jij, als u, mag het, aan het, van het, ik dacht het, van jou, kijk dan", "Kennik, kennu, kejjèh, assu, maggut, annut, vannut, dachut, vajjâh, kèktan")]
     [TestCase("Gaat het niet lekker dan loop je met je ziel onder je hart gestoken ", "Gaat-ie nie lekkâh dan laupie mejje ziel ondâh je hagt gestauke ")]
     [TestCase("M'n been slaapt, vind je het erg als ik er even bij ga liggen?", "Me bein slaap, vijje ut errag as ik d'r eive bè ga leggûh?")]
@@ -113,6 +113,7 @@ namespace HaagsTranslator.Tests
     [TestCase("cultuurschatten übergezellige dieren vooral teams theatervoorstellingen wandelen kenmerken karakteristieke kleding supermarktjes Eten koffietentjes Zeeheldenkwartier borrelen", "kultuâhschatte übâhgezellage diere voâhal tiems theijatâhvoâhstellinge wandele kenmerreke karaktâhristieke kleiding supâhmarrekkies Eite koffietentjes Zeiheldekwagtieâh borrele")]
     [TestCase("dagvers gehele algoritme beginselen hen goedkeuring euro bijbehorende ontworpen stuks levendige Omdat nou", "dagvegs geheile algauritme beginsele hen goedkeuâhring euâhro bèbehoâhrende ontworrepe stuks leivendege Omdat nâh")]
     [TestCase("Kijkduin Zuiderstrand genieten periode bedenken hieronder routes stap je Iedere Oud", "Kèkdùin Zùidâhstgand geniete periaude bedenke hieâhondâh roetes stappie Iedere Âhd")]
+    [TestCase("gokje Zo zeventig expo projectleider kopje koffie routes", "gokkie Zau zeiventag expau praujeklèijâh bakkie pleuâh roetes")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
