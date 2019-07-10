@@ -1,0 +1,20 @@
+{
+  "urls": [
+    "https://haags.nu"
+  ],
+  "runs": 1,
+  "lighthouse": {
+    "performance": {
+      "score": 1
+    },
+    "best-practices": {
+      "score": 1
+    },
+    "accessibility": {
+      "score": 1
+    },
+    "seo": {
+        "score": 1
+    }
+  }
+}
