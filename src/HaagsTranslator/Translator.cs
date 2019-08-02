@@ -292,7 +292,7 @@ namespace HaagsTranslator
       new []{ "(?<![euù])igd\\b", "ag" }, // gevestigd
       new []{ "ilm", "illem" }, // 'film'
       new []{ "ilieu", "ejui"}, // 'milieu'
-      new []{ "inc", "ink"}, // 'incontinentie'
+      new []{ "inc(k|)", "ink"}, // 'incontinentie', 'binckhorst'
       new []{ "io(?![oen])", "iau"}, // 'audio', geen 'viool', 'station'
       new []{ "\\bin m'n\\b", "imme"},
       new []{ "(n|r)atio", "$1asjau" }, // 'internationale'
@@ -358,7 +358,7 @@ namespace HaagsTranslator
       new []{ "orde", "ogde"}, // 'worden'
       new []{ "(N|n)(|o)od", "$1aud"}, // 'noodzakelijk'
       new []{ "nirs\\b", "nieâhs" }, // 'souvenirs'
-      new []{ "l(f|k|m|p)(?![a])", "lle$1"}, // 'volkslied', 'behulp', geen 'elkaar'
+      new []{ "l(f|k|m|p)(?![au])", "lle$1"}, // 'volkslied', 'behulp', geen 'elkaar', 'doelpunten'
       new []{ "olk", "ollek"}, // 'volkslied'
       new []{ "(F|f)olleklore", "$1olklore" },
       new []{ "o(c|k)a", "auka" }, // 'locaties'
@@ -415,6 +415,7 @@ namespace HaagsTranslator
       new []{ "té\\b", "tei"}, // 'satè'
       new []{ "tion", "sion"}, // 'station'
       new []{ "tje\\b", "tsje"}, // 'biertje'
+	  new []{ "\\b(T|t)o\\b", "$1oe"}, // to
       new []{ "(p|t)o\\b", "$1au"}, // 'expo', moet na 'au'/'ou'
       new []{ "toma", "tauma"}, // moet na 'au'/'ou', 'automatiek', geen 'tom'
       new []{ "(T|t)ram", "$1rem"}, // 'tram'
@@ -451,7 +452,7 @@ namespace HaagsTranslator
       new []{ "\\bzich\\b", "ze ège"}, // 'zich'
       new []{ "z(au|o)'n", "zaun"},
       new []{ "\\bzegt\\b", "zeg"},
-      new []{ "(z|Z)o(?![enr])", "$1au"}, // 'zogenaamd', geen 'zoeken', 'zondag', 'zorgen'
+      new []{ "(z|Z)o(?![cenr])", "$1au"}, // 'zogenaamd', geen 'zoeken', 'zondag', 'zorgen', 'zocht'
       new []{ "'t", "ut"},
       new []{ "derr", "dèrr" }, // 'moderne, moet na 'ern'/'ode'
       new []{ "Nie-westegse", "Niet westagse" },

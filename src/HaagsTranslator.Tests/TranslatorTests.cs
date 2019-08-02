@@ -114,6 +114,8 @@ namespace HaagsTranslator.Tests
     [TestCase("dagvers gehele algoritme beginselen hen goedkeuring euro bijbehorende ontworpen stuks levendige Omdat nou", "dagvegs geheile algauritme beginsele hen goedkeuâhring euâhro bèbehoâhrende ontworrepe stuks leivendege Omdat nâh")]
     [TestCase("Kijkduin Zuiderstrand genieten periode bedenken hieronder routes stap je Iedere Oud", "Kèkdùin Zùidâhstgand geniete periaude bedenke hieâhondâh roetes stappie Iedere Âhd")]
     [TestCase("gokje Zo zeventig expo projectleider kopje koffie routes", "gokkie Zau zeiventag expau praujeklèijâh bakkie pleuâh roetes")]
+    [TestCase("zocht binckhorst to doelpunten", "zoch binkhogst toe doelpunte")]
+
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
