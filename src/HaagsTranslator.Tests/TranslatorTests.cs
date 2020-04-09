@@ -89,7 +89,7 @@ namespace HaagsTranslator.Tests
     [TestCase("vliegtuig Waar literatuur orgineel kinderboekenmuseum oudste ontmoet enkele ", "vliegtùig Waah literatuâh oâhgineil kindâhboekemuseum âhdste ontmoet enkele ")]
     [TestCase("ver vers tour kopje tradities kidstips behulp sport deze ", "veâh vegs toeâh koppie tradisies kindâhtips behullep spogt deize ")]
     [TestCase("festivals hofvijver greep Vermeers bekende beker voorhoofd toerist audiovisueel verkeersaderlating reserveren ", "festivals hofvèvâh greip Vemeâhs bekende beikâh voâhhauf toeris âhdiauviseweil vekeâhsadâhlating reisâhvere ")]
-    [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haailaaits menu sie zorrage omgeiving boelevâh ideiaal platfoâhm vorremgeiving eksterrene deipau warrem ")]
+    [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haailaaits menu sie zorrage omgeiving boelevâh ideiaal platfoâhm vorremgeiving eksterne deipau warrem ")]
     [TestCase("huisjes food fastfood 't tegenover station stijl ", "hùissies foet fastfoet ut teigenauvâh stasion stèl ")]
     [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is De Heek jeug stgand stgandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
     [TestCase("Restaurant shopping theater Jeugdprijs Last-minute ticketshop Normale prijs Overige Cabaret", "Resterant sjopping theijatâh Jeugprès Lasminnut tikketsjop Noâhmale près Auverige Kabberet")]
@@ -114,7 +114,7 @@ namespace HaagsTranslator.Tests
     [TestCase("dagvers gehele algoritme beginselen hen goedkeuring euro bijbehorende ontworpen stuks levendige Omdat nou", "dagvegs geheile algauritme beginsele hen goedkeuâhring euâhro bèbehoâhrende ontworrepe stuks leivendege Omdat nâh")]
     [TestCase("Kijkduin Zuiderstrand genieten periode bedenken hieronder routes stap je Iedere Oud", "Kèkdùin Zùidâhstgand geniete periaude bedenke hieâhondâh roetes stappie Iedere Âhd")]
     [TestCase("gokje Zo zeventig expo projectleider kopje koffie routes", "gokkie Zau zeiventag expau praujeklèijâh bakkie pleuâh roetes")]
-    [TestCase("zocht binckhorst to doelpunten", "zoch binkhogst toe doelpunte")]
+    [TestCase("zocht binckhorst to doelpunten toernooi Zoetermeer Natuurgras dreigend termijn worden. beraden", "zoch binkhogst toe doelpunte toeâhnaui Zoetâhmeâh Natuâhgras drègend termèn wogdûh. berade")]
 
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
