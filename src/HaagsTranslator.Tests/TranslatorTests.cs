@@ -64,7 +64,7 @@ namespace HaagsTranslator.Tests
     [TestCase("De keeper wil hem nog houden, maar de voetbal hangt al in de touwen. hangen komen komt nemen ", "De keepâh wil 'm nog hâhwe, maah de foebal hank al in de tâhwûh. hange kaume komp neime ")]
     [TestCase("Ik heb een houten bek, heb je een fles olie? Heb je een step om te surfen op het wereldwijde web ", "Ik hep'n hâhte bek, hebbie un fles aulie? Hebbie un steppie om te surrefe op ut wereldwède wep ")]
     [TestCase("Kinderen zijn lastpakken, ik koop nooit geen postzegels van die pusbakken.", "Kindâhre zèn laspakke, ik kaup nauit gein poszeigels van die pusbakkûh.")]
-    [TestCase("bezoeken festivalstad achtergelaten doen hebben zondag avondje bieden uitzicht indeling.", "bezoeke festivalstad achtâhgelate doen hebbe zondag avondje biede ùitzich indeiling.")]
+    [TestCase("bezoeken festivalstad achtergelaten doen hebben zondag avondje bieden uitzicht indeling.", "bezoeke festivalstad achtâhgelate doen hebbe zondag avondsje biede ùitzich indeiling.")]
     [TestCase("De godsdienstige stadswacht stond bij de gebedsdienst als een scheidsrechter te huilen ", "De gosdienstige staswach stond bè de gebesdiens assun schèdsrechtâh te hùile ")]
     [TestCase("Het wordt almaar kouder, zei de strandpaviljoenhouder. De vermoeide ouder kreeg een schuit in z'n schouder ", "Ut wogt almaah kâhwâh, zè de stgandpavejoenhâhwâh. De vemoeide âhwâh kreig un schùit in ze schâhwâh ")]
     [TestCase("Kan het wat zachter, zei de strandwachter tegen de kreunende verkrachter ", "Ken ut wat zachtâh, zè de stgandwachtâh teige de kreunende vekrachtâh ")]
@@ -114,7 +114,7 @@ namespace HaagsTranslator.Tests
     [TestCase("dagvers gehele algoritme beginselen hen goedkeuring euro bijbehorende ontworpen stuks levendige Omdat nou", "dagvegs geheile algauritme beginsele hen goedkeuâhring euâhro bèbehoâhrende ontworrepe stuks leivendege Omdat nâh")]
     [TestCase("Kijkduin Zuiderstrand genieten periode bedenken hieronder routes stap je Iedere Oud", "Kèkdùin Zùidâhstgand geniete periaude bedenke hieâhondâh roetes stappie Iedere Âhd")]
     [TestCase("gokje Zo zeventig expo projectleider kopje koffie routes", "gokkie Zau zeiventag expau praujeklèijâh bakkie pleuâh roetes")]
-    [TestCase("zocht binckhorst to doelpunten toernooi Zoetermeer Natuurgras dreigend termijn worden. beraden", "zoch binkhogst toe doelpunte toeâhnaui Zoetâhmeâh Natuâhgras drègend termèn wogdûh. berade")]
+    [TestCase("zocht binckhorst to doelpunten toernooi Zoetermeer Natuurgras dreigend termijn worden. beraden mandje tipje sluier zover", "zoch binkhogst toe doelpunte toeâhnaui Zoetâhmeâh Natuâhgras drègend termèn wogdûh. berade mandsje tippie slùiâh zauveâh")]
 
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {

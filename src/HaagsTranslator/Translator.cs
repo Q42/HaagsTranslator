@@ -84,6 +84,7 @@ namespace HaagsTranslator
       new []{ "heeft", "hep"}, // 'heeft', moet voor 'heef'
       new []{ "(on|i)der(?!e)", "$1dâh" }, // 'onder', 'Zuiderpark', geen 'bijzondere'
       new []{ "(?<![ao])ndere", "ndâhre" }, // 'bijzondere', geen 'andere'
+      new []{ "uier\\b", "uiâh" }, // 'sluier', moet voor 'ui'
       new []{ "ui", "ùi"}, // moet voor 'ooi' zitte n
       new []{ "Ui", "Ùi" },
       new []{ "oort", "ogt"}, // 'soort', moet voor '-ort'
@@ -275,7 +276,7 @@ namespace HaagsTranslator
       new []{ "Het\\b", "Ut"},
       new []{ "(?<![eouù])i\\b", "ie" }, // 'januari'
       new []{ "ieri", "ieâhra"}, // 'plezierig'
-      new []{ "ier(?!(a|e|i|ony))", "ieâh" }, // 'bierfeest', 'hieronder', geen 'hieronymus', 'plezierig', 'dieren'
+      new []{ "(?<![uù])ier(?!(a|e|i|ony))", "ieâh" }, // 'bierfeest', 'hieronder', geen 'hieronymus', 'plezierig', 'dieren', 'sluier'
       new []{ "iero(?!e|o|nd)", "ierau" }, // 'hieronymus', geen 'hieronder'
       new []{ "ière", "ijerre"}, // 'barriere'
       new []{ "ibu", "ibe"}, // 'tribunaal'
@@ -310,7 +311,7 @@ namespace HaagsTranslator
       new []{ "jezelf", "je ège"}, // "jezelf"
       new []{ "(?<![oe])kje\\b", "kkie"}, // 'bakje', moet voor algemeen regel op 'je', TODO, 'bekje'
       new []{ "olg", "olleg"}, // 'volgens'
-      new []{ "o(k|p)je\\b", "o$1$1ie"}, // 'kopje', 'gokje'
+      new []{ "(i|o)(k|p)je\\b", "$1$2$2ie"}, // 'kopje', 'gokje', 'tipje' 
       new []{ "(?<![ deèijst])je\\b", "ie"}, // woorden eindigend op -je', zonder 'asje', 'rijtje', 'avondje', geen 'mejje' 'blèjje', 'skiën'
       new []{ "(K|k)an\\b", "$1en"}, // 'kan', geen 'kans', 'kaneel'
       new []{ "(K|k)unne", "$1enne"}, // 'kunnen', TODO, wisselen van u / e
@@ -372,7 +373,7 @@ namespace HaagsTranslator
       new []{ "orp", "orrep"}, // 'ontworpen'
       new []{ "\\borg", "oâhg"}, // 'orgineel'
       new []{ "Over(?![ei])", "Auvâh"}, // 'overgebleven', 'overnachten', geen 'overeenkomsten', 'overige'
-      new []{ "over(?![ei])", "auvâh"}, // 'overgebleven', geen 'overeenkomsten', 'overige'
+      new []{ "(?<![z])over(?![ei])", "auvâh"}, // 'overgebleven', geen 'overeenkomsten', 'overige', 'zover'
       new []{ "o(v|z)e", "au$1e"},
       new []{ "(?<![g])o(b|d|g|k|l|m|p|s|t|v)(i|e)", "au$1$2"}, // 'komen', 'grote', 'over', 'olie', 'notie', geen 'gokje'
       new []{ "O(b|d|g|k|l|m|p|s|t|v)(i|e)", "Au$1$2"}, // zelfde, maar dan met hoofdletter
@@ -382,6 +383,7 @@ namespace HaagsTranslator
       new []{ "(D|d)ert","$1eâht"}, // 'dertig'
       new []{ "der(?![eianrouèt])", "dâh"},// 'moderne'/'moderrene', geen 'dertig'
       new []{ "\\b(P|p|T|t)er\\b", "$1eâh" }, // 'per', 'ter'
+      new []{ "(Z|z)auver\\b", "$1auveâh" }, // 'zover'
       new []{ "(?<![ io])er\\b", "âh" }, // 'kanker', geen 'hoer', 'er', 'per', 'hier' , moet voor 'over' na o(v)(e)
       new []{ "(P|p)er(?!i)", "$1âh"}, // 'supermarkt', geen 'periode', moet na 'per'
       new []{ "(P| p)o(^st)" , "$1au$2"}, // 'poltici'
@@ -415,7 +417,7 @@ namespace HaagsTranslator
       new []{ "tep\\b", "teppie"}, // 'step'
       new []{ "té\\b", "tei"}, // 'satè'
       new []{ "tion", "sion"}, // 'station'
-      new []{ "tje\\b", "tsje"}, // 'biertje'
+      new []{ "(d|t)je\\b", "$1sje"}, // 'biertje', 'mandje'
       new []{ "\\b(T|t)o\\b", "$1oe"}, // to
       new []{ "(p|t)o\\b", "$1au"}, // 'expo', moet na 'au'/'ou'
       new []{ "toma", "tauma"}, // moet na 'au'/'ou', 'automatiek', geen 'tom'
