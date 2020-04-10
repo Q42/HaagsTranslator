@@ -153,10 +153,11 @@ namespace HaagsTranslator
       new []{ "cc", "ks"}, // 'accenten'
       new []{ "chique", "sjieke" },
       new []{"chure", "sjure" }, // 'brochure'
-      new []{ "ct", "kt"}, // 'geactualiseerde', 'directie'
-      new []{ "C(a|o)", "K$1" }, // 'Concerten', 'Cadeau'
-      new []{ "cor\\b", "koâh" }, // 'decor'
+      new []{ "c(a|o|t|r)", "k$1"}, // 'geactualiseerde', 'directie', 'crisis'
+      new []{ "C(a|o|t|r)", "K$1" }, // 'Concerten', 'Cadeau'
+      new []{ "(c|k)or\\b", "$1oâh" }, // 'decor'
       new []{ "(?<![.])c(a|o)", "k$1" }, // 'concerten', 'cadeau', 'collectie', geen '.com'
+      new []{ "\\bkoro", "kaurau"}, // 'corona'
       new []{ "cu", "ku" }, // 'culturele'
       new []{ "Cu", "Ku" }, // 'culturele'
       new []{ "(ch|c|k)t\\b", "$1"}, // woorden eindigend op 'cht', 'ct', 'kt', of met een 's' erachter ('geslachts')
@@ -191,7 +192,7 @@ namespace HaagsTranslator
       new []{ "(?<![eo])erd\\b", "egd"}, // 'werd', geen 'verkeerd', 'gefeliciteerd', 'beroerd
       new []{ "eerd", "eâhd"}, // 'verkeerd'
       new []{ "(?<![k])ee(d|f|g|k|l|m|n|p|s|t)", "ei$1"}, // 'bierfeest', 'kreeg', 'greep', geen 'keeper'
-      new []{ "(?<![èijhm])ds(?![eè])", "s" }, // moet na 'ee','godsdienstige', 'gebedsdienst', geen 'ahdste', 'beroemdste', 'eigentijds', 'weidsheid', 'reeds', 'strandseizoen'
+      new []{ "(?<![èijhm])ds(?![ceè])", "s" }, // moet na 'ee','godsdienstige', 'gebedsdienst', geen 'ahdste', 'boodschappen', 'beroemdste', 'eigentijds', 'weidsheid', 'reeds', 'strandseizoen'
       new []{ "(?<![e])ens\\b", "es"}, // 'ergens', geen 'weleens'
       new []{ "(D|d)ance", "$1ens" }, // moet na '-ens' 
       new []{ "(?<![ hi])eden\\b", "eije"}, // geen 'bieden'. 'bezienswaardigheden'
@@ -422,6 +423,7 @@ namespace HaagsTranslator
       new []{ "(p|t)o\\b", "$1au"}, // 'expo', moet na 'au'/'ou'
       new []{ "toma", "tauma"}, // moet na 'au'/'ou', 'automatiek', geen 'tom'
       new []{ "(T|t)ram", "$1rem"}, // 'tram'
+      new []{ "quaran", "karre" }, // 'quarantaine', moet voor 'ua'
       new []{ "ua", "uwa"}, // 'nuance', 'menstruatie'
       new []{ "(J|j)anu", "$1anne" }, // 'januari', moet na 'ua'
       new []{ "ùite\\b", "ùitûh" }, // 'buiten'
@@ -461,8 +463,14 @@ namespace HaagsTranslator
       new []{ "Nie-westegse", "Niet westagse" },
       new []{ "us sie", "us-sie" }, // 'must see'
       new []{ "\\bThe Hague\\b", "De Heek" }, // moet na 'ee -> ei'
-      new []{ "Crowne", "Kraun" },
+      new []{ "Krowne", "Kraun" },
       new []{ "social media", "sausjel miedieja" }, // moet na 'au'
+      new []{ "aine", "ène" }, // 'quarantaine'
+      new []{ "(?<![eèi])gel\\b", "sjel"}, // 'handgel', geen 'regel'
+      new []{ "down", "dâhn" }, // 'lockdown'
+      new []{ "lock", "lok"}, // 'lockdown'
+      new []{ "(?<![s])sis", "sus"}, // 'crisis', geen 'rassis'van 'racist'
+      new []{ "COVID", "KAUVID"}, // 'COVID-19'
 
       //quick fixups
       new [] { "stgong>", "strong>"}, //fixups for <strong tag>

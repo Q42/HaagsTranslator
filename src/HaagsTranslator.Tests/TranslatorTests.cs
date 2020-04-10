@@ -108,14 +108,14 @@ namespace HaagsTranslator.Tests
     [TestCase("stoere surfers populairste Geniet van de weidsheid dynamisch decor beroemde erwtensoep ", "stoere surrefâhs paupelèhste Geniet van de wèdshèd dinamies dekoâh beroemde erretesoep ")]
     [TestCase("Zinnenprikkelende producten verser dan vers kwalitatieve reeds overgebleven instaprondleiding, je zult je Beauty & the Beast", "Zinneprikkelende praudukte vegsâh dan vegs kwalitatieve reids auvâhgebleive instaprondlèding, je zal je ège Bjoetie & de Bies")]
     [TestCase("modeontwerper bezienswaardigheden relaxen markante bloederigste originele dichtbij spectaculaire stork vegetarisch Cuisine cuisine volgens", "maudeontwerrepâh bezienswaahdigheide rielekse magkante bloedâhragste orresjineile dichbè spektakelère storrek veigetaries Kwiesien kwiesien volleges")]
-    [TestCase("Tripadvisor skiën Overnachten SEA LIFE Europese Nachtje Bites Crowne .com instituut sterker", "Tripetfaaisoâh skieje Auvâhnachte SIELÈF Euraipeise Nachie Bèts Kraun .com instituut sterrekâh")]
+    [TestCase("Tripadvisor skiën Overnachten SEA LIFE Europese Nachtje Bites Crowne .com instituut sterker", "Tripetfaaisoâh skieje Auvâhnachte SIELÈF Euraipeise Nachie Bèts Kraun .kom instituut sterrekâh")]
     [TestCase("bospaddenstoelen saus uitwaaien roots bezoekerscentrum strandseizoen plezierig dertig beach verder parkeervergunning vertegenwoordiger tussenletter broer automatiek", "bospaddestoele sâhs ùitwaaie roets bezoekâhscentrum stgandsèzoen plezieâhrag deâhtag bietsj veâhdahs pagkeâhvegunning veteigewoâhdegâh tusselettâh broeâh âhtaumatiek")]
     [TestCase("cultuurschatten übergezellige dieren vooral teams theatervoorstellingen wandelen kenmerken karakteristieke kleding supermarktjes Eten koffietentjes Zeeheldenkwartier borrelen", "kultuâhschatte übâhgezellage diere voâhal tiems theijatâhvoâhstellinge wandele kenmerreke karaktâhristieke kleiding supâhmarrekkies Eite koffietentjes Zeiheldekwagtieâh borrele")]
     [TestCase("dagvers gehele algoritme beginselen hen goedkeuring euro bijbehorende ontworpen stuks levendige Omdat nou", "dagvegs geheile algauritme beginsele hen goedkeuâhring euâhro bèbehoâhrende ontworrepe stuks leivendege Omdat nâh")]
     [TestCase("Kijkduin Zuiderstrand genieten periode bedenken hieronder routes stap je Iedere Oud", "Kèkdùin Zùidâhstgand geniete periaude bedenke hieâhondâh roetes stappie Iedere Âhd")]
     [TestCase("gokje Zo zeventig expo projectleider kopje koffie routes", "gokkie Zau zeiventag expau praujeklèijâh bakkie pleuâh roetes")]
     [TestCase("zocht binckhorst to doelpunten toernooi Zoetermeer Natuurgras dreigend termijn worden. beraden mandje tipje sluier zover", "zoch binkhogst toe doelpunte toeâhnaui Zoetâhmeâh Natuâhgras drègend termèn wogdûh. berade mandsje tippie slùiâh zauveâh")]
-
+    [TestCase("quarantaine boodschappenmandje handgel lockdown corona crisis COVID-19", "karretène baudschappemandsje handsjel lokdâhn kaurauna krisus KAUVID-19")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
