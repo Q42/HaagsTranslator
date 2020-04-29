@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaagsTranslator", "src\Haag
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaagsTranslator.Tests", "src\HaagsTranslator.Tests\HaagsTranslator.Tests.csproj", "{EC75FA7E-FB7E-4CDE-9B32-9DEF582902D0}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget stuff", "nuget stuff", "{1BD6CA21-7B8A-4438-AA12-B3866AEBCBA5}"
-	ProjectSection(SolutionItems) = preProject
-		src\HaagsTranslator\HaagsTranslator.nuspec = src\HaagsTranslator\HaagsTranslator.nuspec
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitsTesterWeb", "src\HitsTesterWeb\HitsTesterWeb.csproj", "{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}"
 EndProject
 Global

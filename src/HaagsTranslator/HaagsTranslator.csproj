@@ -7,15 +7,19 @@
     <Version>$(DOTNET_BUILD_VERSION)</Version>
     <AssemblyName>HaagsTranslator</AssemblyName>
     <PackageId>HaagsTranslator</PackageId>
-    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
-    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
-    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
-    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
-    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
-    <GenerateAssemblyCopyrightAttribute>false</GenerateAssemblyCopyrightAttribute>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
+    <Title>Dutch to Haags Translator</Title>
+    <Description>Library for translating nl-NL to nl-DH largely based on the rules as explained in 'Ut NIEUWE Groen-Geile Boekie'</Description>
+    <Copyright>Copyright 2020</Copyright>
+    <PackageProjectUrl>https://github.com/Q42/HaagsTranslator</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/Q42/HaagsTranslator/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageIconUrl>https://raw.githubusercontent.com/Q42/HaagsTranslator/master/nuget-package-icon.png</PackageIconUrl>
+    <RepositoryUrl>https://github.com/Q42/HaagsTranslator</RepositoryUrl>
+    <PackageTags>Haags</PackageTags>
+    <Authors>Mark van Straten, Roelf-Jan de Vries</Authors>
   </PropertyGroup>
 
   <ItemGroup>
