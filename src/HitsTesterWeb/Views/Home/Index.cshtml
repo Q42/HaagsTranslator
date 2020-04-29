@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model HitsTesterWeb.ViewModels.TestPageViewModel
+
+<div class="text-center">
+    <h1 class="display-4">Haags Hitstester</h1>
+
+    <form asp-controller="Home" asp-action="IndexPost">
+        <label for="Text">Tekst</label>
+        <input type="text" name="Text" value="@Model?.Text" />
+        <br />
+        <input type="submit" />
+    </form>
+    
+    @if (Model != null)
+    {
+        <p>@Model.TranslatedText</p>
+           
+                                @foreach (var hit in Model.Hits)
+                                {
+                                    <p>@hit</p>
+                                }
+    }
+ </div>

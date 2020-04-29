@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget stuff", "nuget stuff"
 		src\HaagsTranslator\HaagsTranslator.nuspec = src\HaagsTranslator\HaagsTranslator.nuspec
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitsTester", "src\HitsTester\HitsTester.csproj", "{942C6A60-2EF2-405A-AEFB-200568009C3B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitsTesterWeb", "src\HitsTesterWeb\HitsTesterWeb.csproj", "{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,10 +28,10 @@ Global
 		{EC75FA7E-FB7E-4CDE-9B32-9DEF582902D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC75FA7E-FB7E-4CDE-9B32-9DEF582902D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC75FA7E-FB7E-4CDE-9B32-9DEF582902D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{942C6A60-2EF2-405A-AEFB-200568009C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{942C6A60-2EF2-405A-AEFB-200568009C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{942C6A60-2EF2-405A-AEFB-200568009C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{942C6A60-2EF2-405A-AEFB-200568009C3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
