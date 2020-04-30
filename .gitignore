@@ -6,3 +6,5 @@ obj
 _NCrunch_HaagsTranslator
 packages/*
 *.nupkg
+.idea
+src/HitsTesterWeb/wwwroot
