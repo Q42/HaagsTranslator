@@ -43,7 +43,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Iemand dood maken met een blije mus. Ik word met scheve schaatsen aangekeken.", "Iemand daud make met un blèje mus. Ik wogt met scheive schaatse angekeikûh.")]
     [TestCase("Je bent een mongool, een halve zool, een mooie grote klootviool", "Je ben un megaul, un halleve zaul, un mauie graute klautviaul")]
     [TestCase("Je moet geen oude schoenen weggooien voordat je een nieuwe doos hebt.", "Je mot gein âhwe schoene weggauie voâhdat je un nieuwe daus hep.")]
-    [TestCase("De wereld is een pijp kaneel, je zuigt er aan met pijn in je keel.", "De wereld issun pèp kaneil, je zùig d'ran met pèn in je keil.")]
+    [TestCase("De wereld is een pijp kaneel, je zuigt er aan met pijn in je keel.", "De wereld issun pèp kaneil, je zùig d'ran met pèn ijje keil.")]
     [TestCase("Ik werd urenlang ondergevraagd.", "Ik wegd urelang ondâhgevraag.")]
     [TestCase("Die heeft spullen, die zijn al heel lang oud, zeg maar antiek.", "Die hep spulle, die zèn al heil lang âhd, zeg maah antiek.")]
     [TestCase("koets, prostituee, klokkenluider, tribunaal, onsympatieke, verlaten, politici, bierfeest ", "patsâhbak, prostitewei, klokkelùiâh, tribenaal, onsympetieke, velate, pauliticie, bieâhfeis ")]
@@ -93,7 +93,7 @@ namespace HaagsTranslator.Tests
     [TestCase("huisjes food fastfood 't tegenover station stijl ", "hùissies foet fastfoet ut teigenauvâh stasion stèl ")]
     [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is De Heek jeug strand strandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
     [TestCase("Restaurant shopping theater Jeugdprijs Last-minute ticketshop Normale prijs Overige Cabaret", "Resterant sjopping theijatâh Jeugprès Lasminnut tikketsjop Noâhmale près Auverige Kabberet")]
-    [TestCase("Circus Culinair Tentoonstelling Folklore Jazz jazz Moderne dans Hedendaagse Film Musical", "Cirrekus Kulinèâh Tetaunstelling Folklore Djez djez Maudèrrene dans Heidedaagse Fillem Musikol")]
+    [TestCase("Circus Culinair Tentoonstelling Folklore Jazz jazz Moderne dans Hedendaagse Film Musical", "Cirrekus Kulinèâh Tetaunstelling Folklore Djes djes Maudèrrene dans Heidedaagse Fillem Musikol")]
     [TestCase("Niet-westerse dans Toneel Poppentheater lezing Show beurs workshop events Locaties", "Niet westagse dans Tauneil Poppetheijatâh leizing Sjow beuâhs wurreksjop ievents Laukasies")]
     [TestCase("Strand & Buiten Concerten Shoppen Excursies Dit weekend Vandaag Advertentie Reserveer nu", "Strand & Bùitûh Konsegte Sjoppûh Ekskugsies Dit wiekend Vedaag Advâhtensie Reisâhveâh nâh")]
     [TestCase("Data & tickets Tentoonstellingen Extra informatie must see Privacy policy", "Data & tikkets Tetaunstellinge Ekstra infoâhmasie mus-sie Praaivesie pollesie")]
@@ -115,8 +115,8 @@ namespace HaagsTranslator.Tests
     [TestCase("Kijkduin Zuiderstrand genieten periode bedenken hieronder routes stap je Iedere Oud", "Kèkdùin Zùidâhstrand geniete periaude bedenke hieâhondâh roetes stappie Iedere Âhd")]
     [TestCase("gokje Zo zeventig expo projectleider kopje koffie routes", "gokkie Zau zeiventag expau praujeklèijâh bakkie pleuâh roetes")]
     [TestCase("zocht binckhorst to doelpunten toernooi Zoetermeer Natuurgras dreigend termijn worden. beraden mandje tipje sluier zover", "zoch binkhogst toe doelpunte toeâhnaui Zoetâhmeâh Natuâhgras drègend termèn wogdûh. berade mandsje tippie slùiâh zauveâh")]
-    [TestCase("quarantaine boodschappenmandje handgel lockdown corona crisis COVID-19", "karretène baudschappemandsje handsjel lokdâhn kaurauna krisus KAUVID-19")]
-    [TestCase("hardop hard venlo Venlo zorgt legt Nijhuis derde keeper scherm wedstrijdverslag humor straat", "hagtop hagt venlau Venlau zorrag leg Nèhùis derde kiepâh scherrum wedstrèdveslag humoâh straat")]
+    [TestCase("quarantaine boodschappenmandje handgel lockdown corona crisis COVID-19", "karretène baudschappemandsje handsjel lokdâhn kerauna krisus KAUVID-19")]
+    [TestCase("hardop hard venlo Venlo zorgt legt Nijhuis derde keeper scherm wedstrijdverslag humor straat pingel zó debuut debuteren kathedraal hands in je mondkapje generatie rede retour vijftigduizend", "hagtop hagt venlau Venlau zorrag leg Nèhùis derde kiepâh scherrum wedstrèdveslag humoâh straat pingol zau debuut deibetere kattedraal hens ijje bekbedekkâh geinerasie reide retoeâh vèftagdùizend")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
