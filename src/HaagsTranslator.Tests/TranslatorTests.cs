@@ -54,7 +54,7 @@ namespace HaagsTranslator.Tests
     [TestCase("Van die hete saté zat ik een uur of twee met m'n reet op de plee aan de diaree ", "Van die heite satei zattik un uâh of twei met me reit op de plei an de diarei ")]// met m'n niet vertaald
     [TestCase("Menstruatie is een bloederige situatie, net als fluctuatie van de ", "Menstruwasie issun bloedâhrige sitewasie, net as fluktewasie van de ")]
     [TestCase("De vla lag in de la van ma en zij lag op d'r pa, die dat niet echt naar of raar vond, medeklinkers ", "De vla lag in de la van ma en zè lag op d'r pa, die dat nie ech naah of raah vond, meideklinkâhs ")]
-    [TestCase("Ruud zei resoluut ik huur acuut een wijf a la minuut ", "Ruud zè reisoluut ik huâh akuut un wèf a la minuut ")]
+    [TestCase("Ruud zei resoluut ik huur acuut een wijf a la minuut ", "Ruud zè reisauluut ik huâh akuut un wèf a la minuut ")]
     [TestCase("Is dat je haar of heb je jongen gekregen Maar troost jezelf op een ooievaar groeit helemaal geen haar, dat is raar maar wel waar en zo kennen we er nog wel een paar ", "Is dat je haah of hebbie jonge gekreige Maah traus je ège op un auievaah groeit heilemaal gein haah, da's raah maah wel waah en zau kenne we d'r nog wel un paah ")]
     [TestCase("Die hoer is te duur, dan worden m'n druiven maar zuur ", "Die hoeâh is te duâh, dan wogde me drùive maah zuâh ")]
     [TestCase("Mijn hart smacht met alle macht naar een neut in de nacht. Een racist krijgt een vuist voor z'n puist en hij denkt het wordt nou wel erg zwart ", "Mèn hagt smach met alle mach naah un neut in de nach. Un rassis krèg un vùis voâh ze pùis en hè denk ut wogt nâh wel errag zwagt ")]
@@ -118,6 +118,7 @@ namespace HaagsTranslator.Tests
     [TestCase("quarantaine boodschappenmandje handgel lockdown corona crisis COVID-19", "karretène baudschappemandsje handsjel lokdâhn kerauna krisus KAUVID-19")]
     [TestCase("hardop hard venlo Venlo zorgt legt Nijhuis derde keeper scherm wedstrijdverslag humor straat pingel zó debuut debuteren kathedraal hands in je mondkapje generatie rede retour vijftigduizend", "hagtop hagt venlau Venlau zorrag leg Nèhùis derde kiepâh scherrum wedstrèdveslag humoâh straat pingol zau debuut deibetere kattedraal hens ijje bekbedekkâh geinerasie reide retoeâh vèftagdùizend")]
     [TestCase("beperkt beperken derhalve viert beseffen negatief getekend viering machine organisatie benen scherp foto vogel financiële financieel elektronische aansturing impact operaties Bernhard initiatief traditioneel gemeenteraad", "beperrek beperreke derhalleve vieâht beseffe neigetief geteikend vieâhring masjine oâhganisasie beine scherrep fautau vaugel finansjeile finansjeil elektrauniese ansturing impek auperasies Berrenhagt inisiatief tradisiauneil gemeinteraad")]
+    [TestCase("hoofdtrainer hersteltraining verfdoos vergelijking rustsignaal leverde hierna absolute", "hauftreinâh heâhsteltreining verrefdaus vegelijking russinjaal leivede hieâhna absaulute")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
