@@ -221,7 +221,7 @@ namespace HaagsTranslator
       new []{ "oeter", "oetâh" }, // 'Zoetermeer', moet voor 'kermis'
       new []{ "erm\\b", "errum"}, // 'scherm', moet voor 'kermis'
       new []{ "(?<![ieoptvV])er(m|n)", "erre$1"}, // kermis', geen 'vermeer', 'vermoeide', 'toernooi', 'externe', 'supermarkt', termijn, 'hierna'
-      new []{ "(?<![etv])(e|E)rg(?!ez)", "$1rreg"}, // 'kermis', 'ergens', geen 'achtergelaten', 'neergelegd', 'overgebleven', 'ubergezellige'
+      new []{ "(?<![ektv])(e|E)rg(?!ez)", "$1rreg"}, // 'kermis', 'ergens', geen 'achtergelaten', 'neergelegd', 'overgebleven', 'ubergezellige', 'bekergoal'
       new []{ "ber(?![eoiuaâè])", "bâh"}, // 'ubergezellige', moet na '-erg', geen 'beraden'
       new []{ "(P|p)ers", "$1egs"}, // 'pers'
       new []{ "(?<![e])(t|V|v)ers(?![clt])", "$1egs"}, // 'vers', 'personeel', 'versie', 'diverse', geen 'gevers', 'verscheen', 'eerste', 
