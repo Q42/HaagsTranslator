@@ -119,6 +119,7 @@ namespace HaagsTranslator.Tests
     [TestCase("hardop hard venlo Venlo zorgt legt Nijhuis derde keeper scherm wedstrijdverslag humor straat pingel zó debuut debuteren kathedraal hands in je mondkapje generatie rede retour vijftigduizend", "hagtop hagt venlau Venlau zorrag leg Nèhùis derde kiepâh scherrum wedstrèdveslag humoâh straat pingol zau debuut deibetere kattedraal hens ijje bekbedekkâh geinerasie reide retoeâh vèftagdùizend")]
     [TestCase("beperkt beperken derhalve viert beseffen negatief getekend viering machine organisatie benen scherp foto vogel financiële financieel elektronische aansturing impact operaties Bernhard initiatief traditioneel gemeenteraad", "beperrek beperreke derhalleve vieâht beseffe neigetief geteikend vieâhring masjine oâhganisasie beine scherrep fautau vaugel finansjeile finansjeil elektrauniese ansturing impek auperasies Berrenhagt inisiatief tradisiauneil gemeinteraad")]
     [TestCase("hoofdtrainer hersteltraining verfdoos vergelijking rustsignaal leverde hierna absolute", "hauftreinâh heâhsteltreining verrefdaus vegelijking russinjaal leivede hieâhna absaulute")]
+    [TestCase("Eind personeel pers gepersonaliseerde rustig schuren stapje IJsselmeer anderhalf anderhalve vergezeld algemeen bekergoal bekerheld", "Ènd pegsauneil pegs gepegsaunaliseâhde rustag schure stappie Èsselmeâh andâhhalluf andâhhalleve vegezeld algemein beikâhgoal beikâhheld")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
