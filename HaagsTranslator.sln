@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaagsTranslator", "src\HaagsTranslator\HaagsTranslator.csproj", "{EAFF48B1-D748-422B-A423-2BAAD7A41E2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaagsTranslator", "src\HaagsTranslator\HaagsTranslator.csproj", "{EAFF48B1-D748-422B-A423-2BAAD7A41E2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaagsTranslator.Tests", "src\HaagsTranslator.Tests\HaagsTranslator.Tests.csproj", "{EC75FA7E-FB7E-4CDE-9B32-9DEF582902D0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaagsTranslator.Tests", "src\HaagsTranslator.Tests\HaagsTranslator.Tests.csproj", "{EC75FA7E-FB7E-4CDE-9B32-9DEF582902D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitsTesterWeb", "src\HitsTesterWeb\HitsTesterWeb.csproj", "{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HitsTesterWeb", "src\HitsTesterWeb\HitsTesterWeb.csproj", "{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +26,11 @@ Global
 		{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ABF0C48E-9222-46F6-B4E8-8B82900D1F1B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {90710E26-7D49-44DB-BB7F-7931B6819408}
 	EndGlobalSection
 EndGlobal
