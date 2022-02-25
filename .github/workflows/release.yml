@@ -49,7 +49,7 @@ jobs:
       run: dotnet pack src/HaagsTranslator/HaagsTranslator.csproj -c Release --no-restore --no-build -p:PackageVersion=2.1.$GITHUB_RUN_ID
     
     - name: Push to NuGet
-      run: dotnet nuget push *.nupkg --skip-duplicate -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}}
+      run: dotnet nuget push **\*.nupkg --skip-duplicate -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}}
     
 
 
