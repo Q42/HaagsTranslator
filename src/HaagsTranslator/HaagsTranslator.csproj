@@ -7,7 +7,7 @@
     <Version>$(DOTNET_BUILD_VERSION)</Version>
     <AssemblyName>HaagsTranslator</AssemblyName>
     <PackageId>HaagsTranslator</PackageId>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
     <IncludeSource>True</IncludeSource>
     <IncludeSymbols>True</IncludeSymbols>
