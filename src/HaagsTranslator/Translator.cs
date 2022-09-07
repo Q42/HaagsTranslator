@@ -18,6 +18,7 @@ namespace HaagsTranslator
       new [] { "eider", "èijâh" }, // 'projectleider'
       new []{ "(?<![o])ei", "è"}, // moet voor 'scheveningen' en 'eithoeke', geen 'groeit'
       new []{ "Ei", "È"}, // 'Eind'
+      new []{ "(B|b)roodje bal", "$1eschùitstùitâh"},
       new []{ "koets", "patsâhbak"},
       new []{ "kopje koffie", "bakkie pleuâh" },
       new []{ "Kopje koffie", "Bakkie pleuâh" },
@@ -92,7 +93,8 @@ namespace HaagsTranslator
       new []{ "ui", "ùi"}, // moet voor 'ooi' zitte n
       new []{ "Ui", "Ùi" },
       new []{ "oort", "ogt"}, // 'soort', moet voor '-ort'
-      new []{ "(?<![ieo])ert\\b", "egt" }, // 'gert', geen 'viert'
+      new []{ "(?<![ieopf])ert\\b", "egt" }, // 'gert', geen 'viert', 'expert'
+      new []{ "pert\\b", "peâh" }, // 'expert'
       new []{ "\\b(V|v)ert", "$1et"}, // 'vertegenwoordiger', moet voor '-ert'
       new []{ "(?<![eo])erte", "egte" }, // 'concerten'
       new []{ "(?<![eo])(a|o)r(|s)t(?!j)", "$1g$2t" }, // barst, martin etc., geen 'eerste', 'biertje', 'sport', 'voorstellingen'
@@ -101,11 +103,11 @@ namespace HaagsTranslator
       new []{ "\\b(A|a)an", "$1n" }, // 'aan', 'aanrennen'
       new []{ "\\b(G|g)aan\\b", "$1an" }, // 'gaan'
       new []{ "(H|h)oud\\b", "$1ou"}, // 'houd', moet voor 'oud'
+      new []{ "(B|b|R|r)ou(l|t)", "$1oe$2"}, // 'boulevard','routes'
       new []{ "(au|ou)w(?!e)", "$1"}, // 'vrouw', ''flauw', maar zonder 'blauwe'
       new []{ "oude", "ouwe"}, // 'goude'
       new []{ "\\b(T|t)our\\b", "$1oeâh"},
       new []{ "diner\\b", "dinei"},
-      new []{ "(B|b|R|r)ou(l|t)", "$1oe$2"}, // 'boulevard','routes'
       new []{ "o(e|u)r\\b", "oeâh"}, // 'broer', 'retour', moet voor 'au|ou'
       new []{ "oer(?![aieou])", "oeâh"}, // 'beroerd', 'hoer', geen 'toerist', 'stoere, moet voor 'au|ou'
       new []{ "(?<![e])(au|ou)(?![v])", "âh" }, // 'oud', geen 'souvenirs', 'cadeau', 'bureau', 'routes'
@@ -261,7 +263,8 @@ namespace HaagsTranslator
       new []{ "\\b(K|k)en\\b", "$1an"}, // moet voor -en
       new []{ "(a|o)ien\\b", "$1ie"}, // 'uitwaaien', geen 'zien'
       new []{ "(?<![ ieo])en([.?!])", "ûh$1"}, // einde van de zin, haal ' en ', 'doen', 'zien' en 'heen'  eruit
-      new []{ "(?<![ bieoh])en\\b", "e"}, // haal '-en' eruit, geen 'verscheen', 'tien', 'indien', 'ben', 'doen', 'hen'
+      new []{ "(?<![ bieohr])en\\b", "e"}, // haal '-en' eruit, geen 'verscheen', 'tien', 'indien', 'ben', 'doen', 'hen'
+      new []{ "(?<![r])ren\\b", "re"}, // oren, geen 'kerren'
       new []{ "bben\\b", "bbe"}, // 'hebben'
       new []{ "oien\\b", "oie"}, // 'weggooien'
       new []{ "enso", "eso" }, // 'erwtensoep'
@@ -379,7 +382,7 @@ namespace HaagsTranslator
       new []{ "ord(e|û)", "ogd$1"}, // 'worden'
       new []{ "(N|n)(|o)od", "$1aud"}, // 'noodzakelijk'
       new []{ "nirs\\b", "nieâhs" }, // 'souvenirs'
-      new []{ "l(f|k|m|p)(?![aeu])", "lle$1"}, // 'volkslied', 'behulp', geen 'elkaar', 'doelpunten', 'IJsselmeer'
+      new []{ "l(f|k|m|p)(?![aeou])", "lle$1"}, // 'volkslied', 'behulp', geen 'elkaar', 'doelpunten', 'IJsselmeer', 'vuilcontainer'
       new []{ "olk", "ollek"}, // 'volkslied'
       new []{ "(F|f)olleklore", "$1olklore" },
       new []{ "o(c|k)a", "auka" }, // 'locaties'
@@ -405,7 +408,7 @@ namespace HaagsTranslator
       new []{ "(Z|z)auver\\b", "$1auveâh" }, // 'zover'
       new []{ "(?<![ io])er\\b", "âh" }, // 'kanker', geen 'hoer', 'er', 'per', 'hier' , moet voor 'over' na o(v)(e)
       new []{ "eiker(g|h)", "eikâh$1" }, // 'bekergoal', 'bekerheld'
-      new []{ "(P|p)er(?![aeirs])", "$1âh"}, // 'supermarkt', geen 'periode', 'pers, 'beperkt/beperrekt', 'operaties', 'beperken/beperreken' moet na 'per'
+      new []{ "(P|p)er(?![aeirst])", "$1âh"}, // 'supermarkt', geen 'periode', 'pers, 'expert', 'beperkt/beperrekt', 'operaties', 'beperken/beperreken' moet na 'per'
       new []{ "(P| p)o(^st)" , "$1au$2"}, // 'poltici'
       new []{ "p ik\\b", "ppik"}, // 'hep ik'
       new []{ "ppen", "ppe" }, // 'poppentheater'
@@ -487,6 +490,7 @@ namespace HaagsTranslator
       new []{ "social media", "sausjel miedieja" }, // moet na 'au'
       new []{ "sol", "saul" }, // 'resoluut'
       new []{ "aine", "ène" }, // 'quarantaine'
+      new []{ "tain", "tein" }, // 'vuilcontainer'
       new []{ "(?<![eèuoin])gel\\b", "sjel"}, // 'handgel', geen 'regel', 'pingel', 'vogel'
       new []{ "ingel\\b", "ingol"}, // 'pingel'
       new []{ "ign", "inj"}, // 'rustsignaal'

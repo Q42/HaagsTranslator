@@ -120,6 +120,7 @@ namespace HaagsTranslator.Tests
     [TestCase("beperkt beperken derhalve viert beseffen negatief getekend viering machine organisatie benen scherp foto vogel financiële financieel elektronische aansturing impact operaties Bernhard initiatief traditioneel gemeenteraad", "beperrek beperreke derhalleve vieâht beseffe neigetief geteikend vieâhring masjine oâhganisasie beine scherrep fautau vaugel finansjeile finansjeil elektrauniese ansturing impek auperasies Berrenhagt inisiatief tradisiauneil gemeinteraad")]
     [TestCase("hoofdtrainer hersteltraining verfdoos vergelijking rustsignaal leverde hierna absolute", "hauftreinâh heâhsteltreining verrefdaus vegelijking russinjaal leivede hieâhna absaulute")]
     [TestCase("Eind personeel pers gepersonaliseerde rustig schuren stapje IJsselmeer anderhalf anderhalve vergezeld algemeen bekergoal bekerheld", "Ènd pegsauneil pegs gepegsaunaliseâhde rustag schure stappie Èsselmeâh andâhhalluf andâhhalleve vegezeld algemein beikâhgoal beikâhheld")]
+    [TestCase("bouwt kern Broodje bal expert vuilcontainer", "bâht kerren Beschùitstùitâh expeâh vùilkonteinâh")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
