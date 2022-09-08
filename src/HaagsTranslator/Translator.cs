@@ -176,10 +176,10 @@ namespace HaagsTranslator
       new []{ "(d|D)at er", "$1attâh"}, // 'dat er'
       new []{ "(d|D)at is ", "$1a's "}, // 'dat is'
       new []{ "denst", "dest" },
-      new []{ "derb", "dâhb"}, 
+      new []{ "derb", "dâhb"},
       new []{ "nderh", "ndâhh"}, // 'anderhalf', geen 'derhalve'
       new []{ "derd\\b", "dâhd"}, // 'veranderd'
-      new []{ "(?i)(d)eze(?![l])", "$1eize"},
+      new []{ "(D|d)eze(?![l])", "$1eize"}, // 'deze', geen 'dezelfde'
       new []{ "dt\\b", "d"}, // 'dt' op het einde van een woord
       new []{"\\b(B|b)ied\\b", "$1iedt" }, // uitzondering, moet na '-dt'
       new []{ "(D|d)y", "$1i"}, // dynamiek
