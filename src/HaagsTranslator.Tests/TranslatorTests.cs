@@ -86,10 +86,10 @@ namespace HaagsTranslator.Tests
     [TestCase("Zorg dat je er op tijd bent, dan kun je er nog bij", "Zorrag dat je d'r op tèd ben, dan kejjedâh nog bè")]
     [TestCase("Een biertje is net zo gezond als een bruine boterham, alleen veel slapper", "Un bieâhtsje is net zau gezond assun brùine bautâhham, enkelt veil slappâh")]
     [TestCase("Ik heb alleen vijf jaar zandbak, nou en?", "Ik hep enkelt vèf jaah zandbak, nâh en?")]
-    [TestCase("vliegtuig Waar literatuur orgineel kinderboekenmuseum oudste ontmoet enkele ", "vliegtùig Waah literatuâh oâhgineil kindâhboekemuseum âhdste ontmoet enkele ")]
+    [TestCase("vliegtuig Waar literatuur orgineel kinderboekenmuseum oudste ontmoet enkele ", "vliegtùig Waah literatuâh oâhgineil kindâhboekemuseijum âhdste ontmoet enkele ")]
     [TestCase("ver vers tour kopje tradities kidstips behulp sport deze ", "veâh vegs toeâh koppie tradisies kindâhtips behullep spogt deize ")]
     [TestCase("festivals hofvijver greep Vermeers bekende beker voorhoofd toerist audiovisueel verkeersaderlating reserveren ", "festivals hofvèvâh greip Vemeâhs bekende beikâh voâhhauf toeris âhdiauviseweil vekeâhsadâhlating reisâhvere ")]
-    [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haailaaits menu sie zorrage omgeiving boelevâh ideiaal platfoâhm vorremgeiving eksterne deipau warrem ")]
+    [TestCase("highlights menu see zorgen omgeving boulevard ideaal platform vormgeving externe depot warm ", "haailaaits menu sie zorrage omgeiving boelevâh ideiaal platforrum vorremgeiving eksterne deipau warrem ")]
     [TestCase("huisjes food fastfood 't tegenover station stijl ", "hùissies foet fastfoet ut teigenauvâh stasion stèl ")]
     [TestCase("This is The Hague jeugd strand strandpaviljoen lunchroom Uitgaanscentrum Outdoor outdoor", "Dis is De Heek jeug strand strandpavejoen lunsroem Ùitgaanscentrum Âhtdoâh âhtdoâh")]
     [TestCase("Restaurant shopping theater Jeugdprijs Last-minute ticketshop Normale prijs Overige Cabaret", "Resterant sjopping theijatâh Jeugprès Lasminnut tikketsjop Noâhmale près Auverige Kabberet")]
@@ -101,7 +101,7 @@ namespace HaagsTranslator.Tests
     [TestCase("souvenirs cadeau bureau vervoersbewijzen bibliotheek touchscreen actuele Palace medewerkers werkdagen ", "soevenieâhs kado buro vevoeâhsbewèze biebeleteik tatskrien akteweile Pellus meidewerrekâhs werrekdage ")]
     [TestCase("Gevers gevestigd kunt Herenstraat aankomsthal airport Airport vele gele waarin speciale begeleiding Telefonische ", "Geivâhs gevestag ken Herestraat ankompshal èâhpogt Èâhpogt veile geile waarin speiciale begelèding Telefauniese ")]
     [TestCase("voorjaarsvakantie Nederland Favorite koninklijke event evenementen internationale januari februari ", "voâhjaahsvekansie Neidâhland Favverietûh kauninklijke ievent eivenemente intâhnasjaunale jannewarie feibruwarie ")]
-    [TestCase("movies that literatuurfestival favoriete cultureel Ook gemeentemuseum collectie Hieronymus Dance beroemdste winkelen ", "moevies det literatuâhfestival favverietûh kultereil Auk gemeintemuseum kolleksie Hieraunimus Dens beroempste winkele ")]
+    [TestCase("movies that literatuurfestival favoriete cultureel Ook gemeentemuseum collectie Hieronymus Dance beroemdste winkelen ", "moevies det literatuâhfestival favverietûh kultereil Auk gemeintemuseijum kolleksie Hieraunimus Dens beroempste winkele ")]
     [TestCase("flagshipstores Bijenkorf talloze vintage Shop till you drop marktstraat yoga Bergen chique Corona eigentijds ", "fleksjipstoâhs Bèjekorref tallauze vintuts Sjop til joe drop marrekstraat yauga Berrege sjieke Korauna ègetèds ")]
     [TestCase("plekjes watertanden bijzondere Facebook social media jenever- en likeurdistilleerderij ", "plekkies watâhtande biezondere Feisboek sausjel miedieja jeneivâh- en likeuâhdistilleâhderè ")]
     [TestCase("touch vakantiegevoel hofjes dagje ", "tats vekansiegevoel hoffies daggie ")]
@@ -120,7 +120,8 @@ namespace HaagsTranslator.Tests
     [TestCase("beperkt beperken derhalve viert beseffen negatief getekend viering machine organisatie benen scherp foto vogel financiële financieel elektronische aansturing impact operaties Bernhard initiatief traditioneel gemeenteraad", "beperrek beperreke derhalleve vieâht beseffe neigetief geteikend vieâhring masjine oâhganisasie beine scherrep fautau vaugel finansjeile finansjeil elektrauniese ansturing impek auperasies Berrenhagt inisiatief tradisiauneil gemeinteraad")]
     [TestCase("hoofdtrainer hersteltraining verfdoos vergelijking rustsignaal leverde hierna absolute", "hauftreinâh heâhsteltreining verrefdaus vegelijking russinjaal leivede hieâhna absaulute")]
     [TestCase("Eind personeel pers gepersonaliseerde rustig schuren stapje IJsselmeer anderhalf anderhalve vergezeld algemeen bekergoal bekerheld", "Ènd pegsauneil pegs gepegsaunaliseâhde rustag schure stappie Èsselmeâh andâhhalluf andâhhalleve vegezeld algemein beikâhgoal beikâhheld")]
-    [TestCase("bouwt kern Broodje bal expert vuilcontainer", "bâht kerren Beschùitstùitâh expeâh vùilkonteinâh")]
+    [TestCase("bouwt kern Broodje bal expert vuilcontainer energie uitgeverij geselecteerd positie boorplatform biersoort elke tegelijkertijd persbijeenkomst der", "bâht kerren Beschùitstùitâh expeâh vùilkonteinâh einegie ùitgeiverè geseilekteâhd pausisie boâhplatforrum bieâhsoâht elleke tegelijkertèd pegsbèeinkomps deâh")]
+    [TestCase("museum branch", "museijum bransj")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
