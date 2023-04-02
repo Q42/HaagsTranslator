@@ -242,7 +242,7 @@ namespace HaagsTranslator
       new []{ "(?<![eIio])eder", "eider" }, // 'Nederland', geen 'iedereen', 'bloederige', 'Iedere'
       new []{ "(?<![eiop])ers\\b", "âhs"}, // 'klinkers', geen 'pers', 'personeel'
       new []{ "(H|h)er(?![erp])", "$1eâh" }, // 'herzien', 'herstel', geen 'herenstraat', 'scherm', 'scherp', moet voor 'ers'
-      new []{ "(?<![v])ers(c|t)", "âhs$1"}, // 'eerste', 'bezoekerscentrum', geen 'verschaffen'
+      new []{ "(?<![vV])ers(c|t)", "âhs$1"}, // 'eerste', 'bezoekerscentrum', geen 'verschaffen', 'Verstappen'
       new []{ "erwt", "erret" }, // 'erwtensoep'
       new []{ "(?<![eo])eci", "eici" }, // 'speciaal'
       new []{ "(?<![Bbg])ese", "eise" }, // 'reserveer', geen 'beseffen', 'geselecteerd'
@@ -267,7 +267,7 @@ namespace HaagsTranslator
       new []{ "(B|b)eke(?![n])", "$1eike"}, // 'beker', geen 'bekende'
       new []{ "(B|b)ene(?![v])", "$1eine" }, // 'benen', geen 'beneveld'
       new []{ "(?<![ioBbg])eke", "eike"}, // geen 'aangekeken' op 'gek', wel 'kek'
-      new []{ "(?<![r])rege", "reige" }, // 'gekregen', geen 'berrege'
+      new []{ "(?<![r])rege(?![r])", "reige" }, // 'gekregen', geen 'berrege', 'regeren'
       new []{ "(T|t)ege(?![l])", "$1eige" }, // 'tegen', geen 'tegelijkertijd'
       new []{ "(?<![bBIiort])e(g|v|p)e(l|n|m| )", "ei$1e$2" }, // aangegeven, 'leverde', geen 'geleden', 'uitspreken', 'geknepen', 'goeveneur', 'verdiepen', 'postzegels', 'begeleiding', 'berregen', 'tegelijkertijd'
       new []{ "dige", "dege"}, // 'vertegenwoordiger', moet na 'ege'
@@ -297,7 +297,7 @@ namespace HaagsTranslator
       new []{ "fd(?![eo])", "f"}, // 'hoofd', 'hoofdtrainer', geen 'zelfde', 'verfdoos'
       new []{ "(F|f)eb", "$1eib" }, // 'februari'
       new []{ "ngt\\b", "nk"}, // 'hangt'
-      new []{ "eving", "eiving"}, // 'omgeving'
+      new []{ "e(k|v)ing", "ei$1ing"}, // 'omgeving', 'onderbreking'
       new []{ "gje\\b", "ggie"}, // 'dagje'
       new []{ "go(r)", "gau$1" }, // 'algoritme'
       new []{ "gelegd\\b", "geleige"}, // 'neergelegd'
@@ -310,6 +310,7 @@ namespace HaagsTranslator
       new []{ "Het\\b", "Ut"},
       new []{ "(?<![eouù])i\\b", "ie" }, // 'januari'
       new []{ "ieri(n|g)", "ieâhri$1"}, // 'plezierig', 'viering'
+      new []{ "emier", "emjei" }, // 'premier'
       new []{ "(?<![uù])ier(?!(a|e|i|ony))", "ieâh" }, // 'bierfeest', 'hieronder', geen 'hieronymus', 'plezierig', 'dieren', 'sluier'
       new []{ "iero(?!e|o|nd)", "ierau" }, // 'hieronymus', geen 'hieronder'
       new []{ "ière", "ijerre"}, // 'barriere'
@@ -332,7 +333,8 @@ namespace HaagsTranslator
       new []{ "\\bIJ", "È" }, // 'IJsselmeer'
       new []{ "ilm", "illem" }, // 'film'
       new []{ "ilieu", "ejui"}, // 'milieu'
-      new []{ "inc(k|)", "ink"}, // 'incontinentie', 'binckhorst'
+      new []{ "incia", "insja"}, // 'provinciale'
+      new []{ "inc(k|)(?![i])", "ink"}, // 'incontinentie', 'binckhorst', geen 'provinciale'
       new []{ "io(?![oen])", "iau"}, // 'audio', geen 'viool', 'station'
       new []{ "\\bin m'n\\b", "imme"},
       new []{ "(n|r)atio", "$1asjau" }, // 'internationale'
@@ -442,6 +444,7 @@ namespace HaagsTranslator
       new []{ "palè", "pelè"}, // voor Vredespaleis
       new []{ "(R|r)elax", "$1ieleks" },
       new []{ "(R|r)estâhrant", "$1esterant"},
+      new []{ "(R|r)esu", "$1eisu"}, // 'resultaat'
       new []{ "rants\\b", "rans"}, // 'restaurants'
       new []{ "rigste", "ragste"}, // 'bloederigste'
       new []{ "rod", "raud"}, // 'madurodam'
@@ -486,7 +489,7 @@ namespace HaagsTranslator
       new []{ "\\b(V|v)ege(?![lz])", "$1eige"}, // 'vegetarisch', geen 'vergelijking', 'vergezeld' (moet voor 'ver -> ve')
       new []{ "vert\\b", "vâht"}, // 'levert'
       new []{ "([Vv])er(?![aeèfrious])", "$1e"}, // wel 'verkoop', geen 'verse', 'veranderd', 'overeenkomsten', 'overige', 'verf/verref', uitgeverij/è
-      new []{ "([Vv])ersl", "$1esl"}, // 'verslag'
+      new []{ "([Vv])er(sl|sta)", "$1e$2"}, // 'verslag', 'verstappen'
       new []{ "vaka", "veka" }, // 'vakantie' 
       new []{ "vard", "vâh"}, // 'boulevard'
       new []{ "voetbal", "foebal"},
