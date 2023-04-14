@@ -129,7 +129,7 @@ namespace HaagsTranslator
       new []{ "aar(?![i])", "ar" }, // wel 'waarom', geen 'waarin'
       new []{ "patie", "petie"}, // 'sympatiek'
       new []{ "aagd\\b", "aag"}, // 'ondervraagd'
-      new []{ "(am|at|ig|ig|it|kk|nn)en(?![ ,.?!])", "$1e"}, // 'en' in een woord, bijv. 'samenstelling', 'eigenlijk', 'buitenstaander', 'statenkwartier', 'dennenweg', 'klokkenluider'
+      new []{ "(am|at|ig|ig|it|kk|nn)en(?![ e,.?!])", "$1e"}, // 'en' in een woord, bijv. 'samenstelling', 'eigenlijk', 'buitenstaander', 'statenkwartier', 'dennenweg', 'klokkenluider', geen 'betrokkenen'
 
       // woordcombinaties
       new []{ "\\b(K|k)an er\\b", "$1andâh"},
@@ -221,7 +221,8 @@ namespace HaagsTranslator
       new []{ "(?<![ bgi])eden", "eide" }, // 'hedendaagse', geen 'bedenken'
       new []{ "\\b(E|e)ve", "$1ive" }, // 'evenementen'
       new []{ "(?<![a])(m|M|R|r)e(d|t|n)e(?![ei])", "$1ei$2e"}, // 'medeklinkers', 'rede', geen 'Hagenees', 'meneer', geen 'meteen'
-      new []{ "(G|g|)(E|e)ner", "$1$2iner"}, // 'generatie', 'energie'
+      new []{ "(G|g)ener", "$1einer"}, // 'generatie'
+      new []{ "(E|e)nerg", "$1inerg"}, // 'energie'
       new []{ "eugd", "eug" }, // 'jeugd', 'jeugdprijs'
       new []{ "(?<![o])epot\\b", "eipau"}, // 'depot'
       new []{ "(e|E)rg\\b", "$1rrag"}, // 'erg', moet voor 'ergens'
