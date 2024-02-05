@@ -45,7 +45,7 @@ jobs:
         run: dotnet test --configuration $BUILD_CONFIG  --no-restore --no-build --verbosity normal
 
       - name: Pack
-        run: dotnet pack src/HaagsTranslator/HaagsTranslator.csproj -c Release --no-restore --no-build -p:PackageVersion=2.2.7
+        run: dotnet pack src/HaagsTranslator/HaagsTranslator.csproj -c Release --no-restore --no-build -p:PackageVersion=2.2.8
 
       - name: Push to NuGet
         run: dotnet nuget push **\*.nupkg --skip-duplicate -s https://api.nuget.org/v3/index.json -k ${{secrets.NUGET_API_KEY}}
