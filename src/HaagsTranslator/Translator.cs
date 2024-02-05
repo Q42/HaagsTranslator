@@ -246,7 +246,7 @@ namespace HaagsTranslator
       new []{ "(?<![eiop])ers\\b", "âhs"}, // 'klinkers', geen 'pers', 'personeel'
       new []{ "(H|h)er(?![erp])", "$1eâh" }, // 'herzien', 'herstel', geen 'herenstraat', 'scherm', 'scherp', moet voor 'ers'
       new []{ "\\b(K|k)ers", "$1egs"}, // 'kerstfeest'
-      new []{ "(?<![vV])ers(c|t)", "âhs$1"}, // 'eerste', 'bezoekerscentrum', geen 'verschaffen', 'Verstappen'
+      new []{ "(?<![vVi])ers(c|t)", "âhs$1"}, // 'eerste', 'bezoekerscentrum', geen 'verschaffen', 'Verstappen', 'deurkierstandhouder'
       new []{ "erwt", "erret" }, // 'erwtensoep'
       new []{ "(?<![eo])eci", "eici" }, // 'speciaal'
       new []{ "eserve(e|r)", "eiserve$1" }, // 'reserveer', 'reserveren'
