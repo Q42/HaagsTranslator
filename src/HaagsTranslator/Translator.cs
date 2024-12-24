@@ -14,6 +14,9 @@ namespace HaagsTranslator
     /// list of replacement rules, ordered
     /// </summary>
     static readonly string[][] TranslationReplacements = {
+      new []{ "Uitkijktoren", "Kèkstègâh"},
+      new []{ "uitkijktoren", "kèkstègâh"},
+      new []{ "(K|k)ijksteiger", "$1èkstègâh"},
       new []{ "childerswijk", "childâhswijk"},
       new [] { "eider", "èijâh" }, // 'projectleider'
       new []{ "(?<![o])ei", "è"}, // moet voor 'scheveningen' en 'eithoeke', geen 'groeit'
