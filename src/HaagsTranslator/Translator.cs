@@ -16,7 +16,6 @@ namespace HaagsTranslator
     static readonly string[][] TranslationReplacements = {
       new []{ "Uitkijktoren", "Kèkstègâh"},
       new []{ "uitkijktoren", "kèkstègâh"},
-      new []{ "(K|k)ijksteiger", "$1èkstègâh"},
       new []{ "childerswijk", "childâhswijk"},
       new [] { "eider", "èijâh" }, // 'projectleider'
       new []{ "(?<![o])ei", "è"}, // moet voor 'scheveningen' en 'eithoeke', geen 'groeit'
@@ -427,7 +426,7 @@ namespace HaagsTranslator
       new []{ "(N|n)(|o)od", "$1aud"}, // 'noodzakelijk'
       new []{ "nirs\\b", "nieâhs" }, // 'souvenirs'
       new []{ "l(f|k|m|p)(?![aerou])", "lle$1"}, // 'volkslied', 'behulp', geen 'elkaar', 'doelpunten', 'IJsselmeer', 'vuilcontainer', 'spelprogramma'
-      new []{ "(a|e|o)lk(?![a])", "$1llek"}, // 'volkslied','elke', 'Valkenswaard', geen 'elkaar'
+      new []{ "(a|e|o)lk(?![ao])", "$1llek"}, // 'volkslied','elke', 'Valkenswaard', geen 'elkaar', 'welkom'
       new []{ "(F|f)olleklore", "$1olklore" },
       new []{ "o(c|k)a", "auka" }, // 'locaties'
       new []{ "(?<![o])oms", "omps" }, // 'aankomsthal'
