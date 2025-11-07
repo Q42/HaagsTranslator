@@ -98,7 +98,7 @@ namespace HaagsTranslator
       new []{ "(M|m)oeten", "$1otte"}, // moet voor '-en'
       new []{ "(w|W)eleens", "$1elles"}, // 'weleens', moet voor 'hagenees'
       new []{ "(g|G)ouv", "$1oev"}, // 'gouveneur'
-      new []{ "heeft", "hep"}, // 'heeft', moet voor 'heef'
+      new []{ "(H|h)eeft", "$1ep"}, // 'heeft', moet voor 'heef'
       new []{ "(on|i)der(?!e)", "$1dâh" }, // 'onder', 'Zuiderpark', geen 'bijzondere'
       new []{ "iendel", "iendâhl" }, // 'vriendelijk'
       new []{ "(?<![ao])ndere", "ndâhre" }, // 'bijzondere', geen 'andere'
@@ -242,7 +242,7 @@ namespace HaagsTranslator
       new []{ "elden", "elde"}, // 'zeeheldenkwartier'
       new []{ "oeter", "oetâh" }, // 'Zoetermeer', moet voor 'kermis'
       new []{ "erm\\b", "errum"}, // 'scherm', moet voor 'kermis'
-      new []{ "(?<![iegoptvV])er(m|n)", "erre$1"}, // kermis', geen 'vermeer', 'vermoeide', 'toernooi', 'externe', 'supermarkt', termijn, 'hierna', 'tijgermug'
+      new []{ "(?<![ iegoptvV])er(m|n)", "erre$1"}, // kermis', geen 'vermeer', 'vermoeide', 'toernooi', 'externe', 'supermarkt', termijn, 'hierna', 'tijgermug'
       new []{ "(?<![edktv])(e|E)rg(?!ez|i)", "$1rreg"}, // 'kermis', 'ergens', geen 'achtergelaten', 'neergelegd', 'overgebleven', 'ubergezellige', 'bekergoal', 'energie', 'rundergehakt'
       new []{ "(?<![i])(g|b)er(?![eoiuaâè])", "$1âh"}, // 'tijgermug', 'ubergezellige', moet na '-erg', geen 'beraden', 'vertegenwoordiger'
       new []{ "epers\\b", "epâhs"}, // 'developers'
@@ -258,7 +258,7 @@ namespace HaagsTranslator
       new []{ "\\b(K|k)ers", "$1egs"}, // 'kerstfeest'
       new []{ "(?<![vVi])ers(c|t)", "âhs$1"}, // 'eerste', 'bezoekerscentrum', geen 'verschaffen', 'Verstappen', 'deurkierstandhouder'
       new []{ "erwt", "erret" }, // 'erwtensoep'
-      new []{ "(?<![eo])eci", "eici" }, // 'speciaal'
+      new []{ "(?<![eor])eci", "eici" }, // 'speciaal', geen 'precies'
       new []{ "eserve(e|r)", "eiserve$1" }, // 'reserveer', 'reserveren'
       new []{ "erve\\b", "erreve" }, // 'reserve',
       new []{ "ervek", "errevek" }, // 'reservekeeper',
