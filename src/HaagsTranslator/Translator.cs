@@ -238,7 +238,7 @@ namespace HaagsTranslator
       new []{ "(e|E)rg\\b", "$1rrag"}, // 'erg', moet voor 'ergens'
       new []{ "(?<![fnN])(a|o)rm","$1rrem" }, // 'platform', 'vormgeving', 'warm', geen 'normale', 'informatie'
       new []{ "(f|N|n)orma", "$1oâhma" }, // 'normale', 'informatie', geen 'boorplatform'
-      new []{ "(i|I)nterna", "$1ntâhna" }, // 'internationale'
+      new []{ "(i|I|a|A)(l|n)terna", "$1$2tâhna" }, // 'internationale', 'alternatieve'
       new []{ "elden", "elde"}, // 'zeeheldenkwartier'
       new []{ "oeter", "oetâh" }, // 'Zoetermeer', moet voor 'kermis'
       new []{ "erm\\b", "errum"}, // 'scherm', moet voor 'kermis'
@@ -301,7 +301,7 @@ namespace HaagsTranslator
       new []{ "enso", "eso" }, // 'erwtensoep'
       new []{ "eum", "eijum" }, // 'museum'
       new []{ "(?<![eio])enm(?![e])", "em" }, // 'kinderboekenmuseum', geen 'kenmerken'
-      new []{ "(?<![eiorvV])en(b|h|j|l|p|r|v|w|z)", "e$1"}, // 'binnenhof', geen 'paviljoenhoeder', 'venlo', 'Bernhard'
+      new []{ "(?<![eiorRvV])en(b|h|j|l|p|r|v|w|z)", "e$1"}, // 'binnenhof', geen 'paviljoenhoeder', 'venlo', 'Bernhard'
       new []{ "([Hh])eb je ", "$1ebbie "}, // voor '-eb'
       new []{ "(H|h)eb (un|een)\\b", "$1ep'n"}, // voor '-eb'
       new []{ "(?<![eu])eb\\b", "ep"},
@@ -425,7 +425,7 @@ namespace HaagsTranslator
       new []{ "ord(e|û)", "ogd$1"}, // 'worden'
       new []{ "(N|n)(|o)od", "$1aud"}, // 'noodzakelijk'
       new []{ "nirs\\b", "nieâhs" }, // 'souvenirs'
-      new []{ "l(f|k|m|p)(?![aerou])", "lle$1"}, // 'volkslied', 'behulp', geen 'elkaar', 'doelpunten', 'IJsselmeer', 'vuilcontainer', 'spelprogramma'
+      new []{ "l(f|k|m|p)(?![aeiroul])", "lle$1"}, // 'volkslied', 'behulp', geen 'elkaar', 'doelpunten', 'IJsselmeer', 'vuilcontainer', 'spelprogramma', 'asielminister', 'schoolklas'
       new []{ "(a|e|o)lk(?![ao])", "$1llek"}, // 'volkslied','elke', 'Valkenswaard', geen 'elkaar', 'welkom'
       new []{ "(F|f)olleklore", "$1olklore" },
       new []{ "o(c|k)a", "auka" }, // 'locaties'
@@ -443,6 +443,7 @@ namespace HaagsTranslator
       new []{ "olop", "ollop"}, // 'volop'
       new []{ "i(p|P)hone", "aaifaun"},
       new []{ "Iphone", "Aaifaun"},
+      new []{ "emo(?![e])", "eimau" }, // 'emotie', 'democratie', geen 'vemoeide'
       new []{ "(?<![gz])o(b|d|g|k|l|m|n|p|s|t|v)(i|e|o|au)", "au$1$2"}, // 'komen', 'grote', 'over', 'olie', 'notie', geen 'gokje', 'foto', 'doneren', 'zone'
       new []{ "O(b|d|g|k|l|m|p|s|t|v)(i|e)", "Au$1$2"}, // zelfde, maar dan met hoofdletter
       new []{ "\\bout", "âht" }, // 'outdoor'
@@ -545,9 +546,12 @@ namespace HaagsTranslator
       new []{ "\\bThe Hague\\b", "De Heek" }, // moet na 'ee -> ei'
       new []{ "Krowne", "Kraun" },
       new []{ "social media", "sausjel miedieja" }, // moet na 'au'
+      new []{ "\\b(D|d)em", "$1eim" }, // 'demissionair'
+      new []{ "ssio", "ssiau" }, // 'demissionair'
       new []{ "sol(?![l])", "saul" }, // 'resoluut', geen 'solliciteren'
       new []{ "aine", "ène" }, // 'quarantaine'
       new []{ "tain", "tein" }, // 'vuilcontainer'
+      new []{ "terna", "tena"},
       new []{ "(?<![eèuoin])gel\\b", "sjel"}, // 'handgel', geen 'regel', 'pingel', 'vogel'
       new []{ "ingel\\b", "ingol"}, // 'pingel'
       new []{ "ign", "inj"}, // 'rustsignaal'

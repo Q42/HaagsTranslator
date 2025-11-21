@@ -129,7 +129,7 @@ namespace HaagsTranslator.Tests
     [TestCase("fenomenale kerstfeest Valkenswaard Deurkierstandhouder kier", "feinaumenale kegsfeis Vallekeswaahd Deuâhkieâhstandhâhwâh kieâh")]
     [TestCase("logo mafketels design spelprogramma volop vorige ik je ben. boeking verbeteren. solliciteren heroïsche", "laugau mafkeitels diesain spelpraugramma vollop vorage ik je ben. boeking vebeiterûh. sollicitere herauiese")]
     [TestCase("Apps apps developer developers iPhone iphone Iphone bal gehakt enigste welkom Uitkijktoren Kijksteiger", "Eps eps dievellepâh dievellepâhs aaifaun aaifaun Aaifaun beschùitstùitâh einagste welkom Kèkstègâh Kèkstègâh")]
-    [TestCase("precies Heeft ermee", "precies Hep ermei")]
+    [TestCase("precies Heeft ermee asielminister schoolklas demissionair democratie emotie alternatieve Renze", "precies Hep ermei asielministâh schaulklas deimissiaunèâh deimaukrasie eimausie altâhnatieve Renze")]
     public void Given_Dutch_Translates_To_Haags(string dutch, string expectedTranslation)
     {
       var result = Translator.Translate(dutch);
