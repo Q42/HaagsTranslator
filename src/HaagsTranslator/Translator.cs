@@ -105,7 +105,7 @@ namespace HaagsTranslator
       new []{ "uier\\b", "uiâh" }, // 'sluier', moet voor 'ui'
       new []{ "ui", "ùi"}, // moet voor 'ooi' zitte n
       new []{ "Ui", "Ùi" },
-      new []{ "(?<![ieopfv])ert\\b", "egt" }, // 'gert', geen 'viert', 'expert', 'levert'
+      new []{ "(?<![ideopfv])ert\\b", "egt" }, // 'gert', geen 'viert', 'expert', 'levert', 'verandert'
       new []{ "pert\\b", "peâh" }, // 'expert'
       new []{ "\\b(V|v)ert", "$1et"}, // 'vertegenwoordiger', moet voor '-ert'
       new []{ "(?<![eo])erte", "egte" }, // 'concerten'
@@ -119,7 +119,8 @@ namespace HaagsTranslator
       new []{ "oele\\b", "oel"}, // 'poule'
       new []{ "(au|ou)w(?!e)", "$1"}, // 'vrouw', ''flauw', maar zonder 'blauwe'
       new []{ "oude", "ouwe"}, // 'goude'
-      new []{ "\\b(T|t)our\\b", "$1oeâh"},
+      new []{ "\\b(T|t)ouring", "$1oering"},
+      new []{ "\\b(T|t)our", "$1oeâh"},
       new []{ "diner\\b", "dinei"},
       new []{ "o(e|u)r\\b", "oeâh"}, // 'broer', 'retour', moet voor 'au|ou'
       new []{ "oer(?![aieou])", "oeâh"}, // 'beroerd', 'hoer', geen 'toerist', 'stoere, moet voor 'au|ou'
@@ -230,7 +231,7 @@ namespace HaagsTranslator
       new []{ "kens", "kes"}, // 'Valkenswaard'
       new []{ "(D|d)ance", "$1ens" }, // moet na '-ens' 
       new []{ "(?<![ hi])eden\\b", "eije"}, // geen 'bieden'. 'bezienswaardigheden'
-      new []{ "(?<![ bgi])eden", "eide" }, // 'hedendaagse', geen 'bedenken'
+      new []{ "(?<![ bgio])eden", "eide" }, // 'hedendaagse', geen 'bedenken', 'woedende'
       new []{ "\\b(E|e)ve", "$1ive" }, // 'evenementen'
       new []{ "(?<![a])(m|M|R|r)e(d|t|n)e(?![ei])", "$1ei$2e"}, // 'medeklinkers', 'rede', geen 'Hagenees', 'meneer', geen 'meteen'
       new []{ "(G|g)ener", "$1einer"}, // 'generatie'
@@ -250,7 +251,7 @@ namespace HaagsTranslator
       new []{ "epers\\b", "epâhs"}, // 'developers'
       new []{ "(P|p)ers(?![l])", "$1egs"}, // 'pers', geen 'superslimme'
       new []{ "(K|k)erst", "$1egs"}, // 'kerstfeest'
-      new []{ "(?<![e])(t|V|v)ers(?![clt])", "$1egs"}, // 'vers', 'personeel', 'versie', 'diverse', geen 'gevers', 'verscheen', 'eerste', 
+      new []{ "(?<![en])(t|V|v)ers(?![clt])", "$1egs"}, // 'vers', 'personeel', 'versie', 'diverse', geen 'gevers', 'verscheen', 'eerste', 'sprinters'
       new []{ "(G|g)eve(r|n)", "$1eive$2" }, // 'Gevers', moet na 'vers', geen 'gevestigd'
       new []{ "(t|w|W)ene", "$1eine" }, // 'stenen', 'wenen'
       new []{ "renstr", "restr" }, // 'herenstraat' (voor koppelwoorden)
@@ -410,7 +411,7 @@ namespace HaagsTranslator
       new []{ "\\b(L|l)igge\\b", "$1egge" },
       new []{ "\\b(L|l)igt\\b", "$1eg" },
       new []{ "(?<![p])(L|l)ez", "$1eiz"}, // 'lezer', geen 'plezierig'
-      new []{ "lf", "lluf"}, // 'zelfde'
+      new []{ "lf(?![e])", "lluf"}, // 'zelfde', geen 'wisselfestein'
       new []{ "ll([ ,.])", "l$1" }, // 'till'
       new []{ "(a|e|i|o|u)rk\\b", "$1rrek" }, // 'park', 'stork'
       new []{ "(P|p)arke", "$1agke"}, // 'parkeervergunning', moet voor '-ark'
@@ -454,6 +455,7 @@ namespace HaagsTranslator
       new []{ "\\bOut", "Âht" }, // 'Outdoor'
       new []{ "\\b(V|v)er\\b", "$1eâh"}, // 'ver'
       new []{ "ederta", "edâhta"},// 'moedertaal'
+      new []{ "dert\\b", "dâht"}, // 'verandert'
       new []{ "(D|d)ert(?![u])","$1eâht"}, // 'dertig', geen 'ondertussen', 'moedertaal'
       new []{ "\\b(D|d)er\\b","$1eâh"}, // 'der'
       new []{ "der(?![dehianrouèt])", "dâh"},// 'moderne'/'moderrene', geen 'dertig', 'derde', 'derhalve'
